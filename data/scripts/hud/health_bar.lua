@@ -29,7 +29,7 @@ function stamina_builder:new(game, config)
       need_rebuild = true
       local difference = (game:get_life() or 100) - stamina.amount_displayed
       if difference % 10 == 0 then
-        increment = 5
+        increment = 10
       else
         increment = 1
       end

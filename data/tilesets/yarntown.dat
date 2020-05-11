@@ -1071,6 +1071,40 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "80",
+  ground = "grass",
+  default_layer = 0,
+  x = { 208, 224, 240 },
+  y = { 0, 0, 0 },
+  width = 16,
+  height = 16,
+  frame_delay = 400,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "81",
+  ground = "grass",
+  default_layer = 0,
+  x = { 192, 200, 208, 216 },
+  y = { 24, 24, 24, 24 },
+  width = 8,
+  height = 24,
+  frame_delay = 370,
+}
+
+tile_pattern{
+  id = "82",
+  ground = "grass",
+  default_layer = 0,
+  x = { 224, 232, 240, 248 },
+  y = { 32, 32, 32, 32 },
+  width = 8,
+  height = 16,
+  frame_delay = 340,
+}
+
+tile_pattern{
   id = "9",
   ground = "wall",
   default_layer = 0,

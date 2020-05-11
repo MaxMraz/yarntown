@@ -48,7 +48,7 @@ function menu:initialize(game)
       game:set_life(game:get_max_life())
 
     elseif key == "j" and debug_mode then
-      game:remove_life(2)
+      game:remove_life(10)
 
     elseif key == "m" and debug_mode then
       print("You are on map: " .. game:get_map():get_id())
