@@ -1,0 +1,89 @@
+animation{
+  name = "walking",
+  src_image = "enemies/chameleon.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "attack",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 120, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "eye",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 0, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 8, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 16, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 24, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 32, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 0, y = 112, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 8, y = 112, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 16, y = 112, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 40, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/chameleon.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 144, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 144, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 144, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 144, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+  },
+}
+animation{
+  name = "shadow",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 216, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 216, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 216, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 216, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 96, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 96, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 96, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 96, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "tongue",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 0, y = 96, frame_width = 8, frame_height = 8, origin_x = -10, origin_y = 10 },
+    { x = 8, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 28 },
+    { x = 16, y = 96, frame_width = 8, frame_height = 8, origin_x = 18, origin_y = 10 },
+    { x = 24, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 0 },
+  },
+}
+animation{
+  name = "tongue_middle",
+  src_image = "enemies/chameleon.png",
+  directions = {
+    { x = 32, y = 96, frame_width = 8, frame_height = 8, origin_x = -10, origin_y = 10 },
+    { x = 40, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 28 },
+    { x = 32, y = 96, frame_width = 8, frame_height = 8, origin_x = 18, origin_y = 10 },
+    { x = 40, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 0 },
+  },
+}

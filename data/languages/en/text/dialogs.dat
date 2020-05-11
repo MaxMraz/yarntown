@@ -1,0 +1,10 @@
+dialog{
+  id = "_treasure.dandelion_charm.1",
+  text = [[
+The bone of an old hunter whose name is
+lost. It is said they were a practitioner
+of the art of Quickening, a technique
+particular to the first hunters.
+]],
+}
+

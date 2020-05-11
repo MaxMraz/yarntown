@@ -1,0 +1,9 @@
+animation{
+  name = "fly",
+  src_image = "animals/butterfly.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4, num_frames = 4 },
+  },
+}

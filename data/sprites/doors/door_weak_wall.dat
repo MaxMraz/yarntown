@@ -1,0 +1,10 @@
+animation{
+  name = "closed",
+  src_image = "doors/door.png",
+  directions = {
+    { x = 208, y = 8, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 200, y = 32, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 96, y = 8, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 200, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}

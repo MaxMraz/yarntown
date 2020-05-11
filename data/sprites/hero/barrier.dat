@@ -1,0 +1,11 @@
+animation{
+  name = "sword",
+  src_image = "hero/barrier.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 6 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 6 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 6 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 6 },
+  },
+}

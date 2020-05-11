@@ -1,0 +1,110 @@
+animation{
+  name = "walking",
+  src_image = "enemies/spiderskull.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+  },
+}
+animation{
+  name = "acidball_explosion",
+  src_image = "enemies/acidball.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "acidball_walking",
+  src_image = "enemies/acidball.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/spiderskull.png",
+  frame_delay = 75,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 448, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 2 },
+    { x = 448, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 2 },
+    { x = 448, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 2 },
+    { x = 448, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 2 },
+  },
+}
+animation{
+  name = "jumping",
+  src_image = "enemies/spiderskull.png",
+  directions = {
+    { x = 384, y = 48, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 96, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 144, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 0, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+  },
+}
+animation{
+  name = "shadow_jumping",
+  src_image = "enemies/spiderskull.png",
+  directions = {
+    { x = 384, y = 240, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 288, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 336, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+    { x = 384, y = 192, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+  },
+}
+animation{
+  name = "shadow_stopped",
+  src_image = "enemies/spiderskull.png",
+  directions = {
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+  },
+}
+animation{
+  name = "shadow_walking",
+  src_image = "enemies/spiderskull.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/spiderskull.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+  },
+}
+animation{
+  name = "throw_acidball",
+  src_image = "enemies/spiderskull.png",
+  frame_delay = 1000,
+  directions = {
+    { x = 496, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 496, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 496, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+    { x = 496, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+  },
+}

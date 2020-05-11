@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "hq2x.frag.glsl",
+  scaling_factor = 2,
+}

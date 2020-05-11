@@ -1,0 +1,16 @@
+quest{
+  solarus_version = "1.6",
+  write_dir = "yarntown_saves",
+  title = "Yarntown",
+  short_description = "",
+  long_description = [[
+]],
+  author = "Max Mraz",
+  quest_version = "",
+  release_date = "",
+  website = "",
+  normal_quest_size = "416x240",
+  min_quest_size = "320x240",
+  max_quest_size = "416x240",
+}
+

@@ -1,0 +1,94 @@
+animation{
+  name = "stopped",
+  src_image = "hero/stopped.shield.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 24, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+
+animation{
+  name = "walking",
+  src_image = "hero/walking.shield.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 192, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 264, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+  },
+}
+
+animation{
+  name = "sword",
+  src_image = "hero/sword.shield3.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 23, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 23, num_frames = 12 },
+  },
+}
+
+animation{
+  name = "sword_loading_stopped",
+  src_image = "hero/loading.shield3.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 23 },
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 23 },
+  },
+}
+
+animation{
+  name = "sword_loading_walking",
+  src_image = "hero/loading.shield3.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 23, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, num_frames = 6 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 23, num_frames = 6 },
+  },
+}
+
+animation{
+  name = "sword_tapping",
+  src_image = "hero/sword_tapping.shield.png",
+  frame_delay = 40,
+  frame_to_loop_on = 1,
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, num_frames = 7 },
+    { x = 0, y = 280, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, num_frames = 7 },
+    { x = 0, y = 344, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 21, num_frames = 7 },
+  },
+}
+
+animation{
+  name = "boomerang",
+  src_image = "hero/boomerang.shield.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 288, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 320, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 352, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+
+animation{
+  name = "hookshot",
+  src_image = "hero/hookshot.shield.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 1, frame_height = 1 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}
+

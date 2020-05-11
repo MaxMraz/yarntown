@@ -1,0 +1,11 @@
+animation{
+  name = "sword",
+  src_image = "hero/spear.png",
+  frame_delay = 230,
+  directions = {
+    { x = 432, y = 0, frame_width = 72, frame_height = 72, origin_x = 20, origin_y = 43, num_frames = 6 },
+    { x = 432, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 59, num_frames = 6 },
+    { x = 432, y = 144, frame_width = 72, frame_height = 72, origin_x = 52, origin_y = 43, num_frames = 6 },
+    { x = 432, y = 216, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 27, num_frames = 6 },
+  },
+}

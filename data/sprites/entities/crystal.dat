@@ -1,0 +1,18 @@
+animation{
+  name = "orange_lowered",
+  src_image = "switches/switch.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "blue_lowered",
+  src_image = "switches/switch.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

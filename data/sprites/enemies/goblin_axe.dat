@@ -1,0 +1,34 @@
+animation{
+  name = "walking",
+  src_image = "enemies/goblin_green.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 264, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 264, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 264, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 264, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/goblin_green.png",
+  directions = {
+    { x = 264, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 264, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 264, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 264, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "thrown",
+  src_image = "enemies/goblin_green.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+  },
+}

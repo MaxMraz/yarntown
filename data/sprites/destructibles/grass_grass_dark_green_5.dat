@@ -1,0 +1,15 @@
+animation{
+  name = "on_ground",
+  src_image = "destructibles/plant_cabbage.png",
+  directions = {
+    { x = 48, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "destroy",
+  src_image = "destructibles/plant_cabbage.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4, num_columns = 1 },
+  },
+}

@@ -1,0 +1,8 @@
+animation{
+  name = "leaves",
+  src_image = "ground_effects/leaves.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 32, num_frames = 9 },
+  },
+}

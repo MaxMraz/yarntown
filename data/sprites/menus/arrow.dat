@@ -1,0 +1,22 @@
+animation{
+  name = "static",
+  src_image = "menus/arrow.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 9, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 24, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 9, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "blink",
+  src_image = "menus/arrow.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 16, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 9, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 24, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 9, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}

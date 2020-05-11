@@ -1,0 +1,28 @@
+animation{
+  name = "orange_lowered",
+  src_image = "entities/crystal_block.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "blue_lowered",
+  src_image = "entities/crystal_block.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "blue_raised",
+  src_image = "entities/crystal_block.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "orange_raised",
+  src_image = "entities/crystal_block.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}

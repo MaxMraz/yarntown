@@ -1,0 +1,14 @@
+animation{
+  name = "closed",
+  src_image = "chests/chest.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
+  name = "open",
+  src_image = "chests/chest.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}

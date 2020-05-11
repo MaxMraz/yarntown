@@ -1,0 +1,20 @@
+animation{
+  name = "next",
+  src_image = "hud/dialog_box.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 60, frame_width = 16, frame_height = 8, num_frames = 3 },
+  },
+}
+
+animation{
+  name = "last",
+  src_image = "hud/dialog_box.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 60, frame_width = 16, frame_height = 16, origin_y = 3, num_frames = 3 },
+  },
+}
+

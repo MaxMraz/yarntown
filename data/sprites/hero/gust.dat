@@ -1,0 +1,12 @@
+animation{
+  name = "sword",
+  src_image = "hero/gust.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 432, y = 0, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 6 },
+    { x = 432, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 6 },
+    { x = 432, y = 144, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 6 },
+    { x = 432, y = 216, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 6 },
+  },
+}

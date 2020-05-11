@@ -1,0 +1,48 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/crow.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 8, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 8, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 40, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 40, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+animation{
+  name = "attack",
+  src_image = "enemies/crow.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 64, frame_width = 40, frame_height = 24, origin_x = 20, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 40, frame_height = 24, origin_x = 20, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 88, frame_width = 40, frame_height = 24, origin_x = 20, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 88, frame_width = 40, frame_height = 24, origin_x = 20, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "flying",
+  src_image = "enemies/crow.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 64, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 64, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 64, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/crow.png",
+  frame_delay = 700,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}

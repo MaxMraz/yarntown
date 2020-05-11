@@ -1,0 +1,10 @@
+animation{
+  name = "walking",
+  src_image = "hero/shield_collision_mask.png",
+  directions = {
+    { x = 24, y = 0, frame_width = 16, frame_height = 24, origin_x = -4, origin_y = 20 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 29 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 24, origin_x = 20, origin_y = 20 },
+    { x = 16, y = 24, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 3 },
+  },
+}

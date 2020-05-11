@@ -1,0 +1,7 @@
+animation{
+  name = "normal",
+  src_image = "hud/hearts.png",
+  directions = {
+    { x = 27, y = 0, frame_width = 9, frame_height = 8, origin_x = 8, origin_y = 8 },
+  },
+}

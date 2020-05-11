@@ -1,0 +1,16 @@
+animation{
+  name = "normal",
+  src_image = "hud/hearts.png",
+  directions = {
+    { x = 0, y = 8, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "danger",
+  src_image = "hud/hearts.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 8, frame_width = 9, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}

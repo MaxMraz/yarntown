@@ -1,0 +1,157 @@
+animation{
+  name = "walking",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "bone_crush",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 50,
+  directions = {
+    { x = 256, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4, num_columns = 1 },
+    { x = 256, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4, num_columns = 1 },
+    { x = 256, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4, num_columns = 1 },
+    { x = 256, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4, num_columns = 1 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 224, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+  },
+}
+animation{
+  name = "hurt_head",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 224, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 224, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+  },
+}
+animation{
+  name = "hurt_wings",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 128, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 128, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 3 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/skullbat.png",
+  directions = {
+    { x = 0, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped_head",
+  src_image = "enemies/skullbat.png",
+  directions = {
+    { x = 0, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped_wings_brown",
+  src_image = "enemies/skullbat.png",
+  directions = {
+    { x = 320, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped_wings_green",
+  src_image = "enemies/skullbat.png",
+  directions = {
+    { x = 320, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 320, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped_wings_white",
+  src_image = "enemies/skullbat.png",
+  directions = {
+    { x = 128, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "walking_head",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "walking_wings_brown",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 320, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "walking_wings_green",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 320, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 320, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "walking_wings_white",
+  src_image = "enemies/skullbat.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 168, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 120, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 144, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
