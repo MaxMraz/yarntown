@@ -46,7 +46,7 @@ function stamina_builder:new(game, config)
     end
 
     -- Schedule the next check.
-    sol.timer.start(stamina, 40, function()
+    sol.timer.start(stamina, 29, function()
       stamina:check()
     end)
   end

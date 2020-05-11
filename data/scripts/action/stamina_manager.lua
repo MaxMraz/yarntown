@@ -6,7 +6,7 @@ function menu:start(game)
     if (game.stamina_regain_block_points or 0) > 0 then
       game.stamina_regain_block_points = game.stamina_regain_block_points - 1
     elseif not game:is_suspended() then
-      game:add_stamina(10)
+      game:add_stamina(20)
     end
     return true
   end)
@@ -21,9 +21,7 @@ function menu:start(game)
 
   function game:remove_stamina(amount)
     game.stamina = game.stamina - amount
-    if game.stamina <0 then
-    	game.stamina = 0
-    end
+--    if game.stamina <0 then game.stamina = 0 end
     game.stamina_regain_block_points = (game.stamina_regain_block_points or 0) + 5
   end
 

@@ -2,14 +2,14 @@ local dash_manager = {}
 
 local MAX_MOTHS = 15
 local MAGIC_COST = 0
-local STAMINA_COST = 25
+local STAMINA_COST = 15
 local enough_magic
 local movement_id = 1
 local current_movement
 
 function dash_manager:dash(game)
     --check to make sure there's enough stamina
-    if game.stamina < STAMINA_COST then return end
+    if game.stamina <= 0 then return end
     game:remove_stamina(STAMINA_COST)
 
 

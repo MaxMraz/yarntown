@@ -5,6 +5,13 @@ require("scripts/multi_events")
 local hero_meta = sol.main.get_metatable("hero")
 
 
+function hero_meta:on_state_changed(new_state)
+  if new_state == "sword spin attack" then
+    require("scripts/action/weapon_manager"):process_spin_attack()
+  end
+end
+
+
 -- Redefine how to calculate the damage received by the hero.
 function hero_meta:on_taking_damage(damage)
   -- In the parameter, the damage unit is 1/2 of a heart.

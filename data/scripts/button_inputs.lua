@@ -97,12 +97,11 @@ function menu:initialize(game)
     elseif action == "attack" then
       weapon_manager:process_attack_input()
       handled = true
+
     end 
 
     return handled
   end
-
-
 
   function game:on_joypad_button_pressed(btn)
     local handled = false
