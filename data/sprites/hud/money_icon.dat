@@ -1,0 +1,7 @@
+animation{
+  name = "icon",
+  src_image = "hud/money_icon.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 16, origin_x = 48, origin_y = 0 },
+  },
+}

@@ -17,6 +17,9 @@ animation{
     { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 10 },
     { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 10 },
     { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 10 },
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 80, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
   },
 }
 animation{

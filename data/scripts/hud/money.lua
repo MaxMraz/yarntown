@@ -8,14 +8,13 @@ function rupees_builder:new(game, config)
 
   rupees.dst_x, rupees.dst_y = config.x, config.y
 
-  rupees.surface = sol.surface.create(48, 12)
+  rupees.surface = sol.surface.create(64, 18)
+  rupees.icon = sol.sprite.create("hud/money_icon")
   rupees.digits_text = sol.text_surface.create{
     font = "8_bit",
     horizontal_alignment = "left",
   }
   rupees.digits_text:set_text(game:get_money())
-  rupees.rupee_icons_img = sol.surface.create("hud/rupee_icon.png")
-  rupees.rupee_bag_displayed = game:get_item("money_bag"):get_variant()
   rupees.money_displayed = game:get_money()
 
   function rupees:check()
@@ -24,30 +23,25 @@ function rupees_builder:new(game, config)
     local rupee_bag = game:get_item("money_bag"):get_variant()
     local money = game:get_money()
 
-    -- Max money.
-    if rupee_bag ~= rupees.rupee_bag_displayed then
-      need_rebuild = true
-      rupees.rupee_bag_displayed = rupee_bag
-    end
-
     -- Current money.
     if money ~= rupees.money_displayed then
       need_rebuild = true
-      local increment
-      if money > rupees.money_displayed then
-        increment = 1
-      else
-        increment = -1
+      local difference = money - rupees.money_displayed
+      if difference % 100 == 0 then increment = 100
+      elseif difference % 10 == 0 then increment = 10
+      else increment = 1 end
+      if money < rupees.money_displayed then
+        increment = increment * -1
       end
       rupees.money_displayed = rupees.money_displayed + increment
 
       -- Play a sound if we have just reached the final value.
       if rupees.money_displayed == money then
-        sol.audio.play_sound("picked_money")
+        --sol.audio.play_sound("picked_money")
 
       -- While the counter is scrolling, play a sound every 3 values.
       elseif rupees.money_displayed % 3 == 0 then
-        sol.audio.play_sound("picked_money")
+        --sol.audio.play_sound("picked_money")
       end
     end
 
@@ -66,8 +60,8 @@ function rupees_builder:new(game, config)
 
     rupees.surface:clear()
 
-    -- Max money (icon).
-    rupees.rupee_icons_img:draw_region((rupees.rupee_bag_displayed - 1) * 12, 0, 12, 12, rupees.surface)
+    -- Money background icon
+    rupees.icon:draw(rupees.surface, 64, 0)
 
     -- Current rupee (counter).
     local max_money = game:get_max_money()
@@ -77,7 +71,11 @@ function rupees_builder:new(game, config)
       rupees.digits_text:set_font("8_bit")  -- TODO show in a different color
     end
     rupees.digits_text:set_text(rupees.money_displayed)
-    rupees.digits_text:draw(rupees.surface, 16, 5)
+    local digit_x = 40
+    if rupees.money_displayed > 99 then digit_x = 30 end
+    if rupees.money_displayed > 999 then digit_x = 20 end
+    if rupees.money_displayed > 9999 then digit_x = 12 end
+    rupees.digits_text:draw(rupees.surface, digit_x, 7)
   end
 
   function rupees:get_surface()

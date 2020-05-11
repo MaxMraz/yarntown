@@ -133,6 +133,7 @@ sprite{ id = "hud/icon_item_1", description = "Item 1 icon" }
 sprite{ id = "hud/icon_item_2", description = "Item 2 icon" }
 sprite{ id = "hud/icon_pause", description = "Pause icon" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
+sprite{ id = "hud/money_icon", description = "Money Icon" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }

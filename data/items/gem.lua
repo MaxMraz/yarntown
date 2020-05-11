@@ -10,7 +10,7 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
 
-  local amounts = { 1, 5, 20, 50, 100, 300 }
+  local amounts = { 1, 5, 20, 50, 100, 300, 1000, 5000, 10000 }
   local amount = amounts[variant]
 
   item:get_game():add_money(amount)
