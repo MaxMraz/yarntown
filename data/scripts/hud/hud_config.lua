@@ -14,7 +14,7 @@ local hud_config = {
 
   -- Hearts meter.
   {
-    menu_script = "scripts/hud/hearts",
+    menu_script = "scripts/hud/health_bar",
     x = 4,
     y = 2,
   },
@@ -24,6 +24,13 @@ local hud_config = {
     menu_script = "scripts/hud/money",
     x = -64,
     y = 4,
+  },
+
+  -- Stamina Bar
+  {
+    menu_script = "scripts/hud/stamina",
+    x = 4,
+    y = 12,
   },
 
   --[[ Pause icon.

@@ -7,8 +7,8 @@
 
 require("scripts/multi_events")
 local initial_game = require("scripts/initial_game")
-local game_restart = require("scripts/game_restart")
 local stamina_manager = require"scripts/action/stamina_manager"
+local game_restart = require("scripts/game_restart")
 
 local game_manager = {}
 
@@ -29,6 +29,7 @@ function game_manager:create(file)
   game:register_event("on_started", function()
     game_restart:reset_values(game)
   end)
+  stamina_manager:start(game)
 
   return game
 end

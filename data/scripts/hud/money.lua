@@ -27,8 +27,9 @@ function rupees_builder:new(game, config)
     if money ~= rupees.money_displayed then
       need_rebuild = true
       local difference = money - rupees.money_displayed
-      if difference % 100 == 0 then increment = 100
-      elseif difference % 10 == 0 then increment = 10
+      if difference % 1000 == 0 then increment = 800
+      elseif difference % 100 == 0 then increment = 80
+      elseif difference % 10 == 0 then increment = 8
       else increment = 1 end
       if money < rupees.money_displayed then
         increment = increment * -1

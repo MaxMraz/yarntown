@@ -126,6 +126,8 @@ sprite{ id = "hero/tunic2", description = "Eldran blue" }
 sprite{ id = "hero/tunic3", description = "Eldran purple" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
+sprite{ id = "hud/health_bar", description = "Health Bar" }
+sprite{ id = "hud/healthbar_end_marker", description = "healthbar_end_marker" }
 sprite{ id = "hud/heart", description = "Heart" }
 sprite{ id = "hud/icon_action", description = "Action icon" }
 sprite{ id = "hud/icon_attack", description = "Attack icon" }
@@ -134,6 +136,8 @@ sprite{ id = "hud/icon_item_2", description = "Item 2 icon" }
 sprite{ id = "hud/icon_pause", description = "Pause icon" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "hud/money_icon", description = "Money Icon" }
+sprite{ id = "hud/stamina_bar", description = "Stamina Bar" }
+sprite{ id = "hud/stamina_bar_background", description = "stamina bar BG" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }

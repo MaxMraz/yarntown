@@ -1,0 +1,7 @@
+animation{
+  name = "bar",
+  src_image = "hud/stamina_bar.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 200, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}

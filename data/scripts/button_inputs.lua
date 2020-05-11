@@ -1,5 +1,6 @@
 require("scripts/multi_events")
 local dash_manager = require("scripts/action/dash_manager")
+local weapon_manager = require"scripts/action/weapon_manager"
 
 local menu = {}
 
@@ -73,6 +74,8 @@ function menu:initialize(game)
 
   local can_dash = true
   function game:on_command_pressed(action)
+    local handled = false
+
   --Roll / Dash
   local ignoring_obstacles
   local hero = game:get_hero()
@@ -90,7 +93,13 @@ function menu:initialize(game)
         sol.timer.start(game, 500, function() can_dash = true end)
       end
 
+    --Attack  
+    elseif action == "attack" then
+      weapon_manager:process_attack_input()
+      handled = true
     end 
+
+    return handled
   end
 
 

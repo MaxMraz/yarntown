@@ -2,10 +2,10 @@ local menu = {}
 local game
 
 function menu:start(game)
-
-  --regen stamina 
   sol.timer.start(game, 200, function()
-    if not game:is_suspended() then
+    if (game.stamina_regain_block_points or 0) > 0 then
+      game.stamina_regain_block_points = game.stamina_regain_block_points - 1
+    elseif not game:is_suspended() then
       game:add_stamina(10)
     end
     return true
@@ -23,7 +23,8 @@ function menu:start(game)
     game.stamina = game.stamina - amount
     if game.stamina <0 then
     	game.stamina = 0
-    end    
+    end
+    game.stamina_regain_block_points = (game.stamina_regain_block_points or 0) + 5
   end
 
 

@@ -2,12 +2,18 @@ local dash_manager = {}
 
 local MAX_MOTHS = 15
 local MAGIC_COST = 0
+local STAMINA_COST = 25
 local enough_magic
 local movement_id = 1
 local current_movement
 
 function dash_manager:dash(game)
-    --if it consumes magic, make sure there's enough (doesn't consume magic anymore)
+    --check to make sure there's enough stamina
+    if game.stamina < STAMINA_COST then return end
+    game:remove_stamina(STAMINA_COST)
+
+
+    --enough magic because of changes, now indicates if you have the dash ability, as opposed to just rolling
     enough_magic = false
     if game:has_item("dandelion_charm") and game:get_magic() >= MAGIC_COST then
         enough_magic = true
@@ -70,7 +76,8 @@ function dash_manager:dash(game)
         game:set_value("hero_rolling", false)
     end)
 
-    if enough_magic then hero:set_invincible(true, 400) end
+    if enough_magic then hero:set_invincible(true, 600)
+    else hero:set_invincible(true, 299) end
 
     function m:on_obstacle_reached()
       hero:unfreeze()
