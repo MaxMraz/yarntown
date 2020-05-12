@@ -4,10 +4,14 @@ require("scripts/multi_events")
 
 local hero_meta = sol.main.get_metatable("hero")
 
-
+--Not sure where else to deal with spin attacks and avoiding the "sword tapping" state which for some reason loops forever
 function hero_meta:on_state_changed(new_state)
+  local hero = self
   if new_state == "sword spin attack" then
     require("scripts/action/weapon_manager"):process_spin_attack()
+  elseif new_state == "sword tapping" then
+    sol.main.get_game():simulate_command_released"attack"
+    hero:unfreeze()
   end
 end
 

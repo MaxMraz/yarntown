@@ -103,27 +103,18 @@ sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
 sprite{ id = "ground_effects/water_splash", description = "Water splash" }
-sprite{ id = "hero/barrier", description = "Barrier" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
-sprite{ id = "hero/gust", description = "Gust" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }
 sprite{ id = "hero/shield2", description = "Hero shield 2" }
 sprite{ id = "hero/shield3", description = "Hero shield 3" }
-sprite{ id = "hero/shield_1_above", description = "Shield 1 Above" }
-sprite{ id = "hero/shield_1_below", description = "Shield 1 Below" }
 sprite{ id = "hero/shield_collision_mask", description = "Shield Collision Mask" }
 sprite{ id = "hero/spear", description = "Spear" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
-sprite{ id = "hero/sword2", description = "Hero sword 2" }
-sprite{ id = "hero/sword3", description = "Hero sword 3" }
-sprite{ id = "hero/sword4", description = "Hero sword 4" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/trail", description = "Trail" }
-sprite{ id = "hero/tunic1", description = "Eldran red" }
-sprite{ id = "hero/tunic2", description = "Eldran blue" }
-sprite{ id = "hero/tunic3", description = "Eldran purple" }
+sprite{ id = "hero/tunic1", description = "tunic 1" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
 sprite{ id = "hud/health_bar", description = "Health Bar" }
