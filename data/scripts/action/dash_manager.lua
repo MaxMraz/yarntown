@@ -28,11 +28,11 @@ function dash_manager:dash(game)
     local m = sol.movement.create("straight")
     m:set_angle(dir)
     if enough_magic then
-        m:set_speed(300)
+        m:set_speed(228)
         m:set_max_distance(96)
     else
-        m:set_speed(250)
-        m:set_max_distance(64)
+        m:set_speed(171)
+        m:set_max_distance(72)
     end
     m:set_smooth(true)
 

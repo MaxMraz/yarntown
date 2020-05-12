@@ -2,7 +2,7 @@ game_restart = {}
 
 function game_restart:reset_values(game)
   local hero = game:get_hero()
-  hero:set_walking_speed(98)
+  hero:set_walking_speed(85)
   game:set_value("hero_dashing", false)
   game:set_value("hero_rolling", false)
   game:set_value("gameovering", false)

@@ -234,14 +234,14 @@ animation{
 }
 animation{
   name = "pulling",
-  src_image = "hero/pulling.png",
+  src_image = "hero/template_hero_1.png",
   frame_delay = 150,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
-    { x = 0, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 304, y = 288, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 304, y = 320, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 304, y = 352, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 304, y = 384, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 3 },
   },
 }
 animation{
@@ -258,14 +258,14 @@ animation{
 }
 animation{
   name = "roll",
-  src_image = "hero/roll.png",
+  src_image = "hero/template_hero_1.png",
   frame_delay = 60,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
-    { x = 0, y = 104, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
-    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 864, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
     { x = 16, y = 8, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 896, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 832, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
   },
 }
 animation{
