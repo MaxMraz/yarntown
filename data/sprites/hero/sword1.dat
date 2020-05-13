@@ -70,13 +70,10 @@ animation{
 }
 animation{
   name = "victory",
-  src_image = "hero/victory.sword.png",
+  src_image = "hero/sword.sword1.png",
   frame_delay = 50,
-  frame_to_loop_on = 17,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 39, num_frames = 18, num_columns = 9 },
-    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 39, num_frames = 18, num_columns = 9 },
-    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 39, num_frames = 18, num_columns = 9 },
-    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 39, num_frames = 18, num_columns = 9 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
   },
 }
