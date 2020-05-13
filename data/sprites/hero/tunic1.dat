@@ -271,12 +271,12 @@ animation{
 animation{
   name = "spin_attack",
   src_image = "hero/hunter_hero.png",
-  frame_delay = 50,
+  frame_delay = 70,
   directions = {
-    { x = 0, y = 144, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 176, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 208, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
-    { x = 0, y = 240, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28, num_frames = 7 },
+    { x = 0, y = 1040, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 1072, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 1104, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 1136, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
   },
 }
 animation{

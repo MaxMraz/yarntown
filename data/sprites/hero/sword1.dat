@@ -19,13 +19,10 @@ animation{
 }
 animation{
   name = "spin_attack",
-  src_image = "hero/spin_attack.sword1.heavy_attack.png",
-  frame_delay = 50,
+  src_image = "hero/sword.sword1.png",
+  frame_delay = 70,
   directions = {
-    { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 48, num_frames = 11 },
-    { x = 0, y = 96, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 48, num_frames = 11 },
-    { x = 0, y = 192, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 48, num_frames = 11 },
-    { x = 0, y = 288, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 48, num_frames = 11 },
+    { x = 0, y = 288, frame_width = 96, frame_height = 48, origin_x = 48, origin_y = 48, num_frames = 6 },
   },
 }
 animation{
