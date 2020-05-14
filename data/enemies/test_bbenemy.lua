@@ -24,6 +24,7 @@ end
 
 
 function enemy:choose_attack()
+
   enemy:melee_attack()
 --  sol.timer.start(enemy, 500, function() enemy:choose_action() end)
 end
@@ -51,8 +52,8 @@ function enemy:melee_attack()
 
 		weapon:get_sprite():set_animation("attack", function()
 			weapon:remove()
-			enemy.recovery_time = 900
-			enemy:choose_action()
+			enemy.recovery_time = 1000
+			enemy:choose_next_state("attack")
 		end)
 	end)
 end

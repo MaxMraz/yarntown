@@ -112,52 +112,35 @@ function souls_enemy:create(enemy, props)
   		end
   	end)
 
-  	enemy:choose_action()
+  	enemy:approach_hero()
   end
 
 
-  -- Choose Action
-  enemy.action_index = 1
-  function enemy:choose_action()
-  	sol.audio.play_sound"bird_chirp1"
-  	if enemy.action_index == 1 then
-  		if enemy:get_distance(hero) <= (props.melee_range or DEFAULT_MELEE_RANGE) then
-  			enemy.recovery_time = 100 --set a short recovery time because it hasn't just attacked
-  			enemy:gather_wits()
-  		else
-  			enemy:approach_hero()
-  		end
-  	elseif enemy.action_index == 2 then
+
+  function enemy:choose_next_state(previous_state)
+  	if previous_state == "agro" then
+  		enemy:approach_hero()
+  	elseif previous_state == "approach" then
   		enemy:choose_attack()
-  	elseif enemy.action_index == 3 then
-  		--take no action
-  		enemy:gather_wits()
-  	else
-  		error("Invalid enemy.action_index")
+  	elseif previous_state == "attack" then
+  		enemy:recover()
+  	elseif previous_state == "recover" then
+  		enemy:approach_hero()
   	end
-  	enemy.action_index = enemy.action_index + 1
-  	if enemy.action_index > 3 then enemy.action_index = 1 end
+  	print("chose next state based on ", previous_state)
   end
-
 
 
   function enemy:approach_hero()
-  	--note, make sure to end any action choice (movement, attack, etc) by calling choose_action again
   	local m = sol.movement.create("target")
   	m:set_speed(props.speed or 50)
-  	m:start(enemy, function()
-  		enemy:choose_action()
-  	end)
-
-  	function m:on_obstacle_reached()
-  		enemy:choose_action()
-  	end
+  	m:start(enemy, function() end)
 
   	sol.timer.start(enemy, 100, function()
   		--see if close enough
   		if enemy:get_distance(hero) <= (props.melee_range or DEFAULT_MELEE_RANGE) then
   			m:stop()
-  			enemy:choose_action()
+  			enemy:choose_next_state("approach")
   		else
   			return true
   		end
@@ -166,10 +149,10 @@ function souls_enemy:create(enemy, props)
   end
 
 
-  function enemy:gather_wits()
+  function enemy:recover()
   	sprite:set_direction(enemy:get_direction4_to(hero))
   	sol.timer.start(enemy, enemy.recovery_time or 400, function()
-  		enemy:choose_action()
+  		enemy:choose_next_state("recover")
   	end)
   end
 
