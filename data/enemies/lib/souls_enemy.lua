@@ -102,23 +102,15 @@ function souls_enemy:create(enemy, props)
 
   function enemy:start_agro()
   	enemy.agro = true
-  	--check distance to hero to cancel agro
-  	sol.timer.start(enemy, 200, function()
-  		local distance = enemy:get_distance(hero)
-  		if distance >= (props.deagro_threshold or 250) then
-  			enemy.agro = false
-  			enemy:initial_state()
-  			--TODO add functionality for enemy to return to initial location
-  		end
-  	end)
-
   	enemy:approach_hero()
   end
 
 
 
   function enemy:choose_next_state(previous_state)
-  	if previous_state == "agro" then
+  	if not enemy.agro then
+  		enemy:start_default_state()
+  	elseif previous_state == "agro" then
   		enemy:approach_hero()
   	elseif previous_state == "approach" then
   		enemy:choose_attack()
@@ -127,7 +119,6 @@ function souls_enemy:create(enemy, props)
   	elseif previous_state == "recover" then
   		enemy:approach_hero()
   	end
-  	print("chose next state based on ", previous_state)
   end
 
 
@@ -146,6 +137,12 @@ function souls_enemy:create(enemy, props)
   		end
   	end)
 
+  	--check distance to hero to cancel agro
+  	sol.timer.start(enemy, 200, function()
+  		enemy:check_to_deagro()
+  		if enemy.agro then return true end
+  	end)
+
   end
 
 
@@ -156,6 +153,13 @@ function souls_enemy:create(enemy, props)
   	end)
   end
 
+
+  function enemy:check_to_deagro()
+		local distance = enemy:get_distance(hero)
+		if distance >= (props.deagro_threshold or 250) then
+			enemy.agro = false
+		end
+  end
 
 
 

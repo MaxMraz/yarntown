@@ -15,7 +15,7 @@ function enemy:on_created()
   	--set life, damage, particular noises, etc
   	initial_movement_type = "random",
   	damage = DAMAGE,
-  	life = 100,
+  	life = 150,
   	melee_range = 48,
   })
 
@@ -23,38 +23,19 @@ function enemy:on_created()
 end
 
 
+
+
 function enemy:choose_attack()
+	print("is orth: ", enemy:is_orthogonal_to_hero(12))
+	if enemy:is_orthogonal_to_hero() and enemy:get_distance(hero) <= 50 then
+		require("enemies/lib/attacks/melee_attack"):melee_attack(enemy, DAMAGE, "enemies/weapons/test_axe_thrust")
+	elseif enemy:get_distance(hero) <= 40 then
+		local num_attacks = math.random(2,4)
+		require("enemies/lib/attacks/multiattack"):melee_attack(enemy, DAMAGE, "enemies/weapons/test_axe_swipe", num_attacks)
+	else
+		enemy.recovery_time = 100
+		enemy:choose_next_state("attack")
+	end
 
-  enemy:melee_attack()
---  sol.timer.start(enemy, 500, function() enemy:choose_action() end)
-end
-
-
---TODO move this into a module
-function enemy:melee_attack()
-	enemy:stop_movement()
-	sprite:set_animation("wind_up")
-	enemy.stagger_window = true
-	sol.timer.start(enemy, 300, function()
-		enemy.stagger_window = false
-		sprite:set_animation("attack", "stopped")
-		local x, y, z = enemy:get_position()
-		local direction = sprite:get_direction()
-		local weapon = map:create_custom_entity{
-			x=x, y=y, layer=z, width=16, height=16, direction=direction, sprite="enemies/test_bbenemy_weapon"
-		}
-		weapon:add_collision_test("sprite", function(weapon, other_entity)
-			if other_entity:get_type() == "hero" then
-				weapon:clear_collision_tests()
-				hero:start_hurt(weapon, DAMAGE)
-			end
-		end)
-
-		weapon:get_sprite():set_animation("attack", function()
-			weapon:remove()
-			enemy.recovery_time = 1000
-			enemy:choose_next_state("attack")
-		end)
-	end)
 end
 

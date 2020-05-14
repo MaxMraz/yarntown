@@ -135,4 +135,16 @@ function enemy_meta:is_on_screen()
   return on_screen
 end
 
+function enemy_meta:is_orthogonal_to_hero(threshold)
+  local enemy = self
+  local hero = enemy:get_map():get_hero()
+  local ex, ey = enemy:get_position()
+  local hx, hy = hero:get_position()
+  local orthogonal = false
+  if math.abs(ex-hx) <= (threshold or 16) then orthogonal = true end
+  if math.abs(ey-hy) <= (threshold or 16) then orthogonal = true end
+
+  return orthogonal
+end
+
 return true

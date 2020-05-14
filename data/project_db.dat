@@ -90,6 +90,8 @@ sprite{ id = "enemies/spiderskull", description = "Spiderskull" }
 sprite{ id = "enemies/test_bbenemy", description = "test-bbenemy" }
 sprite{ id = "enemies/test_bbenemy_weapon", description = "test enemy weapon" }
 sprite{ id = "enemies/tools/agro_cone_medium", description = "Agro Cone - Medium" }
+sprite{ id = "enemies/weapons/test_axe_swipe", description = "test_axe_swipe" }
+sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" }
 sprite{ id = "enemies/wings_evil", description = "Wings evil" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bomb", description = "Bomb" }

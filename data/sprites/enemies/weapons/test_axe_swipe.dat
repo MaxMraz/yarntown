@@ -1,0 +1,11 @@
+animation{
+  name = "attack",
+  src_image = "enemies/test_bbenemy.png",
+  frame_delay = 100,
+  directions = {
+    { x = 368, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 4, num_columns = 1 },
+    { x = 368, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 5 },
+    { x = 416, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 4, num_columns = 1 },
+    { x = 368, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 5 },
+  },
+}

@@ -176,3 +176,11 @@ enemy{
   breed = "test_bbenemy",
 }
 
+enemy{
+  layer = 0,
+  x = 216,
+  y = 117,
+  direction = 0,
+  breed = "test_bbenemy",
+}
+
