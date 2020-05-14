@@ -117,7 +117,8 @@ function souls_enemy:create(enemy, props)
 
 
   function enemy:choose_next_state(previous_state)
-  	if not enemy.agro then
+  	if enemy:get_life() < 1 then return
+    elseif not enemy.agro then
   		enemy:start_default_state()
   	elseif previous_state == "agro" then
   		enemy:approach_hero()

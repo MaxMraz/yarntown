@@ -22,7 +22,7 @@ function menu:start(game)
   function game:remove_stamina(amount)
     game.stamina = game.stamina - amount
 --    if game.stamina <0 then game.stamina = 0 end
-    game.stamina_regain_block_points = (game.stamina_regain_block_points or 0) + 5
+    game.stamina_regain_block_points = (game.stamina_regain_block_points or 0) + 4
   end
 
 
