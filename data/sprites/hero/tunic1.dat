@@ -147,6 +147,17 @@ animation{
   },
 }
 animation{
+  name = "heal",
+  src_image = "hero/hunter_hero.png",
+  frame_delay = 120,
+  directions = {
+    { x = 304, y = 432, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 304, y = 464, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 304, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 304, y = 528, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+  },
+}
+animation{
   name = "hurt",
   src_image = "hero/hunter_hero.png",
   directions = {
@@ -368,13 +379,13 @@ animation{
 }
 animation{
   name = "waking_up",
-  src_image = "hero/waking_up.png",
-  frame_delay = 1000,
+  src_image = "hero/hunter_hero.png",
+  frame_delay = 500,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 176, y = 16, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 16, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 16, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 16, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
   },
 }
 animation{

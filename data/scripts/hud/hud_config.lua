@@ -30,7 +30,14 @@ local hud_config = {
   {
     menu_script = "scripts/hud/stamina",
     x = 4,
-    y = 12,
+    y = 11,
+  },
+
+  -- Blood Vials
+  {
+    menu_script = "scripts/hud/blood_vials",
+    x = 4,
+    y = 23,
   },
 
   --[[ Pause icon.

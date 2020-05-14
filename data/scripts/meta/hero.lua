@@ -20,7 +20,7 @@ end
 function hero_meta:on_taking_damage(damage)
   -- In the parameter, the damage unit is 1/2 of a heart.
   local game = self:get_game()
-  local defense = game:get_value("defense")
+  local defense = game:get_value("defense") or 1
   damage = math.floor(damage*2 / defense)
   if game.take_half_damage then
     damage = damage / 2

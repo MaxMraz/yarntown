@@ -22,7 +22,10 @@ animation{
   src_image = "hero/sword.sword1.png",
   frame_delay = 70,
   directions = {
-    { x = 0, y = 288, frame_width = 96, frame_height = 48, origin_x = 48, origin_y = 48, num_frames = 6 },
+    { x = 0, y = 288, frame_width = 96, frame_height = 48, origin_x = 32, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 336, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 92, num_frames = 6 },
+    { x = 0, y = 432, frame_width = 96, frame_height = 48, origin_x = 64, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 480, frame_width = 96, frame_height = 104, origin_x = 48, origin_y = 45, num_frames = 6 },
   },
 }
 animation{
@@ -49,7 +52,7 @@ animation{
   directions = {
     { x = 80, y = 0, frame_width = 32, frame_height = 16, origin_x = 18, origin_y = 13, num_frames = 4, num_columns = 2 },
     { x = 80, y = 64, frame_width = 32, frame_height = 16, origin_x = 10, origin_y = 13, num_frames = 4, num_columns = 2 },
-    { x = 80, y = 64, frame_width = 32, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 4, num_columns = 2 },
+    { x = 80, y = 64, frame_width = 32, frame_height = 16, origin_x = 14, origin_y = 13, num_frames = 4, num_columns = 2 },
     { x = 80, y = 0, frame_width = 32, frame_height = 16, origin_x = 22, origin_y = 13, num_frames = 4, num_columns = 2 },
   },
 }

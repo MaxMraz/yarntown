@@ -92,8 +92,8 @@ tile{
 destination{
   name = "destination",
   layer = 0,
-  x = 160,
-  y = 101,
+  x = 72,
+  y = 85,
   direction = 3,
 }
 
@@ -166,5 +166,13 @@ pickable{
   y = 45,
   treasure_name = "gem",
   treasure_variant = 9,
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 157,
+  direction = 0,
+  breed = "test_bbenemy",
 }
 

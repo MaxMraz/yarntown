@@ -17,10 +17,10 @@ function enemy_meta:set_consequence_for_all_attacks(consequence)
   self:set_attack_consequence("fire", consequence)
 end
 
-
+--[[
 function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
   local game = self:get_game()
-  local sword_damage = game:get_value("sword_damage")
+  local sword_damage = game:get_value("sword_damage") or 1
   local hero_state = hero:get_state()
   if hero_state == "sword spin attack" or hero_state == "running" then
     sword_damage = sword_damage * 2.5
@@ -29,7 +29,7 @@ function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
   self:remove_life(sword_damage)
 
 end
-
+--]]
 
 
 
@@ -64,25 +64,6 @@ function enemy_meta:on_hurt(attack)
       game:set_suspended(false)
       map:get_camera():shake({count = 4, amplitude = 5, speed = 100, zoom_factor = 1.005})
      end) --end of timer
-
-  --particle effect
-  local hurt_particles = {}
-  local _, sprite_height = self:get_sprite():get_size()
-  local NUM_PARTICLES = sprite_height / 3
-  local x,y,z = self:get_position()
-  for i=1, NUM_PARTICLES do
-    hurt_particles[i] = map:create_custom_entity{x=x,y=y,layer=z,width=8,height=8,direction=0,
-      model="ephemeral_effect",sprite="entities/pollution_ash"}
-    hurt_particles[i]:set_duration(500)
-    hurt_particles[i]:start()
-    local m = sol.movement.create"straight"
-    m:set_max_distance(math.random(25,38))
-    m:set_speed(200)
-    m:set_ignore_obstacles()
-    local angle = map:get_hero():get_angle(self)
-    m:set_angle(angle + math.random(1,300) / 300)
-    m:start(hurt_particles[i])
-  end
 
   if attack == "explosion" then
     local game = self:get_game()

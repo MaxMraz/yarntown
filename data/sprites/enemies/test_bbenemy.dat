@@ -1,0 +1,41 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/test_bbenemy.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}
+animation{
+  name = "attack",
+  src_image = "enemies/test_bbenemy.png",
+  frame_delay = 100,
+  directions = {
+    { x = 96, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/test_bbenemy.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 32, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 32, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 32, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/test_bbenemy.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 64, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 64, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 64, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}

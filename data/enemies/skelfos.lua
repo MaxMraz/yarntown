@@ -114,6 +114,7 @@ function enemy:on_created()
   arms_behavior = self:get_property("arms_behavior") or arms_behavior
   head_behavior = self:get_property("head_behavior") or head_behavior
   self:initialize_behavior()
+
 end
 
 -- Update directions and animations.

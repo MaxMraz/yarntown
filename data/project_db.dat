@@ -87,6 +87,9 @@ sprite{ id = "enemies/soldier", description = "Soldier" }
 sprite{ id = "enemies/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/soldier_sword", description = "Soldier Sword" }
 sprite{ id = "enemies/spiderskull", description = "Spiderskull" }
+sprite{ id = "enemies/test_bbenemy", description = "test-bbenemy" }
+sprite{ id = "enemies/test_bbenemy_weapon", description = "test enemy weapon" }
+sprite{ id = "enemies/tools/agro_cone_medium", description = "Agro Cone - Medium" }
 sprite{ id = "enemies/wings_evil", description = "Wings evil" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bomb", description = "Bomb" }
@@ -105,16 +108,13 @@ sprite{ id = "ground_effects/leaves", description = "Leaves" }
 sprite{ id = "ground_effects/water_splash", description = "Water splash" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
-sprite{ id = "hero/shield1", description = "Hero shield 1" }
-sprite{ id = "hero/shield2", description = "Hero shield 2" }
-sprite{ id = "hero/shield3", description = "Hero shield 3" }
 sprite{ id = "hero/shield_collision_mask", description = "Shield Collision Mask" }
 sprite{ id = "hero/spear", description = "Spear" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
-sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/trail", description = "Trail" }
 sprite{ id = "hero/tunic1", description = "tunic 1" }
+sprite{ id = "hud/blood_vial_icon", description = "blood vial icon" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
 sprite{ id = "hud/health_bar", description = "Health Bar" }
@@ -293,6 +293,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "blood_vial_user", description = "Blod Vial User" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "gem", description = "Gem (x1 / x5 / x20 / x50 / x300)" }
 item{ id = "heart", description = "Heart" }
@@ -318,6 +319,7 @@ enemy{ id = "slime_purple", description = "Slime (purple)" }
 enemy{ id = "slime_red", description = "Slime (red)" }
 enemy{ id = "slime_yellow", description = "Slime (yellow)" }
 enemy{ id = "slimy_green", description = "Slimy Green" }
+enemy{ id = "test_bbenemy", description = "test bb enemy" }
 
 
 language{ id = "en", description = "English" }
@@ -483,10 +485,6 @@ file{ path = "sounds/stone.ogg", author = "Diarandor", license = "CC BY-SA 4.0" 
 file{ path = "sounds/swim.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/switch.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/switch_hero.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/sword1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/sword2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/sword3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/sword4.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/sword_spin_attack_load.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/sword_spin_attack_release.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/sword_tapping.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -657,104 +655,8 @@ file{ path = "sprites/ground_effects/leaves.png", author = "Diarandor", license 
 file{ path = "sprites/ground_effects/walking_ground_effects.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/water_splash.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/water_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_boomerang.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_bow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_grabbing.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_hookshot.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_jumping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_miscellaneous.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_on_shield.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_plunging.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_running.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_running_on_sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_seashell_flute.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_shovel.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_spin_attack.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_swimming.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_sword_brandish.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_sword_loading.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_sword_tapping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran2_victory.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_boomerang.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_bow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_grabbing.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_hookshot.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_jumping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_miscellaneous.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_on_shield.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_plunging.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_running.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_running_on_sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_seashell_flute.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_shovel.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_spin_attack.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_swimming.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_sword_brandish.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_sword_loading.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_sword_tapping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran3_victory.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_boomerang.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_bow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_grabbing.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_hookshot.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_jumping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_miscellaneous.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_on_shield.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_plunging.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_running.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_running_on_sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_seashell_flute v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_seashell_flute.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_shovel.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_spin_attack.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_swimming.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_brandish.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_loading.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_tapping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_victory v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_victory.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/hero_on_shield v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/loading_sword_magic.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne v2.2.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_grabbing v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_miscellaneous v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_plunging v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_swimming v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_victory v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_1_above.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_1_above.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_1_below.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_1_below.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/shield_collision_mask.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_collision_mask.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/spin_attack.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/sword_brandish.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/sword_loading.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/sword_running.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/sword_tapping.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/sword_victory.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_box.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_box_message_end.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
