@@ -18,8 +18,6 @@ function enemy:on_created()
   	life = 150,
   	melee_range = 48,
   })
-
-  enemy:start_default_state()
 end
 
 

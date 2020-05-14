@@ -52,6 +52,11 @@ function souls_enemy:create(enemy, props)
 
 
 
+  function enemy:on_restarted()
+    enemy:start_default_state()
+  end
+
+
 
   function enemy:start_default_state()
   	--Start idle movement
@@ -63,6 +68,8 @@ function souls_enemy:create(enemy, props)
   		--TODO create a script for enemy to follow a set path
   	else
   		--Enemy just waits in place
+  		sprite:set_animation"stopped"
+
 
   	end
 

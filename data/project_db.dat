@@ -68,6 +68,8 @@ sprite{ id = "enemies/goblin_axe", description = "Goblin Axe" }
 sprite{ id = "enemies/goblin_club", description = "Goblin Club" }
 sprite{ id = "enemies/goblin_green", description = "Goblin Green" }
 sprite{ id = "enemies/goblin_green_slingshot", description = "Goblin Slingshot" }
+sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
+sprite{ id = "enemies/huntsman_template", description = "huntsman-template" }
 sprite{ id = "enemies/ice_block", description = "Ice block" }
 sprite{ id = "enemies/iceball", description = "Iceball" }
 sprite{ id = "enemies/pterobat", description = "Pterobat" }
@@ -309,6 +311,7 @@ enemy{ id = "explosion", description = "Explosion" }
 enemy{ id = "flame", description = "Flame" }
 enemy{ id = "generic_projectile", description = "Projectile" }
 enemy{ id = "goblin_green", description = "Goblin" }
+enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
 enemy{ id = "iceball", description = "Iceball" }
 enemy{ id = "pterobat", description = "Pterobat" }
 enemy{ id = "shamablin_fire", description = "Goblin Shaman Fire" }

@@ -170,17 +170,23 @@ pickable{
 
 enemy{
   layer = 0,
-  x = 96,
-  y = 157,
+  x = 56,
+  y = 197,
   direction = 0,
-  breed = "test_bbenemy",
+  breed = "huntsman_cleaver",
 }
 
 enemy{
   layer = 0,
-  x = 216,
-  y = 117,
-  direction = 0,
-  breed = "test_bbenemy",
+  x = 256,
+  y = 109,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
 }
 
