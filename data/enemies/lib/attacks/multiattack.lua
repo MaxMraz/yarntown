@@ -19,7 +19,6 @@ function attack:melee_attack(enemy, damage, attack_sprite, num_attacks)
 		for i=1, num_attacks do
 			sol.timer.start(enemy, (i-1)*500, function()
 				--several attacs
-				sprite:set_animation("melee_attack", "stopped")
 				local sword_sound = math.random(2,4)
 				sol.audio.play_sound("sword"..sword_sound)
 				local x, y, z = enemy:get_position()
@@ -37,11 +36,16 @@ function attack:melee_attack(enemy, damage, attack_sprite, num_attacks)
 				weapon:get_sprite():set_animation("attack", function()
 					weapon:remove()
 				end)
-				if i == num_attacks then
-					--finish attack
-					enemy:choose_next_state("attack")
-					enemy.recovery_time = 1800
-				end
+
+				sprite:set_animation("melee_attack", function()
+					sprite:set_animation"stopped"
+					if i == num_attacks then
+						--finish attack
+						enemy:choose_next_state("attack")
+						enemy.recovery_time = 1800
+					end
+				end)
+
 			end)
 		end
 

@@ -24,8 +24,8 @@ end
 
 
 function enemy:choose_attack()
-	if enemy:is_orthogonal_to_hero() and enemy:get_distance(hero) <= 50 then
-		require("enemies/lib/attacks/melee_attack"):melee_attack(enemy, DAMAGE, "enemies/weapons/test_axe_thrust")
+	if enemy:is_orthogonal_to_hero(12) and enemy:get_distance(hero) <= 50 then
+		require("enemies/lib/attacks/melee_attack"):melee_attack(enemy, DAMAGE+10, "enemies/weapons/test_axe_thrust")
 	elseif enemy:get_distance(hero) <= 40 then
 		local num_attacks = math.random(2,4)
 		require("enemies/lib/attacks/multiattack"):melee_attack(enemy, DAMAGE, "enemies/weapons/test_axe_swipe", num_attacks)
