@@ -3,9 +3,9 @@ animation{
   src_image = "enemies/test_bbenemy.png",
   frame_delay = 100,
   directions = {
-    { x = 224, y = 16, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 224, y = 64, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 224, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 224, y = 160, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 304, y = 128, frame_width = 48, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4, num_columns = 1 },
+    { x = 224, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 41, num_frames = 4 },
+    { x = 240, y = 112, frame_width = 48, frame_height = 32, origin_x = 28, origin_y = 29, num_frames = 4, num_columns = 1 },
+    { x = 224, y = 64, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 21, num_frames = 4 },
   },
 }

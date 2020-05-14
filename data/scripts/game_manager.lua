@@ -28,8 +28,8 @@ function game_manager:create(file)
   --reset some values whenever game starts or restarts
   game:register_event("on_started", function()
     game_restart:reset_values(game)
+    stamina_manager:start(game)
   end)
-  stamina_manager:start(game)
 
   return game
 end
