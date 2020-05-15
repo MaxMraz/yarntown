@@ -44,13 +44,17 @@ function souls_enemy:create(enemy, props)
   		end)
 
   		sol.audio.play_sound(props.enemy_hurt_sound or "enemy_hurt")
-      if not enemy.agro then damage = damage * 2 end
+      if not enemy.agro then damage = damage * 3 end
       if hero:get_state() == "sword spin attack" then damage = damage * 2 end
   		enemy:remove_life(damage)
 
   		if not enemy.agro then enemy:start_agro() end
   	end
   end
+
+  enemy:register_event("on_dying", function()
+    game:add_money(enemy.blood_echoes or 25)
+  end)
 
 
 

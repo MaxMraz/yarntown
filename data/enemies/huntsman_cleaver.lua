@@ -8,6 +8,7 @@ local hero = map:get_hero()
 local sprite
 local movement
 local DAMAGE = 20
+enemy.blood_echoes = 45
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

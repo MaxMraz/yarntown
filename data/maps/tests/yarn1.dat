@@ -1055,42 +1055,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 88,
-  width = 8,
-  height = 24,
-  pattern = "81",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 88,
-  width = 8,
-  height = 16,
-  pattern = "82",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 96,
-  width = 8,
-  height = 16,
-  pattern = "82",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 104,
-  width = 8,
-  height = 16,
-  pattern = "82",
-}
-
-tile{
-  layer = 0,
   x = 352,
   y = 104,
   width = 8,
@@ -1170,14 +1134,6 @@ tile{
   pattern = "81",
 }
 
-pickable{
-  layer = 0,
-  x = 176,
-  y = 69,
-  treasure_name = "gem",
-  treasure_variant = 7,
-}
-
 enemy{
   layer = 0,
   x = 232,
@@ -1188,7 +1144,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 192,
+  x = 200,
   y = 93,
   properties = {
     {
@@ -1220,6 +1176,51 @@ enemy{
   },
   direction = 0,
   breed = "huntsman_axe",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 208,
+  y = 88,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 200,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 216,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 200,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 8,
+  height = 24,
+  pattern = "81",
 }
 
 tile{

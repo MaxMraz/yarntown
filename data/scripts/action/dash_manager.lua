@@ -2,7 +2,7 @@ local dash_manager = {}
 
 local MAX_MOTHS = 15
 local MAGIC_COST = 0
-local STAMINA_COST = 15
+local STAMINA_COST = 10
 local enough_magic
 local movement_id = 1
 local current_movement

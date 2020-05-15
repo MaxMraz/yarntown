@@ -24,7 +24,7 @@ function initial_game:initialize_new_savegame(game)
   game:set_life(game:get_max_life())
   game:set_value("max_stamina", 75)
 
-  game:set_value("sword_damage", 30)
+  game:set_value("sword_damage", 35)
 
   game:get_item("blood_vial_user"):set_amount(20)
 end
