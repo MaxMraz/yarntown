@@ -1,0 +1,11 @@
+animation{
+  name = "attack",
+  src_image = "enemies/huntsman_axe.png",
+  frame_delay = 100,
+  directions = {
+    { x = 336, y = 0, frame_width = 32, frame_height = 64, origin_x = 8, origin_y = 45, num_frames = 5, num_columns = 1 },
+    { x = 400, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 5 },
+    { x = 368, y = 0, frame_width = 32, frame_height = 64, origin_x = 24, origin_y = 45, num_frames = 5, num_columns = 1 },
+    { x = 400, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
+  },
+}

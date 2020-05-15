@@ -3,8 +3,13 @@
 
 local attack = {}
 
+local wind_up_time = 300
 
-function attack:melee_attack(enemy, damage, attack_sprite, num_attacks)
+function attack:set_wind_up_time(time)
+	wind_up_time = time
+end
+
+function attack:attack(enemy, damage, attack_sprite, num_attacks)
 	local sprite = enemy:get_sprite()
 	local map = enemy:get_map()
 	local hero = map:get_hero()
@@ -13,7 +18,7 @@ function attack:melee_attack(enemy, damage, attack_sprite, num_attacks)
 	enemy:stop_movement()
 	sprite:set_animation("wind_up")
 	enemy.stagger_window = true
-	sol.timer.start(enemy, 500, function()
+	sol.timer.start(enemy, wind_up_time, function()
 		enemy.stagger_window = false
 		
 		for i=1, num_attacks do
@@ -42,7 +47,6 @@ function attack:melee_attack(enemy, damage, attack_sprite, num_attacks)
 					if i == num_attacks then
 						--finish attack
 						enemy:choose_next_state("attack")
-						enemy.recovery_time = 1800
 					end
 				end)
 

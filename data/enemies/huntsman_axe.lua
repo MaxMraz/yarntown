@@ -7,7 +7,7 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
-local DAMAGE = 20
+local DAMAGE = 30
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
@@ -15,7 +15,7 @@ function enemy:on_created()
   	--set life, damage, particular noises, etc
   	initial_movement_type = enemy:get_property("initial_movement_type") or "random",
   	damage = DAMAGE,
-  	life = 150,
+  	life = 220,
   	attack_range = 48,
   })
 end
@@ -24,20 +24,24 @@ end
 
 
 function enemy:choose_attack()
-	if enemy:is_orthogonal_to_hero(12) and enemy:get_distance(hero) <= 50 then
+	if enemy:is_orthogonal_to_hero(12) then
 		local attack = require("enemies/lib/attacks/melee_attack")
-		attack:set_wind_up_time(100)
+		attack:set_wind_up_time(400)
 		enemy.recovery_time = 800
 		attack:attack(enemy, {
-			damage = DAMAGE+10, attack_sprite = "enemies/weapons/cleaver_thrust"
+			damage = DAMAGE+10, attack_sprite = "enemies/weapons/axe_slam"
 		})
 	elseif enemy:get_distance(hero) <= 40 then
-		local num_attacks = math.random(2,4)
-		enemy.recovery_time = 1400
-		require("enemies/lib/attacks/multiattack"):attack(enemy, DAMAGE, "enemies/weapons/cleaver_swipe", num_attacks)
+		local attack = require("enemies/lib/attacks/melee_combo")
+		attack:set_wind_up_time(400)
+		enemy.recovery_time = 600
+		attack:attack(enemy, {
+			damage = DAMAGE+10,
+			attack_sprites = {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe", "enemies/weapons/axe_slam"},
+		})
 	else
 		enemy.recovery_time = 100
-		enemy:choose_next_state("attack")
+		enemy:choose_next_state("recover")
 	end
 
 end

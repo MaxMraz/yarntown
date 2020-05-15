@@ -173,12 +173,12 @@ enemy{
   x = 56,
   y = 197,
   direction = 0,
-  breed = "huntsman_cleaver",
+  breed = "huntsman_axe",
 }
 
 enemy{
   layer = 0,
-  x = 256,
+  x = 264,
   y = 109,
   properties = {
     {
@@ -187,6 +187,6 @@ enemy{
     },
   },
   direction = 3,
-  breed = "huntsman_cleaver",
+  breed = "huntsman_axe",
 }
 

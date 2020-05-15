@@ -1,0 +1,11 @@
+animation{
+  name = "attack",
+  src_image = "enemies/huntsman_cleaver.png",
+  frame_delay = 100,
+  directions = {
+    { x = 320, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 320, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 5 },
+    { x = 320, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 320, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
+  },
+}

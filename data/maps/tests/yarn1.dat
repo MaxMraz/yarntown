@@ -1178,6 +1178,50 @@ pickable{
   treasure_variant = 7,
 }
 
+enemy{
+  layer = 0,
+  x = 232,
+  y = 189,
+  direction = 0,
+  breed = "huntsman_axe",
+}
+
+enemy{
+  layer = 0,
+  x = 192,
+  y = 93,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 24,
+  y = 141,
+  direction = 0,
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 149,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 0,
+  breed = "huntsman_axe",
+}
+
 tile{
   layer = 1,
   x = 0,

@@ -1,6 +1,6 @@
 local souls_enemy = {}
 
-local DEFAULT_MELEE_RANGE = 40
+local DEFAULT_ATTACK_RANGE = 40
 
 function souls_enemy:create(enemy, props)
   local game = enemy:get_game()
@@ -44,7 +44,7 @@ function souls_enemy:create(enemy, props)
   		end)
 
   		sol.audio.play_sound(props.enemy_hurt_sound or "enemy_hurt")
-      if not enemy.agro then damage = damage * 3 end
+      if not enemy.agro then damage = damage * 2 end
       if hero:get_state() == "sword spin attack" then damage = damage * 2 end
   		enemy:remove_life(damage)
 
@@ -98,7 +98,9 @@ function souls_enemy:create(enemy, props)
   	agro_cone:add_collision_test("sprite", function(cone, other_entity)
   		if other_entity:get_type() == "hero" then
   			agro_cone:remove()
-  			enemy:start_agro()
+        sol.timer.start(enemy, 400, function() --slight delay once they see you before attacking
+          enemy:start_agro()
+        end)
   		end
   	end)
 
@@ -133,13 +135,14 @@ function souls_enemy:create(enemy, props)
 
 
   function enemy:approach_hero()
+    sprite:set_animation"walking"
   	local m = sol.movement.create("target")
   	m:set_speed(props.speed or 50)
   	m:start(enemy, function() end)
 
   	sol.timer.start(enemy, 100, function()
   		--see if close enough
-  		if enemy:get_distance(hero) <= (props.melee_range or DEFAULT_MELEE_RANGE) then
+  		if enemy:get_distance(hero) <= (props.attack_range or DEFAULT_ATTACK_RANGE) then
   			m:stop()
   			enemy:choose_next_state("approach")
   		else
