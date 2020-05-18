@@ -119,83 +119,30 @@ tile{
   tileset = "yarntown",
 }
 
+tile{
+  layer = 0,
+  x = 40,
+  y = 256,
+  width = 64,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 136,
+  width = 32,
+  height = 64,
+  pattern = "5",
+}
+
 destination{
   name = "destination",
   layer = 0,
   x = 72,
   y = 85,
   direction = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 40,
-  y = 45,
-  treasure_name = "gem",
-}
-
-pickable{
-  layer = 0,
-  x = 64,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 88,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 112,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 136,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 5,
-}
-
-pickable{
-  layer = 0,
-  x = 160,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 6,
-}
-
-pickable{
-  layer = 0,
-  x = 192,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 7,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 8,
-}
-
-pickable{
-  layer = 0,
-  x = 256,
-  y = 45,
-  treasure_name = "gem",
-  treasure_variant = 9,
 }
 
 teletransporter{
@@ -205,5 +152,287 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "central_yarntown",
+}
+
+sensor{
+  name = "^layer_up_sensor_2",
+  layer = 0,
+  x = 24,
+  y = 269,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 32,
+  y = 256,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 16,
+  y = 248,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 16,
+  y = 288,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "^layer_up_sensor_3",
+  layer = 0,
+  x = 120,
+  y = 269,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 256,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 248,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 104,
+  y = 288,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "^layer_up_sensor",
+  layer = 0,
+  x = -40,
+  y = 229,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = -48,
+  y = 200,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = -16,
+  y = 200,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = -56,
+  y = 200,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_2",
+  layer = 1,
+  x = 0,
+  y = 256,
+  width = 40,
+  height = 32,
+  pattern = "4",
+  tileset = "oceanset_outside",
+}
+
+sensor{
+  name = "^layer_down_sensor_3",
+  layer = 1,
+  x = 8,
+  y = 269,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 1,
+  x = 0,
+  y = 248,
+  width = 40,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 0,
+  y = 288,
+  width = 40,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_3",
+  layer = 1,
+  x = 104,
+  y = 256,
+  width = 40,
+  height = 32,
+  pattern = "4",
+  tileset = "oceanset_outside",
+}
+
+sensor{
+  name = "^layer_down_sensor_4",
+  layer = 1,
+  x = 136,
+  y = 269,
+  width = 16,
+  height = 32,
+}
+
+wall{
+  layer = 1,
+  x = 104,
+  y = 248,
+  width = 40,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 104,
+  y = 288,
+  width = 40,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs",
+  layer = 1,
+  x = -48,
+  y = 200,
+  width = 32,
+  height = 32,
+  pattern = "4",
+  tileset = "oceanset_outside",
+}
+
+sensor{
+  name = "^layer_down_sensor_2",
+  layer = 1,
+  x = -40,
+  y = 237,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = -56,
+  y = 200,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = -16,
+  y = 200,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 

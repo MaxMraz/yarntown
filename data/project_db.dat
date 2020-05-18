@@ -112,6 +112,7 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "entities/stair_entity", description = "Stair Entity" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
