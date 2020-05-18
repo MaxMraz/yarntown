@@ -1,3 +1,4 @@
+map{ id = "central_yarntown", description = "Central Yarntown" }
 map{ id = "first_map", description = "First map" }
 map{ id = "tests/yarn1", description = "yarn1" }
 
@@ -7,6 +8,7 @@ tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "outside", description = "Light Overworld" }
 tileset{ id = "yarntown", description = "yarntown" }
+tileset{ id = "yarntown_props", description = "Yarntown Props" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/butterfly_blue", description = "Butterfly blue" }

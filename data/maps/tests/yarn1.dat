@@ -12,10 +12,9 @@ tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 416,
-  height = 240,
-  pattern = "272_3",
-  tileset = "oceanset_outside",
+  width = 448,
+  height = 256,
+  pattern = "124",
 }
 
 tile{

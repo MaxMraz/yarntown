@@ -89,6 +89,36 @@ tile{
   pattern = "20_20",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -168,25 +198,12 @@ pickable{
   treasure_variant = 9,
 }
 
-enemy{
+teletransporter{
   layer = 0,
-  x = 56,
-  y = 197,
-  direction = 0,
-  breed = "huntsman_axe",
-}
-
-enemy{
-  layer = 0,
-  x = 264,
-  y = 109,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "idle",
-    },
-  },
-  direction = 3,
-  breed = "huntsman_axe",
+  x = 64,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "central_yarntown",
 }
 
