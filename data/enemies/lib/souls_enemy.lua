@@ -8,6 +8,8 @@ function souls_enemy:create(enemy, props)
   local hero = map:get_hero()
   local sprite = enemy:get_sprite()
 
+  enemy.entities = {}
+
   enemy:set_life(props.life or 150)
   enemy:set_damage(props.damage or 20)
   enemy:set_pushed_back_when_hurt(props.pushed_back_when_hurt or false)
@@ -53,6 +55,9 @@ function souls_enemy:create(enemy, props)
   end
 
   enemy:register_event("on_dying", function()
+    for _, entity in pairs(enemy.entities) do
+      if entity:exists() then entity:remove() end
+    end
     game:add_money(enemy.blood_echoes or 25)
   end)
 

@@ -43,6 +43,15 @@ map_meta:register_event("on_started", function(self)
     end
   end
 
+  --Set properties of doors with the "gate" sprite
+  for door in map:get_entities_by_type"door" do
+    if door:get_sprite():get_animation_set() == "doors/gate" then
+      door:set_drawn_in_y_order(true)
+      door:set_size(48, 16)
+      door:set_origin(24, 0)
+    end
+  end
+
 end) --end of on_started registered event
 --==================================================================================--
 

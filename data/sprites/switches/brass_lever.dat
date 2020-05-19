@@ -1,0 +1,14 @@
+animation{
+  name = "activated",
+  src_image = "misc.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 8, origin_y = 0 },
+  },
+}
+animation{
+  name = "inactivated",
+  src_image = "misc.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 8, origin_y = 0 },
+  },
+}

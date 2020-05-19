@@ -1,0 +1,18 @@
+animation{
+  name = "closed",
+  src_image = "doors/gate.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 48 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 48 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 48 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 48 },
+  },
+}
+animation{
+  name = "opening",
+  src_image = "doors/gate.png",
+  frame_delay = 120,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 16, origin_y = 48, num_frames = 6 },
+  },
+}

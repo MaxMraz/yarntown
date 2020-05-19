@@ -61,6 +61,7 @@ sprite{ id = "doors/door_normal", description = "Door (normal)" }
 sprite{ id = "doors/door_small_key", description = "Door (small key)" }
 sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "doors/gate", description = "Gate" }
 sprite{ id = "enemies/chameleon", description = "Chameleon" }
 sprite{ id = "enemies/clucko", description = "Clucko white" }
 sprite{ id = "enemies/crow", description = "Crow" }
@@ -157,6 +158,7 @@ sprite{ id = "shadows/shadow_big", description = "Big shadow" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
 sprite{ id = "streams/arrow_stream", description = "Conveyor belt" }
+sprite{ id = "switches/brass_lever", description = "Brass lever" }
 sprite{ id = "switches/switch_1", description = "Switch 1" }
 sprite{ id = "switches/switch_2", description = "Switch 2" }
 sprite{ id = "switches/switch_3", description = "Switch 3" }

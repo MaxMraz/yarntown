@@ -1296,6 +1296,96 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "185",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 392,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "185_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 392,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "186",
+  ground = "wall",
+  default_layer = 1,
+  x = 208,
+  y = 384,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "186_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 224,
+  y = 384,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "187",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 384,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "188",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 432,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "188_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 232,
+  y = 432,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "189",
+  ground = "wall",
+  default_layer = 1,
+  x = 208,
+  y = 416,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "189_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 232,
+  y = 416,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
   id = "19",
   ground = "wall",
   default_layer = 0,
@@ -1304,6 +1394,46 @@ tile_pattern{
   width = 32,
   height = 16,
   repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "190",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 504,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "191",
+  ground = "wall",
+  default_layer = 1,
+  x = 192,
+  y = 464,
+  width = 64,
+  height = 40,
+}
+
+tile_pattern{
+  id = "192",
+  ground = "traversable",
+  default_layer = 0,
+  x = 208,
+  y = 528,
+  width = 48,
+  height = 32,
+}
+
+tile_pattern{
+  id = "194",
+  ground = "traversable",
+  default_layer = 0,
+  x = 208,
+  y = 448,
+  width = 24,
+  height = 16,
 }
 
 tile_pattern{
