@@ -31,12 +31,24 @@ local properties = {
 	push_hero_on_sword = false,
 	hurts_to_touch = false, --sets enemy:can_attack()
 	enemy_hurt_sound = "enemy_hurt",
-	initial_movement_type = "stopped", --other options are "random" or "path" (path is still TODO)
+	initial_movement_type = "stopped", --other options are "random" or "route"
 	agro_cone_size = "medium", --enemy's vision area sprite. Corresponds to enemies/tools/agro_cone_ .. agro_cone_size
 	speed = 50,
 	attack_range = 40, --enemy will get this close to hero before attacking. If the enemy has ranged attacks available to it, this may be quite far.
 	deagro_threshold = 250, --distance at which enemy will stop chasing hero
-}
+}```
+
+Patrol Routes:
+Enemy's movement behavior is dictated by the property `initial_movement_type`, but if "route" is specified, you'll have some work to do on the map. "route" type enemies will follow a route to its end then back to its start, watching for the player to cross their line of sight all along it. If the player escapes, the enemy will attempt to go back to a node along its route, although its possible it may have become trapped.
+Each map entity enemy that is to follow a route needs to have a map entity property with the key `patrol_route_name`. The value is the name of the entities that the enemy will walk to in sequence.
+Next, you need to create a string of entities (of any type) named like {patrol_route_name}_1, {patrol_route_name}_2, etc. For example: `east_terrace_patrol_1`, `east_terrace_patrol_2`. It is important that the numbering start at `_1` and doesn't skip numbers as it goes up.
+Place these entities so that the enemies can walk basically in a straight line from one to the next. Enemies use "target" type movements to go from node to node, rather than "path_finding" as that movement type seems fairly buggy.
+Enemies may be placed anywhere along this route. They will start by walking to the closest node to their starting location, then proceeding upward along the numbered entities. When they reach the highest numbered entity, they will turn around and count back down until they find no lowered numbered entities, then count up again.
+Notes:
+- Looping routes are not implemented.
+- Any type of entities can be used for nodes for enemies to follow. I tend to use sensors or custom entities. Even moving entities should work. Although this hasn't been tested and could lead to some interesting edge cases, it should be fairly stable, if unpredictable.
+- Sometimes, enemies will just wander off in a random direction when they reach a node. When they hit a wall, they'll go back to their path. Haven't tracked this bug down yet.
+
 
 Multiple attacks:
 Each enemy is required to have its own `enemy:choose_attack()` function. This allows multiple enemies to use the same attacks, but each under different circumstances, or even to create its own cooldown time for a certain attack. Here's an example function:
