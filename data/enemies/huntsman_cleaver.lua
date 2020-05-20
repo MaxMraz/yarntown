@@ -7,8 +7,8 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
-local DAMAGE = 20
-enemy.blood_echoes = 45
+local DAMAGE = 100
+enemy.blood_echoes = 48
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
@@ -16,8 +16,9 @@ function enemy:on_created()
   	--set life, damage, particular noises, etc
   	initial_movement_type = enemy:get_property("initial_movement_type") or "random",
   	damage = DAMAGE,
-  	life = 150,
+  	life = 70,
   	attack_range = 48,
+  	speed = 80,
   })
 end
 

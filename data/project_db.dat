@@ -1,5 +1,5 @@
-map{ id = "central_yarntown", description = "Central Yarntown" }
-map{ id = "first_map", description = "First map" }
+map{ id = "central_yarntown/central_yarntown", description = "Central Yarntown" }
+map{ id = "first_map" }
 map{ id = "tests/yarn1", description = "yarn1" }
 
 tileset{ id = "castle", description = "Castle" }
@@ -62,37 +62,10 @@ sprite{ id = "doors/door_small_key", description = "Door (small key)" }
 sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "doors/gate", description = "Gate" }
-sprite{ id = "enemies/chameleon", description = "Chameleon" }
-sprite{ id = "enemies/clucko", description = "Clucko white" }
-sprite{ id = "enemies/crow", description = "Crow" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
-sprite{ id = "enemies/flame", description = "Flame" }
-sprite{ id = "enemies/goblin_axe", description = "Goblin Axe" }
-sprite{ id = "enemies/goblin_club", description = "Goblin Club" }
-sprite{ id = "enemies/goblin_green", description = "Goblin Green" }
-sprite{ id = "enemies/goblin_green_slingshot", description = "Goblin Slingshot" }
 sprite{ id = "enemies/huntsman_axe", description = "Huntsman-Axe" }
 sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
 sprite{ id = "enemies/huntsman_template", description = "huntsman-template" }
-sprite{ id = "enemies/ice_block", description = "Ice block" }
-sprite{ id = "enemies/iceball", description = "Iceball" }
-sprite{ id = "enemies/pterobat", description = "Pterobat" }
-sprite{ id = "enemies/shamablin_fire", description = "Goblin Shaman Fire" }
-sprite{ id = "enemies/skelfos", description = "Skelfos" }
-sprite{ id = "enemies/skullbat", description = "Skullbat" }
-sprite{ id = "enemies/slime_cyan", description = "Slime (cyan)" }
-sprite{ id = "enemies/slime_egg", description = "Slime egg" }
-sprite{ id = "enemies/slime_egg_blue", description = "Slime Egg Blue" }
-sprite{ id = "enemies/slime_green", description = "Slime (green)" }
-sprite{ id = "enemies/slime_green_small", description = "Small slime (green)" }
-sprite{ id = "enemies/slime_purple", description = "Slime (purple)" }
-sprite{ id = "enemies/slime_red", description = "Slime (red)" }
-sprite{ id = "enemies/slime_yellow", description = "Slime (yellow)" }
-sprite{ id = "enemies/slimy_green", description = "Slimy Green" }
-sprite{ id = "enemies/soldier", description = "Soldier" }
-sprite{ id = "enemies/soldier_feather", description = "Soldier Feather" }
-sprite{ id = "enemies/soldier_sword", description = "Soldier Sword" }
-sprite{ id = "enemies/spiderskull", description = "Spiderskull" }
 sprite{ id = "enemies/test_bbenemy", description = "test-bbenemy" }
 sprite{ id = "enemies/test_bbenemy_weapon", description = "test enemy weapon" }
 sprite{ id = "enemies/tools/agro_cone_medium", description = "Agro Cone - Medium" }
@@ -102,12 +75,15 @@ sprite{ id = "enemies/weapons/cleaver_swipe", description = "CleaverSwipe" }
 sprite{ id = "enemies/weapons/cleaver_thrust", description = "CleaverThrust" }
 sprite{ id = "enemies/weapons/test_axe_swipe", description = "test_axe_swipe" }
 sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" }
-sprite{ id = "enemies/wings_evil", description = "Wings evil" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
+sprite{ id = "entities/effects/light_l", description = "Light - L" }
+sprite{ id = "entities/effects/light_m", description = "Light M" }
+sprite{ id = "entities/effects/light_s", description = "Light - M" }
+sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
@@ -316,26 +292,8 @@ item{ id = "money_bag", description = "Money bag (small / large / huge)" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
-enemy{ id = "chameleon", description = "Chameleon" }
-enemy{ id = "explosion", description = "Explosion" }
-enemy{ id = "flame", description = "Flame" }
-enemy{ id = "generic_projectile", description = "Projectile" }
-enemy{ id = "goblin_green", description = "Goblin" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }
 enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
-enemy{ id = "iceball", description = "Iceball" }
-enemy{ id = "pterobat", description = "Pterobat" }
-enemy{ id = "shamablin_fire", description = "Goblin Shaman Fire" }
-enemy{ id = "skelfos", description = "Skelfos" }
-enemy{ id = "skullbat", description = "Skullbat" }
-enemy{ id = "slime_cyan", description = "Slime (cyan)" }
-enemy{ id = "slime_egg", description = "Slime egg" }
-enemy{ id = "slime_green", description = "Slime (green)" }
-enemy{ id = "slime_green_small", description = "Small Slime (green)" }
-enemy{ id = "slime_purple", description = "Slime (purple)" }
-enemy{ id = "slime_red", description = "Slime (red)" }
-enemy{ id = "slime_yellow", description = "Slime (yellow)" }
-enemy{ id = "slimy_green", description = "Slimy Green" }
 enemy{ id = "test_bbenemy", description = "test bb enemy" }
 
 
@@ -347,24 +305,6 @@ font{ id = "enter_command", description = "Enter Command" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
-file{ path = "enemies/chameleon.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/explosion.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/flame.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/generic_projectile.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/goblin_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/iceball.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/pterobat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/shamablin_fire.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skelfos.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skullbat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_cyan.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_egg.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_green_small.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/gem.lua", author = "Christopho", license = "GPL v3" }
@@ -599,54 +539,8 @@ file{ path = "sprites/doors/door_small_key.dat", author = "Christopho", license 
 file{ path = "sprites/doors/door_very_weak_wall.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_weak_wall.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/chameleon.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/chameleon.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/clucko.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/clucko.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/crow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/crow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/enemy_killed.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/enemy_killed.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/flame.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_axe.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_club.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green_slingshot.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_shaman_fire.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/ice_block.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/iceball.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/pterobat.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/pterobat.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/shamablin_fire.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skelfos.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skelfos.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skullbat.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skullbat.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_cyan.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_cyan.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg_blue.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg_blue.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_purple.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_purple.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_red.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_red.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_yellow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_yellow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slimy_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slimy_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_feather.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_sword.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/spiderskull.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/spiderskull.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/wings_evil.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.png", author = "Diarandor", license = "CC BY-SA 4.0" }

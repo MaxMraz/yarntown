@@ -122,6 +122,7 @@ function souls_enemy:create(enemy, props)
 
   function enemy:start_agro()
   	enemy.agro = true
+    enemy.deagro_x, enemy.deagro_y, enemy.deagro_z = enemy:get_position()
   	enemy:approach_hero()
   end
 
@@ -135,6 +136,8 @@ function souls_enemy:create(enemy, props)
   		enemy:approach_hero()
   	elseif previous_state == "approach" then
   		enemy:choose_attack()
+    elseif previous_state == "deagro" then
+      enemy:return_to_idle_location()
   	elseif previous_state == "attack" then
   		enemy:recover()
   	elseif previous_state == "recover" then
@@ -151,20 +154,19 @@ function souls_enemy:create(enemy, props)
 
   	sol.timer.start(enemy, 100, function()
   		--see if close enough
-  		if enemy:get_distance(hero) <= (props.attack_range or DEFAULT_ATTACK_RANGE) then
+      local dist = enemy:get_distance(hero)
+  		if dist <= (props.attack_range or DEFAULT_ATTACK_RANGE) then
   			m:stop()
   			enemy:choose_next_state("approach")
+      elseif dist >= (props.deagro_threshold or 250) then
+        --Deagro
+        enemy.agro=false
+        enemy:stop_movement()
+        enemy:choose_next_state("deagro")
   		else
   			return true
   		end
   	end)
-
-  	--check distance to hero to cancel agro
-  	sol.timer.start(enemy, 200, function()
-  		enemy:check_to_deagro()
-  		if enemy.agro then return true end
-  	end)
-
   end
 
 
@@ -175,14 +177,10 @@ function souls_enemy:create(enemy, props)
   	end)
   end
 
-
-  function enemy:check_to_deagro()
-		local distance = enemy:get_distance(hero)
-		if distance >= (props.deagro_threshold or 250) then
-			enemy.agro = false
-		end
+  function enemy:return_to_idle_location()
+    --TODO ...do this. Probably write my own A* pathfinding algorithm since the built-in has limitations
+    enemy:choose_next_state()
   end
-
 
 
 

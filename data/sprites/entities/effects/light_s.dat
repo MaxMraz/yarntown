@@ -1,0 +1,9 @@
+animation{
+  name = "stopped",
+  src_image = "entities/effects/light_s.png",
+  frame_delay = 250,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 8, frame_width = 96, frame_height = 80, origin_x = 48, origin_y = 40, num_frames = 4, num_columns = 1 },
+  },
+}

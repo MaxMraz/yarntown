@@ -36,7 +36,7 @@ function attack:attack(enemy, props)
 		local weapon = map:create_custom_entity{
 			x=x, y=y, layer=z, width=16, height=16, direction=direction, sprite=attack_sprite
 		}
-		table.insert(enemy.entities, weapon)
+		enemy.entities[weapon] = weapon
 		weapon:add_collision_test("sprite", function(weapon, other_entity)
 			if other_entity:get_type() == "hero" then
 				weapon:clear_collision_tests()

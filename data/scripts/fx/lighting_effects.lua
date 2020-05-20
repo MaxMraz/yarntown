@@ -2,9 +2,9 @@ local lighting_effects = {}
 
 local effects = {
   torch = sol.sprite.create"entities/effects/light_l",
-  candle = sol.sprite.create"entities/effects/light_m",
+  candle = sol.sprite.create"entities/effects/light_s",
   explosion = sol.sprite.create"entities/effects/light_xl",
-  hero_aura = sol.sprite.create"entities/effects/light_l",
+  hero_aura = sol.sprite.create"entities/effects/light_s",
 }
 
 local shadow_surface
@@ -20,7 +20,7 @@ function lighting_effects:initialize()
 
   --add color to effects
   effects.torch:set_color_modulation{255, 230, 150}
-  effects.candle:set_color_modulation{235, 210, 130}
+  effects.candle:set_color_modulation{255, 230, 130}
   effects.hero_aura:set_color_modulation{255, 230, 180}
   effects.explosion:set_color_modulation{255, 240, 180}
 
@@ -51,6 +51,12 @@ function lighting_effects:set_darkness_level(level)
     darkness_color = {20,40,55}
   elseif level == 5 then
     darkness_color = {5, 15, 25}
+  elseif level == "dusk" then
+    darkness_color = {240,229,210}
+  elseif level == "night" then
+    darkness_color = {100,115,135}
+  else
+    darkness_color = level
   end
 end
 
@@ -76,7 +82,9 @@ function lighting_effects:on_draw(dst_surface)
 --=========================================================================================--
   --draw different light effects
   --hero aura:
-  effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
+  if hero.torch then
+    effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
+  end
   --torches:
   for e in map:get_entities("^lighting_effect_torch") do
     if e:is_enabled() and e:get_distance(hero) <= 450 then

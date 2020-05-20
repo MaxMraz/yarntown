@@ -9,7 +9,7 @@ function stamina_builder:new(game, config)
 
   stamina.max_width = game:get_value("max_stamina") or 100
   stamina.amount_displayed = stamina.max_width
-  stamina.surface = sol.surface.create(100, 8)
+  stamina.surface = sol.surface.create(400, 8)
   stamina.background = sol.sprite.create("hud/stamina_bar_background")
   stamina.bar = sol.sprite.create("hud/stamina_bar")
   stamina.end_marker = sol.sprite.create("hud/healthbar_end_marker")
@@ -52,11 +52,12 @@ function stamina_builder:new(game, config)
   end
 
   function stamina:rebuild_surface()
-
+    --stamina is drawn at 1px per 2 health
+    local DRAW_RATIO = 2
     stamina.surface:clear()
-    stamina.background:draw_region(0, 0, stamina.max_width / 2, 8, stamina.surface)
-    stamina.bar:draw_region(0, 0, stamina.amount_displayed / 2, 8, stamina.surface, 0, 0)
-    stamina.end_marker:draw(stamina.surface, stamina.amount_displayed/2, 0)
+    stamina.background:draw_region(0, 0, stamina.max_width / DRAW_RATIO, 8, stamina.surface)
+    stamina.bar:draw_region(0, 0, stamina.amount_displayed / DRAW_RATIO, 8, stamina.surface, 0, 0)
+    stamina.end_marker:draw(stamina.surface, stamina.amount_displayed/DRAW_RATIO, 0)
 
   end
 

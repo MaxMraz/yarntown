@@ -2,7 +2,7 @@ require("scripts/multi_events")
 
 local weapon_manager = {}
 
-local SWORD_STAMINA_COST = 15
+local SWORD_STAMINA_COST = 20
 local CHARGE_STAMINA_COST = 60
 
 function weapon_manager:process_attack_input()

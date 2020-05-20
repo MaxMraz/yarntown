@@ -20,11 +20,17 @@ function initial_game:initialize_new_savegame(game)
   game:set_ability("lift", 1)
   game:set_ability("sword", 1)
 
-  game:set_max_life(120)  
+  --Stats
+  game:set_value("vitality", 10)
+  game:set_max_life(572) --each level, max hp goes up by (health_level * .6)+14 
+  --Health bar is feasible up to around 1600 health. More than that it starts to go off screen.
   game:set_life(game:get_max_life())
-  game:set_value("max_stamina", 75)
+  game:set_value("endurance", 10)
+  game:set_value("max_stamina", 85) --max stamina = stamina_level * 2.5 + 65. Starting level 10 means 85 stamina. Over 800 stamina goes off screen
 
-  game:set_value("sword_damage", 35)
+  game:set_value("strength", 10)
+  game:set_value("skill", 10)
+  game:set_value("sword_damage", 40)
 
   game:get_item("blood_vial_user"):set_amount(20)
 end

@@ -49,7 +49,7 @@ function menu:initialize(game)
 
     elseif key == "j" and debug_mode then
 --      game:remove_life(10)
-      hero:start_hurt(10)
+      hero:start_hurt(200)
 
     elseif key == "m" and debug_mode then
       print("You are on map: " .. game:get_map():get_id())

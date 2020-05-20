@@ -7,8 +7,8 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
-local DAMAGE = 30
-enemy.blood_echoes = 50
+local DAMAGE = 100
+enemy.blood_echoes = 48
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
@@ -16,8 +16,9 @@ function enemy:on_created()
   	--set life, damage, particular noises, etc
   	initial_movement_type = enemy:get_property("initial_movement_type") or "random",
   	damage = DAMAGE,
-  	life = 200,
+  	life = 150,
   	attack_range = 48,
+  	speed = 70,
   })
 end
 
@@ -30,14 +31,14 @@ function enemy:choose_attack()
 		attack:set_wind_up_time(400)
 		enemy.recovery_time = 800
 		attack:attack(enemy, {
-			damage = DAMAGE+10, attack_sprite = "enemies/weapons/axe_slam"
+			damage = DAMAGE+30, attack_sprite = "enemies/weapons/axe_slam"
 		})
 	elseif enemy:get_distance(hero) <= 40 then
 		local attack = require("enemies/lib/attacks/melee_combo")
 		attack:set_wind_up_time(400)
 		enemy.recovery_time = 600
 		attack:attack(enemy, {
-			damage = DAMAGE+10,
+			damage = DAMAGE,
 			attack_sprites = {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe", "enemies/weapons/axe_slam"},
 		})
 	else
