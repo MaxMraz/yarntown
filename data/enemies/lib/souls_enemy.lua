@@ -1,3 +1,5 @@
+require"enemies/lib/patrol_route"
+
 local souls_enemy = {}
 
 local DEFAULT_ATTACK_RANGE = 40
@@ -75,8 +77,14 @@ function souls_enemy:create(enemy, props)
   		local m = sol.movement.create"random_path"
   		m:set_speed(20)
   		m:start(enemy)
-  	elseif props.initial_movement_type == "path" then
+  	elseif props.initial_movement_type == "route" then
   		--TODO create a script for enemy to follow a set path
+      if not enemy:has_valid_patrol_route() then
+        props.initial_movement_type = "random"
+        enemy:start_default_state()
+      else
+        enemy:start_patrol_route()
+      end
   	else
   		--Enemy just waits in place
   		sprite:set_animation"stopped"

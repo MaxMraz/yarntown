@@ -12161,15 +12161,15 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1568,
-  y = 1725,
+  x = 1552,
+  y = 1685,
   properties = {
     {
       key = "initial_movement_type",
       value = "idle",
     },
   },
-  direction = 1,
+  direction = 0,
   breed = "huntsman_cleaver",
 }
 
@@ -12226,34 +12226,6 @@ enemy{
     },
   },
   direction = 2,
-  breed = "huntsman_cleaver",
-}
-
-enemy{
-  layer = 0,
-  x = 1360,
-  y = 1621,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "random",
-    },
-  },
-  direction = 3,
-  breed = "huntsman_axe",
-}
-
-enemy{
-  layer = 0,
-  x = 1336,
-  y = 1653,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "random",
-    },
-  },
-  direction = 3,
   breed = "huntsman_cleaver",
 }
 
@@ -12376,20 +12348,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-enemy{
-  layer = 0,
-  x = 1176,
-  y = 2293,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "random",
-    },
-  },
-  direction = 2,
-  breed = "huntsman_axe",
 }
 
 enemy{
@@ -12535,6 +12493,299 @@ wall{
   width = 104,
   height = 8,
   stops_enemies = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1592,
+  y = 2181,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "central_road_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_axe",
+}
+
+sensor{
+  name = "central_road_huntsman_route_1",
+  layer = 0,
+  x = 1592,
+  y = 2237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "central_road_huntsman_route_2",
+  layer = 0,
+  x = 1592,
+  y = 1965,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "central_road_huntsman_route_3",
+  layer = 0,
+  x = 1640,
+  y = 1821,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "central_road_huntsman_route_4",
+  layer = 0,
+  x = 1672,
+  y = 1693,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1576,
+  y = 2205,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "central_road_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 1608,
+  y = 2221,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "central_road_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 1376,
+  y = 1613,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "werewolf_fire_west_terrace_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_axe",
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_1",
+  layer = 0,
+  x = 1352,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_2",
+  layer = 0,
+  x = 1336,
+  y = 1725,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_3",
+  layer = 0,
+  x = 1384,
+  y = 1805,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_4",
+  layer = 0,
+  x = 1408,
+  y = 1893,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_5",
+  layer = 0,
+  x = 1528,
+  y = 1885,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_6",
+  layer = 0,
+  x = 1576,
+  y = 1797,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_7",
+  layer = 0,
+  x = 1536,
+  y = 1709,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_8",
+  layer = 0,
+  x = 1376,
+  y = 1701,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "werewolf_fire_west_terrace_huntsman_route_9",
+  layer = 0,
+  x = 1384,
+  y = 1565,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1344,
+  y = 1637,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "werewolf_fire_west_terrace_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 1096,
+  y = 2269,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "first_axeman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_axe",
+}
+
+sensor{
+  name = "first_axeman_route_1",
+  layer = 0,
+  x = 1296,
+  y = 2269,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "first_axeman_route_2",
+  layer = 0,
+  x = 1112,
+  y = 2269,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1584,
+  y = 1653,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 1640,
+  y = 1845,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "central_road_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_axe",
+}
+
+enemy{
+  layer = 0,
+  x = 1624,
+  y = 1869,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "central_road_huntsman_route",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
 }
 
 tile{
