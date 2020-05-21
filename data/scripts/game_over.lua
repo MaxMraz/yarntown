@@ -29,18 +29,8 @@ function game_over:initialize(game)
       hero:set_visible(false)
       game:set_life(game:get_max_life())
       --send the player to a different map to ensure the one they died on resets
-      hero:teleport("hunters_dream/dream_outside", "from_waking_world")
-      sol.timer.start(game, 500, function()
-        hero:teleport(game:get_value"respawn_map", game:get_value"respawn_destination")
-      end)
-      sol.timer.start(game, 1000, function()
-        sol.menu.stop(death_banner)
-        hero:set_animation"stopped"
-        game:stop_game_over()
-        hero:set_visible(true)
-        hero:set_invincible(false)
-        hero:set_blinking(false)
-      end)
+      hero:teleport("respawn_map")
+
       
     end)
     

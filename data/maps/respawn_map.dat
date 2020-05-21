@@ -1,0 +1,108 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "yarntown",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 192,
+  y = 109,
+  direction = 1,
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -16,
+  width = 456,
+  height = 296,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -16,
+  width = 456,
+  height = 296,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -24,
+  y = -16,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -24,
+  width = 448,
+  height = 304,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -16,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -8,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -8,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -8,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = -16,
+  width = 456,
+  height = 280,
+  pattern = "88",
+}
+
