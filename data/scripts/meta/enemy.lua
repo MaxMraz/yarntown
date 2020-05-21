@@ -17,21 +17,6 @@ function enemy_meta:set_consequence_for_all_attacks(consequence)
   self:set_attack_consequence("fire", consequence)
 end
 
---[[
-function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
-  local game = self:get_game()
-  local sword_damage = game:get_value("sword_damage") or 1
-  local hero_state = hero:get_state()
-  if hero_state == "sword spin attack" or hero_state == "running" then
-    sword_damage = sword_damage * 2.5
-  end
-  if game.tilia_damage_multiplier then sword_damage = sword_damage * game.tilia_damage_multiplier end
-  self:remove_life(sword_damage)
-
-end
---]]
-
-
 
 -- Helper function to inflict an explicit reaction from a scripted weapon.
 -- TODO this should be in the Solarus API one day

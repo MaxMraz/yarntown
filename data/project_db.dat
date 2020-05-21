@@ -1,5 +1,6 @@
 map{ id = "central_yarntown/central_yarntown", description = "Central Yarntown" }
 map{ id = "first_map" }
+map{ id = "hunters_dream/dream_outside", description = "Dream-Outside" }
 map{ id = "tests/yarn1", description = "yarn1" }
 
 tileset{ id = "castle", description = "Castle" }
@@ -86,6 +87,8 @@ sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/lantern", description = "Lantern" }
+sprite{ id = "entities/lost_echoes", description = "Lost Echoes" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -296,6 +299,8 @@ enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }
 enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
 enemy{ id = "test_bbenemy", description = "test bb enemy" }
 
+entity{ id = "lantern", description = "Lantern" }
+entity{ id = "lost_echoes", description = "Lost Echoes" }
 
 language{ id = "en", description = "English" }
 

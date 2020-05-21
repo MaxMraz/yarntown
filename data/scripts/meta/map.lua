@@ -9,6 +9,41 @@ map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
   local game = map:get_game()
+  local map_id = map:get_id()
+  --Set empty array for saving enemy respawn data if there isn't one yet
+  if not game.enemies_killed[map_id] then game.enemies_killed[map_id] = {} end
+
+
+  --Deal with enemy respawns
+  for enemy in map:get_entities_by_type"enemy" do
+    local x, y, z = enemy:get_position()
+    --create a unique ID for each enemy based on starting position
+    --This will fall apart if multiple enemies start in the same location
+    local c_id = x .. "," .. y .. "," .. z
+
+    --Save enemies to table when killed
+    enemy:register_event("on_dying", function()
+      game.enemies_killed[map_id][c_id] = {x=x, y=y, z=z}
+    end)
+
+  --Remove enemies that have already been killed
+    if game.enemies_killed[map_id][c_id] then
+      enemy:set_enabled(false)
+    end
+  end
+
+  --Create echo retrieval
+print("echo map: ", game:get_value"lost_echoes_map")
+  if game:get_value("lost_echoes_map") and game:get_value"lost_echoes_map" == map_id then
+    map:create_custom_entity{
+      x = game:get_value"lost_echoes_x",
+      y = game:get_value"lost_echoes_y",
+      layer = game:get_value"lost_echoes_z",
+      width = 16, height = 16, direction = 0,
+      model = "lost_echoes",
+    }
+  end
+
 
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do

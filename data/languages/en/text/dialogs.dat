@@ -1,4 +1,17 @@
 dialog{
+  id = "_game.rest_at_lantern",
+  question = "1",
+  text = [[
+Lantern saved as checkpoint.
+
+
+Return to the Hunter's Dream?
+Yes
+No
+]],
+}
+
+dialog{
   id = "_test.1",
   text = [[
 Sphinx of black quartz, hear my

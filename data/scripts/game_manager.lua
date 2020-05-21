@@ -23,7 +23,11 @@ function game_manager:create(file)
     initial_game:initialize_new_savegame(game)
   end
 
+  --Get some things ready
+  game.enemies_killed = {} --empty array to keep track of dead enemies
+
   require("scripts/button_inputs"):initialize(game)
+  require("scripts/game_over"):initialize(game)
 
   --reset some values whenever game starts or restarts
   game:register_event("on_started", function()

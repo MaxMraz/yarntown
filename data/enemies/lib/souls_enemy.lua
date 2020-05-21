@@ -61,6 +61,9 @@ function souls_enemy:create(enemy, props)
       if entity:exists() then entity:remove() end
     end
     game:add_money(enemy.blood_echoes or 25)
+    -- Save enemy data to respawn at lanterns/bonfires
+    game.enemies_killed[enemy] = true
+    
   end)
 
 

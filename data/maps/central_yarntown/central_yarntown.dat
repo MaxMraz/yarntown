@@ -12788,6 +12788,55 @@ enemy{
   breed = "huntsman_cleaver",
 }
 
+custom_entity{
+  name = "lantern",
+  layer = 0,
+  x = 1864,
+  y = 2589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/lantern",
+  model = "lantern",
+}
+
+custom_entity{
+  name = "lantern_2",
+  layer = 0,
+  x = 1024,
+  y = 1965,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/lantern",
+  model = "lantern",
+}
+
+destination{
+  name = "lantern_clinic",
+  layer = 0,
+  x = 1864,
+  y = 2605,
+  direction = 3,
+}
+
+destination{
+  name = "lantern_gilbert",
+  layer = 0,
+  x = 1024,
+  y = 1981,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1912,
+  y = 2488,
+  width = 16,
+  height = 16,
+  destination_map = "first_map",
+}
+
 tile{
   layer = 1,
   x = 880,

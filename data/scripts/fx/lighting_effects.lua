@@ -5,6 +5,7 @@ local effects = {
   candle = sol.sprite.create"entities/effects/light_s",
   explosion = sol.sprite.create"entities/effects/light_xl",
   hero_aura = sol.sprite.create"entities/effects/light_s",
+  lantern = sol.sprite.create"entities/effects/light_l",
 }
 
 local shadow_surface
@@ -22,6 +23,7 @@ function lighting_effects:initialize()
   effects.torch:set_color_modulation{255, 230, 150}
   effects.candle:set_color_modulation{255, 230, 130}
   effects.hero_aura:set_color_modulation{255, 230, 180}
+  effects.lantern:set_color_modulation{230, 210, 240}
   effects.explosion:set_color_modulation{255, 240, 180}
 
   --set blend modes
@@ -97,6 +99,13 @@ function lighting_effects:on_draw(dst_surface)
     if e:is_enabled() and e:get_distance(hero) <= 450 then
       local x,y = e:get_center_position()
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
+    end
+  end
+  --Lanterns
+  for e in map:get_entities_by_type("custom_entity") do
+    if e:is_enabled() and e:get_model() == "lantern" and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.lantern:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
   --explosions
