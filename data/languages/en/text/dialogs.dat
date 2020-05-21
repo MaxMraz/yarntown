@@ -1,4 +1,13 @@
 dialog{
+  id = "_test.1",
+  text = [[
+Sphinx of black quartz, hear my
+vow! When zombies arrive, quickly
+fax Judge Pat!
+]],
+}
+
+dialog{
   id = "_treasure.dandelion_charm.1",
   text = [[
 The bone of an old hunter whose name is

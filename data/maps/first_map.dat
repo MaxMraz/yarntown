@@ -66,3 +66,13 @@ destination{
   direction = 3,
 }
 
+npc{
+  name = "sign",
+  layer = 0,
+  x = 176,
+  y = 53,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sign",
+}
+

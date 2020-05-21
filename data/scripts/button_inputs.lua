@@ -95,7 +95,7 @@ function menu:initialize(game)
       end
 
     --Attack  
-    elseif action == "attack" then
+    elseif action == "attack" and not game:is_suspended() then
       weapon_manager:process_attack_input()
       handled = true
 
