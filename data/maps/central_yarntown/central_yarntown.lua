@@ -16,3 +16,7 @@ end
 function gilbert_gate_switch:on_activated()
   map:open_doors"gilbert_gate"
 end
+
+function musicbox_gate_switch:on_activated()
+  map:open_doors"musicbox_gate"
+end
