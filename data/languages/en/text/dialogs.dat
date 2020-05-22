@@ -1,10 +1,24 @@
 dialog{
+  id = "_game.locked",
+  text = [[
+Locked.
+]],
+}
+
+dialog{
   id = "_game.rest_at_lantern",
   question = "1",
   text = [[
 Commune with dream?
 Yes
 No
+]],
+}
+
+dialog{
+  id = "_game.wrong_side",
+  text = [[
+Does not open from this side.
 ]],
 }
 

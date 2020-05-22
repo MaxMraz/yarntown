@@ -20,3 +20,7 @@ end
 function musicbox_gate_switch:on_activated()
   map:open_doors"musicbox_gate"
 end
+
+function elevator_gate_allow_sensor:on_activated()
+ game:set_value("central_yarntown_elevator_gate_right_side", true)
+end
