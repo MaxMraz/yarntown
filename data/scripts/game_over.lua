@@ -29,7 +29,7 @@ function game_over:initialize(game)
       hero:set_visible(false)
       game:set_life(game:get_max_life())
       --send the player to a different map to ensure the one they died on resets
-      hero:teleport("respawn_map")
+      hero:teleport("respawn_map", "destination", "immediate")
 
       sol.timer.start(game, 2000, function()
         hero:teleport(game:get_value"respawn_map", game:get_value"respawn_destination")
