@@ -18,11 +18,11 @@ function game_over:initialize(game)
     local death_banner = require"scripts/hud/game_over_banner"
     sol.menu.start(game, death_banner)
 
-    sol.timer.start(game, 2000, function()
+    sol.timer.start(game, 1000, function()
       death_banner:fade_to_black()
     end)
 
-    sol.timer.start(game, 4000, function()
+    sol.timer.start(game, 3000, function()
       --reset all enemies by clearing the enemies_killed table
       game.enemies_killed = {}
 
@@ -31,6 +31,17 @@ function game_over:initialize(game)
       --send the player to a different map to ensure the one they died on resets
       hero:teleport("respawn_map")
 
+      sol.timer.start(game, 2000, function()
+        hero:teleport(game:get_value"respawn_map", game:get_value"respawn_destination")
+      end)
+      sol.timer.start(game, 2000, function()
+        sol.menu.stop(require"scripts/hud/game_over_banner")
+        hero:set_animation"stopped"
+        game:stop_game_over()
+        hero:set_visible(true)
+        hero:set_invincible(false)
+        hero:set_blinking(false)
+      end)
       
     end)
     

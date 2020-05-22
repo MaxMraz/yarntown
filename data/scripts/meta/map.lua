@@ -33,7 +33,6 @@ map_meta:register_event("on_started", function(self)
   end
 
   --Create echo retrieval
-print("echo map: ", game:get_value"lost_echoes_map")
   if game:get_value("lost_echoes_map") and game:get_value"lost_echoes_map" == map_id then
     map:create_custom_entity{
       x = game:get_value"lost_echoes_x",

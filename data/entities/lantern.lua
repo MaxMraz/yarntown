@@ -28,11 +28,26 @@ function entity:on_interaction()
   --Check to return to dream
   game:start_dialog("_game.rest_at_lantern", function(answer)
     if answer == 1 then
-      game:get_hero():teleport("hunters_dream/dream_outside", "from_waking_world")
       --heal
       game:set_life(game:get_max_life())
       --reset enemies by clearing enemies_killed table
       game.enemies_killed = {}
+
+      --teleport to respawn map then back to reset enemies on this map
+      local hero = game:get_hero()
+      local flash = require"scripts/fx/white_flash"
+      sol.menu.start(game, flash)
+      hero:teleport("respawn_map", "destination", "immediate")
+      sol.timer.start(game, 200, function()
+        hero:teleport(game:get_value"respawn_map", game:get_value"respawn_destination", "immediate")
+        flash:fade_out()
+        sol.timer.start(game, 200, function()
+          game:set_suspended()
+          sol.menu.stop(flash)
+          sol.menu.start(game, require"scripts/menus/level_up")
+        end)
+      end)
+
     end
 
 

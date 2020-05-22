@@ -146,6 +146,7 @@ function menu:process_selection()
     sol.audio.play_sound"wrong"
     return
   end
+  game:remove_money(menu.required_echoes_amount)
   game:set_value(stats[menu.cursor.index + 1], game:get_value(stats[menu.cursor.index + 1]) + 1)
   game:set_value("player_level", game:get_value("player_level") + 1)
   menu:process_stat_update(stats[menu.cursor.index + 1])
