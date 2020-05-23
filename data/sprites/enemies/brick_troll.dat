@@ -1,0 +1,47 @@
+animation{
+  name = "walking",
+  src_image = "enemies/brick_troll.png",
+  frame_delay = 170,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 48, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 48, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 48, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "melee_attack",
+  src_image = "enemies/brick_troll.png",
+  frame_delay = 110,
+  directions = {
+    { x = 288, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 288, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 288, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 288, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/brick_troll.png",
+  frame_delay = 450,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/brick_troll.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 240, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 240, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 240, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+    { x = 240, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+  },
+}

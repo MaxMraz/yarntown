@@ -11387,15 +11387,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
-  y = 2472,
-  width = 16,
-  height = 32,
-  pattern = "193",
-}
-
-tile{
-  layer = 0,
   x = 864,
   y = 1520,
   width = 16,
@@ -22400,6 +22391,60 @@ tile{
   pattern = "179",
 }
 
+tile{
+  layer = 0,
+  x = 416,
+  y = 824,
+  width = 8,
+  height = 16,
+  pattern = "52_3",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 824,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 824,
+  width = 112,
+  height = 16,
+  pattern = "55_2",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 824,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 824,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 824,
+  width = 144,
+  height = 16,
+  pattern = "55_2",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -23575,8 +23620,8 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 1264,
-  y = 1389,
+  x = 1256,
+  y = 1373,
   properties = {
     {
       key = "initial_movement_type",
@@ -23718,6 +23763,104 @@ sensor{
   y = 789,
   width = 48,
   height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 957,
+  direction = 3,
+  breed = "brick_troll",
+}
+
+enemy{
+  layer = 0,
+  x = 544,
+  y = 1045,
+  direction = 3,
+  breed = "brick_troll",
+}
+
+enemy{
+  layer = 0,
+  x = 960,
+  y = 1293,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "brick_troll",
+}
+
+enemy{
+  layer = 0,
+  x = 1624,
+  y = 1165,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "brick_troll",
+}
+
+enemy{
+  layer = 0,
+  x = 1960,
+  y = 1117,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "random",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 1936,
+  y = 1141,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "random",
+    },
+  },
+  direction = 3,
+  breed = "huntsman_cleaver",
+}
+
+wall{
+  layer = 0,
+  x = 720,
+  y = 976,
+  width = 160,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 848,
+  y = 960,
+  width = 32,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -26945,60 +27088,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "52_3",
-}
-
-tile{
-  layer = 1,
-  x = 416,
-  y = 824,
-  width = 8,
-  height = 16,
-  pattern = "52_3",
-}
-
-tile{
-  layer = 1,
-  x = 536,
-  y = 824,
-  width = 8,
-  height = 16,
-  pattern = "52_2",
-}
-
-tile{
-  layer = 1,
-  x = 424,
-  y = 824,
-  width = 112,
-  height = 16,
-  pattern = "55_2",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 824,
-  width = 8,
-  height = 16,
-  pattern = "52",
-}
-
-tile{
-  layer = 1,
-  x = 744,
-  y = 824,
-  width = 8,
-  height = 16,
-  pattern = "52_2",
-}
-
-tile{
-  layer = 1,
-  x = 600,
-  y = 824,
-  width = 144,
-  height = 16,
-  pattern = "55_2",
 }
 
 tile{

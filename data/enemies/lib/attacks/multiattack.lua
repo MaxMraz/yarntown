@@ -4,9 +4,19 @@
 local attack = {}
 
 local wind_up_time = 300
+local attack_frequency = 500
+local tracking = false
 
 function attack:set_wind_up_time(time)
 	wind_up_time = time
+end
+
+function attack:set_frequency(time)
+	attack_frequency = time
+end
+
+function attack:set_tracking(track)
+  tracking = track
 end
 
 function attack:attack(enemy, damage, attack_sprite, num_attacks)
@@ -22,8 +32,14 @@ function attack:attack(enemy, damage, attack_sprite, num_attacks)
 		enemy.stagger_window = false
 		
 		for i=1, num_attacks do
-			sol.timer.start(enemy, (i-1)*500, function()
+			sol.timer.start(enemy, (i-1)* attack_frequency, function()
 				--several attacs
+        if tracking then
+        	enemy:get_sprite():set_direction(enemy:get_direction4_to(hero))
+        	local m = sol.movement.create"target"
+        	m:set_speed(20)
+        	m:start(enemy)
+        end
 				local sword_sound = math.random(2,4)
 				sol.audio.play_sound("sword"..sword_sound)
 				local x, y, z = enemy:get_position()
@@ -47,6 +63,7 @@ function attack:attack(enemy, damage, attack_sprite, num_attacks)
 					sprite:set_animation"stopped"
 					if i == num_attacks then
 						--finish attack
+						enemy:stop_movement()
 						enemy:choose_next_state("attack")
 					end
 				end)

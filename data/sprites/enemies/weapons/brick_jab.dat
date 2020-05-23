@@ -1,0 +1,11 @@
+animation{
+  name = "attack",
+  src_image = "enemies/brick_troll.png",
+  frame_delay = 110,
+  directions = {
+    { x = 496, y = 0, frame_width = 64, frame_height = 16, origin_x = 24, origin_y = 21, num_frames = 4 },
+    { x = 512, y = 16, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 53, num_frames = 4 },
+    { x = 496, y = 64, frame_width = 64, frame_height = 16, origin_x = 40, origin_y = 21, num_frames = 4 },
+    { x = 512, y = 80, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+  },
+}

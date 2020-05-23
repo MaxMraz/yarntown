@@ -12,10 +12,6 @@ local initial_game = {}
 -- Sets initial values to a new savegame file.
 function initial_game:initialize_new_savegame(game)
 
-  -- You can modify this function to set the initial life and equipment
-  -- and the starting location.
-  game:set_starting_location("first_map", nil)  -- Starting location.
-
   game:set_max_money(999999999)
   game:set_ability("lift", 1)
   game:set_ability("sword", 1)
@@ -33,7 +29,17 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("sword_damage", 40) --so is damage strength * 4? I guess for now
   game:set_value("skill", 10) --No effect on anything yet
 
+  --Just have 20 blood vials to start
   game:get_item("blood_vial_user"):set_amount(20)
+
+  --Set starting location and starting respawn
+  game:set_starting_location("central_yarntown/central_yarntown", "lantern_clinic")  -- Starting location.
+  game:set_value("respawn_map", "central_yarntown/central_yarntown")
+  game:set_value("respawn_destination", "lantern_clinic")
+  game:set_value("respawn_x", 1864)
+  game:set_value("respawn_y", 2605)
+  game:set_value("respawn_z", 0)
+
 end
 
 return initial_game
