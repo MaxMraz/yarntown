@@ -38,6 +38,8 @@ function game_over:initialize(game)
         sol.menu.stop(require"scripts/hud/game_over_banner")
         hero:set_animation"stopped"
         game:stop_game_over()
+        --retrieve blood vials from storage
+        game:replenish_blood_vials()
         hero:set_visible(true)
         hero:set_invincible(false)
         hero:set_blinking(false)

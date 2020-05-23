@@ -290,6 +290,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "blood_vial", description = "Blood Vial" }
 item{ id = "blood_vial_user", description = "Blod Vial User" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "gem", description = "Gem (x1 / x5 / x20 / x50 / x300)" }

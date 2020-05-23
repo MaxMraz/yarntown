@@ -32,6 +32,42 @@ fax Judge Pat!
 }
 
 dialog{
+  id = "_treasure.blood_vial.1",
+  text = [[
+You found a blood vial. Special
+blood used in ministration.
+Restores HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.2",
+  text = [[
+You found a blood vial. Special
+blood used in ministration.
+Restores HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.3",
+  text = [[
+You found a blood vial. Special
+blood used in ministration.
+Restores HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.4",
+  text = [[
+You found a blood vial. Special
+blood used in ministration.
+Restores HP.
+]],
+}
+
+dialog{
   id = "_treasure.dandelion_charm.1",
   text = [[
 The bone of an old hunter whose name is
