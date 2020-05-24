@@ -23863,13 +23863,6 @@ wall{
   stops_projectiles = true,
 }
 
-pickable{
-  layer = 0,
-  x = 1808,
-  y = 2597,
-  treasure_name = "blood_vial",
-}
-
 tile{
   layer = 1,
   x = 552,

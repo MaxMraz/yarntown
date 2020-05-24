@@ -32,7 +32,9 @@ function souls_enemy:create(enemy, props)
 
   --Common functions for map entities
   enemy:register_event("on_position_changed", function()
-  	sprite:set_direction(enemy:get_movement():get_direction4())
+    if not enemy.staggered then
+    	sprite:set_direction(enemy:get_movement():get_direction4())
+    end
   end)
 
 
@@ -47,14 +49,33 @@ function souls_enemy:create(enemy, props)
   			sprite:set_blend_mode"blend"
   		end)
 
+      if not enemy.agro then enemy:start_agro() end
+
   		sol.audio.play_sound(props.enemy_hurt_sound or "enemy_hurt")
+      if enemy.staggered then
+        enemy:visceral_attack(damage)
+        return
+      end
+
       if not enemy.agro then damage = damage * 3 end
       if hero:get_state() == "sword spin attack" then damage = damage * 2 end
   		enemy:remove_life(damage)
-
-  		if not enemy.agro then enemy:start_agro() end
   	end
   end
+
+
+  function enemy:visceral_attack(init_damage)
+    enemy:remove_life(init_damage * 6)
+    enemy:stop_movement()
+    local m = sol.movement.create"straight"
+    m:set_angle(hero:get_angle(enemy))
+    m:set_max_distance(24)
+    m:set_speed(100)
+    m:start(enemy)
+    enemy.unstagger_timer:stop()
+    enemy:unstagger()
+  end
+
 
   enemy:register_event("on_dying", function()
     for _, entity in pairs(enemy.entities) do
@@ -191,6 +212,38 @@ function souls_enemy:create(enemy, props)
   function enemy:return_to_idle_location()
     --TODO ...do this. Probably write my own A* pathfinding algorithm since the built-in has limitations
     enemy:choose_next_state()
+  end
+
+  function enemy:get_shot()
+    print"GETTING SHOT"
+    --break out of function if enemy is already dying
+    if enemy:get_life() <= 0 then
+      return
+    end
+    enemy:get_hit(game:get_value"gun_damage" or 15)
+    if enemy.stagger_window then
+      enemy.stagger_window = false
+      enemy:stagger()
+    end
+  end
+
+  function enemy:stagger()
+    --don't create infinite stunlock with pistol
+    if enemy.staggered then return end
+    enemy.staggered = true
+    sol.timer.stop_all(enemy)
+    enemy:stop_movement()
+    sprite:set_animation("stopped") --TODO add staggered animations for enemies
+    sprite:set_color_modulation{200,200,200} --Grey out color in lieu of staggered animation
+    enemy.unstagger_timer = sol.timer.start(enemy, enemy.stagger_duration or 2000, function()
+      enemy:unstagger()
+    end)
+  end
+
+  function enemy:unstagger()
+    enemy.staggered = false
+    sprite:set_color_modulation{255,255,255}
+    enemy:choose_next_state("attack")
   end
 
 

@@ -28,6 +28,7 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("strength", 10)
   game:set_value("sword_damage", 40) --so is damage strength * 4? I guess for now
   game:set_value("skill", 10) --No effect on anything yet
+  game:set_value("gun_damage", 15)
 
   --Just have 20 blood vials to start
   game:get_item("blood_vial_user"):set_amount(20)
