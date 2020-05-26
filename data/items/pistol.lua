@@ -14,14 +14,14 @@ function item:on_using()
   local enemy = item:select_target()
 
 
-  item:set_finished()
+--  item:set_finished()
 end
 
 function item:select_target()
   local hero = game:get_hero()
   local map = game:get_map()
   local direction = hero:get_direction()
-  local AIM_SPREAD = math.rad(45)
+  local AIM_SPREAD = math.rad(55)
   local RANGE = 128
   local angles = {[0] = 0, [1] = math.pi / 2, [2] = math.pi, [3] = 3* math.pi / 2}
   local potential_enemies = {}
@@ -29,8 +29,12 @@ function item:select_target()
   hero:freeze()
 
   --see who's in range
+  function normalize(angle)
+    return ((angle + math.pi) % (2 * math.pi)) - math.pi
+  end
   for enemy in map:get_entities_by_type"enemy" do
-    if math.abs( hero:get_angle(enemy) - angles[direction] ) < AIM_SPREAD and hero:get_distance(enemy) < RANGE then
+    local enemy_angle = math.abs( normalize(hero:get_angle(enemy)) - angles[direction] )
+    if enemy_angle < AIM_SPREAD and hero:get_distance(enemy) < RANGE then
       potential_enemies[enemy] = true
     end
   end
@@ -47,9 +51,9 @@ function item:select_target()
 
   sol.audio.play_sound"hand_cannon"
   hero:set_animation("bow", function()
-if not closest_enemy then print"no enemy found" end
     if closest_enemy then closest_enemy:get_shot() end
     hero:unfreeze()
+    potential_enemies = {}
     item:set_finished()
   end)
 
