@@ -26,6 +26,7 @@ function game_manager:create(file)
   --Get some things ready
   game.enemies_killed = {} --empty array to keep track of dead enemies
 
+  require("scripts/fx/lighting_effects"):initialize()
   require("scripts/button_inputs"):initialize(game)
   require("scripts/game_over"):initialize(game)
 

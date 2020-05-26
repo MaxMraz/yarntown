@@ -4,7 +4,7 @@ local effects = {
   torch = sol.sprite.create"entities/effects/light_l",
   candle = sol.sprite.create"entities/effects/light_s",
   explosion = sol.sprite.create"entities/effects/light_xl",
-  hero_aura = sol.sprite.create"entities/effects/light_s",
+  hero_aura = sol.sprite.create"entities/effects/light_m",
   lantern = sol.sprite.create"entities/effects/light_l",
 }
 
@@ -60,6 +60,50 @@ function lighting_effects:set_darkness_level(level)
   else
     darkness_color = level
   end
+end
+
+function lighting_effects:fade_to_darkness_level(level)
+  if lighting_effects.color_fade_timer then lighting_effects.color_fade_timer:stop() end
+  if level == 1 then
+    new_darkness_color = {150,180,200}
+  elseif level == 2 then
+    new_darkness_color = {100,115,135}
+  elseif level == 3 then
+    new_darkness_color = {75,85,90}
+  elseif level == 4 then
+    new_darkness_color = {20,40,55}
+  elseif level == 5 then
+    new_darkness_color = {5, 15, 25}
+  elseif level == "dusk" then
+    new_darkness_color = {240,229,210}
+  elseif level == "night" then
+    new_darkness_color = {100,115,135}
+  else
+    new_darkness_color = level
+  end
+
+  local r1, g1, b1 = darkness_color[1], darkness_color[2], darkness_color[3]
+  local r2, g2, b2 = new_darkness_color[1], new_darkness_color[2], new_darkness_color[3]
+
+  lighting_effects.color_fade_timer = sol.timer.start(sol.main.get_game(), 10, function()
+    local r_step = 1
+    local g_step = 1
+    local b_step = 1
+    if math.abs(r1-r2) > 10 then r_step = 5 end
+    if math.abs(g1-g2) > 10 then g_step = 5 end
+    if math.abs(b1-b2) > 10 then b_step = 5 end
+    if r1 > r2 then r_step = r_step * -1 elseif r1 == r2 then r_step = 0 end
+    if r1 > r2 then g_step = g_step * -1 elseif g1 == g2 then g_step = 0 end
+    if r1 > r2 then b_step = b_step * -1 elseif b1 == b2 then b_step = 0 end
+    r1 = r1 + r_step
+    g1 = g1 + g_step
+    b1 = b1 + b_step    
+    darkness_color = {r1, g1, b1}
+    if r1 == r2 and g1 == g2 and b1 == b2 then
+    else return true
+    end
+  end)
+
 end
 
 

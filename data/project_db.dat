@@ -37,6 +37,8 @@ sprite{ id = "chests/chest_purple", description = "Chest (purple)" }
 sprite{ id = "chests/chest_red", description = "Chest (red)" }
 sprite{ id = "chests/chest_yellow", description = "Chest (yellow)" }
 sprite{ id = "chests/large_chest_brown", description = "Large chest (brown)" }
+sprite{ id = "destructibles/barrel" }
+sprite{ id = "destructibles/box", description = "box" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
 sprite{ id = "destructibles/cabbagge_grey", description = "Plant Grey" }
@@ -65,6 +67,7 @@ sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" 
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "doors/gate", description = "Gate" }
 sprite{ id = "enemies/brick_troll", description = "Brick Troll" }
+sprite{ id = "enemies/dog", description = "Dog" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/huntsman_axe", description = "Huntsman-Axe" }
 sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
@@ -207,6 +210,7 @@ sound{ id = "enemy_awake", description = "enemy_awake" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
+sound{ id = "falling", description = "falling" }
 sound{ id = "falling_on_hole", description = "falling_on_hole" }
 sound{ id = "falling_rock", description = "falling_rock" }
 sound{ id = "fire_ball", description = "fire_ball" }
@@ -290,7 +294,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
-item{ id = "blood_vial", description = "Blood Vial" }
+item{ id = "blood_vial", description = "Blood Vial(1,2,5)" }
 item{ id = "blood_vial_user", description = "Blod Vial User" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "gem", description = "Gem (x1 / x5 / x20 / x50 / x300)" }
@@ -301,10 +305,12 @@ item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
 enemy{ id = "brick_troll", description = "Brick Troll" }
+enemy{ id = "dog", description = "Dog" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }
 enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
 enemy{ id = "test_bbenemy", description = "test bb enemy" }
 
+entity{ id = "breakable", description = "Breakable" }
 entity{ id = "lantern", description = "Lantern" }
 entity{ id = "lost_echoes", description = "Lost Echoes" }
 

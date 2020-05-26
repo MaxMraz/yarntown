@@ -24,6 +24,15 @@ function enemy:on_created()
 end
 
 
+enemy:register_event("on_dying", function()
+  local random = math.random(1,100)
+  if random <= 5 then
+    enemy:set_treasure("blood_vial", 1)
+  elseif random <= 25 then
+    enemy:set_treasure("blood_vial", 2)
+  end
+end)
+
 
 
 function enemy:choose_attack()

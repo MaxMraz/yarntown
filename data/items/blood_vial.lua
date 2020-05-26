@@ -18,6 +18,7 @@ end
 function game:replenish_blood_vials()
   local user_item = game:get_item("blood_vial_user")
   local needed_vials = 20 - user_item:get_amount()
+  if not game:get_value"stored_blood_vials" then game:set_value("stored_blood_vials", 0) end
   if game:get_value"stored_blood_vials" < needed_vials then
     user_item:add_amount(game:get_value"stored_blood_vials")
     game:set_value("stored_blood_vials", 0)

@@ -1,0 +1,15 @@
+animation{
+  name = "stopped",
+  src_image = "destructibles/boxes.png",
+  directions = {
+    { x = 16, y = 8, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
+animation{
+  name = "destroy",
+  src_image = "destructibles/boxes.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+  },
+}

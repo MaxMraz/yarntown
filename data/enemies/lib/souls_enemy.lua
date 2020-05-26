@@ -204,7 +204,8 @@ function souls_enemy:create(enemy, props)
 
   function enemy:recover()
   	sprite:set_direction(enemy:get_direction4_to(hero))
-  	sol.timer.start(enemy, enemy.recovery_time or 400, function()
+    --TODO add a check if an enemy overlaps another one and if so, move aside a bit
+  	sol.timer.start(enemy, (enemy.recovery_time or 400) + math.random(400), function()
   		enemy:choose_next_state("recover")
   	end)
   end
@@ -215,7 +216,6 @@ function souls_enemy:create(enemy, props)
   end
 
   function enemy:get_shot()
-    print"GETTING SHOT"
     --break out of function if enemy is already dying
     if enemy:get_life() <= 0 then
       return
