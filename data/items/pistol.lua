@@ -23,7 +23,6 @@ function item:select_target()
   local direction = hero:get_direction()
   local AIM_SPREAD = math.rad(55)
   local RANGE = 128
-  local angles = {[0] = 0, [1] = math.pi / 2, [2] = math.pi, [3] = 3* math.pi / 2}
   local potential_enemies = {}
 
   hero:freeze()
@@ -33,7 +32,7 @@ function item:select_target()
     return ((angle + math.pi) % (2 * math.pi)) - math.pi
   end
   for enemy in map:get_entities_by_type"enemy" do
-    local enemy_angle = math.abs( normalize(hero:get_angle(enemy)) - angles[direction] )
+    local enemy_angle = math.abs( normalize( hero:get_angle(enemy) - hero:get_direction() * math.pi/2 ) )
     if enemy_angle < AIM_SPREAD and hero:get_distance(enemy) < RANGE then
       potential_enemies[enemy] = true
     end
