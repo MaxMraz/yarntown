@@ -9,7 +9,7 @@ dialog{
   id = "_game.rest_at_lantern",
   question = "1",
   text = [[
-Commune with dream?
+Commune with The Dream?
 Yes
 No
 ]],

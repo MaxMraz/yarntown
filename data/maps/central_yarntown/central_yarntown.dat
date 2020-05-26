@@ -31537,6 +31537,19 @@ sensor{
   height = 16,
 }
 
+door{
+  name = "elevator_gate_2",
+  layer = 0,
+  x = 1576,
+  y = 2432,
+  direction = 3,
+  sprite = "doors/gate",
+  savegame_variable = "central_yarntown_clinic_gate",
+  opening_method = "interaction",
+  opening_condition = "central_yarntown_elevator_gate_right_side",
+  cannot_open_dialog = "_game.wrong_side",
+}
+
 tile{
   layer = 1,
   x = 1024,
@@ -37679,6 +37692,42 @@ tile{
   width = 16,
   height = 24,
   pattern = "170",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 2432,
+  width = 16,
+  height = 16,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 2416,
+  width = 16,
+  height = 16,
+  pattern = "66",
+}
+
+tile{
+  layer = 1,
+  x = 1552,
+  y = 2432,
+  width = 16,
+  height = 16,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 1552,
+  y = 2416,
+  width = 16,
+  height = 16,
+  pattern = "66",
 }
 
 dynamic_tile{

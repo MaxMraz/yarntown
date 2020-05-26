@@ -38,6 +38,7 @@ end
 
 function entity:destroy()
   entity:clear_collision_tests()
+  sol.audio.play_sound("breaking_crate_" .. math.random(1,5))
   entity:get_sprite():set_animation("destroy", function()
     entity:set_traversable_by(true)
     entity:remove()

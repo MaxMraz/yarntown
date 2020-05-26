@@ -430,11 +430,8 @@ file{ path = "sounds/key_fall.ogg", author = "Diarandor", license = "CC BY-SA 4.
 file{ path = "sounds/lamp.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/lift.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/magnet1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/message_end.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/message_letter.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/money_counter.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/money_counter_end.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/monster_hurt.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/mouse.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/ok.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/open_lock.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
