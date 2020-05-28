@@ -49,17 +49,30 @@ function souls_enemy:create(enemy, props)
   			sprite:set_blend_mode"blend"
   		end)
 
-      if not enemy.agro then enemy:start_agro() end
-
   		sol.audio.play_sound(props.enemy_hurt_sound or "enemy_hurt")
-      if enemy.staggered then
+
+      if enemy.agro_cone then enemy.agro_cone:remove() enemy.agro_cone = nil end
+
+      if hero:get_state() == "sword swinging" and enemy.staggered then
         enemy:visceral_attack(damage)
         return
+
+      elseif hero:get_state() == "sword spin attack" and hero:get_direction() == sprite:get_direction() then
+        --this is where a backstab would go in Souls, but in Bloodborne it's a stagger
+        enemy:stagger()
+
+      elseif hero:get_state() == "sword_spin_attack" then
+        damage = damage * 2.5
+      else
+        if not enemy.agro then enemy:start_agro() end
       end
 
-      if not enemy.agro then damage = damage * 3 end
-      if hero:get_state() == "sword spin attack" then damage = damage * 2 end
   		enemy:remove_life(damage)
+
+      --TODO consider stunning enemies if you hit them super hard. Not open for visceral attacks, but stunned
+      if damage >= (props.life or 9000) * .75 then
+        --something like enemy:stun. Having a stun and stagger that are different seems confusing tho
+      end
   	end
   end
 
@@ -67,6 +80,17 @@ function souls_enemy:create(enemy, props)
   function enemy:visceral_attack(init_damage)
     enemy:remove_life(init_damage * 6)
     enemy:stop_movement()
+    --create effect probably TODO improve this later
+    local x,y,z = enemy:get_position()
+    for i=1, 20 do
+      local blood_drop = map:create_custom_entity{x=x,y=y,layer=z,width=8,height=8,direction=0,sprite="entities/blood_drop"}
+      local bm = sol.movement.create("straight")
+      bm:set_speed(200)
+      bm:set_angle(math.random(1,100) * math.pi / 100)
+      bm:set_ignore_obstacles()
+      bm:start(blood_drop)
+      blood_drop:get_sprite():set_animation("drop", function() blood_drop:remove() end)
+    end
     local m = sol.movement.create"straight"
     m:set_angle(hero:get_angle(enemy))
     m:set_max_distance(24)
@@ -132,13 +156,14 @@ function souls_enemy:create(enemy, props)
   	local direction = sprite:get_direction()
   	local cone_size = props.agro_cone_size or "medium"
   	local cone_sprite = "enemies/tools/agro_cone_" .. cone_size
-  	local agro_cone = map:create_custom_entity{
+  	enemy.agro_cone = map:create_custom_entity{
   		x=ex, y=ey, layer=ez, width=16, height=16, direction=direction, sprite=cone_sprite
   	}
-  	agro_cone:set_visible(false)
-  	agro_cone:add_collision_test("sprite", function(cone, other_entity)
+  	enemy.agro_cone:set_visible(false)
+  	enemy.agro_cone:add_collision_test("sprite", function(cone, other_entity)
   		if other_entity:get_type() == "hero" then
-  			agro_cone:remove()
+  			enemy.agro_cone:remove()
+        enemy.agro_cone = nil
         sol.timer.start(enemy, 400, function() --slight delay once they see you before attacking
           enemy:start_agro()
         end)
@@ -146,8 +171,10 @@ function souls_enemy:create(enemy, props)
   	end)
 
   	enemy:register_event("on_position_changed", function()
-  		agro_cone:set_position(enemy:get_position())
-  		agro_cone:get_sprite():set_direction(sprite:get_direction())
+      if enemy.agro_cone then
+    		enemy.agro_cone:set_position(enemy:get_position())
+    		enemy.agro_cone:get_sprite():set_direction(sprite:get_direction())
+      end
   	end)
   end
 
@@ -228,7 +255,7 @@ function souls_enemy:create(enemy, props)
   end
 
   function enemy:stagger()
-    --don't create infinite stunlock with pistol
+    --don't create infinite stunlock
     if enemy.staggered then return end
     enemy.staggered = true
     sol.timer.stop_all(enemy)

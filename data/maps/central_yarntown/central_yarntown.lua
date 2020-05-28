@@ -48,7 +48,7 @@ end
 --Make other dark places dark
 for sensor in map:get_entities("dark_area_sensor") do
 function sensor:on_activated()
-  light_fx:fade_to_darkness_level(1)
+  light_fx:fade_to_darkness_level(2)
 end
 end
 

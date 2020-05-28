@@ -11,6 +11,16 @@ animation{
   },
 }
 animation{
+  name = "crouching",
+  src_image = "enemies/brick_troll.png",
+  directions = {
+    { x = 0, y = 224, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 0, y = 272, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 48, y = 224, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 48, y = 272, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}
+animation{
   name = "melee_attack",
   src_image = "enemies/brick_troll.png",
   frame_delay = 110,

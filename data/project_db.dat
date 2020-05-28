@@ -66,6 +66,7 @@ sprite{ id = "doors/door_small_key", description = "Door (small key)" }
 sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "doors/gate", description = "Gate" }
+sprite{ id = "enemies/beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 sprite{ id = "enemies/brick_troll", description = "Brick Troll" }
 sprite{ id = "enemies/dog", description = "Dog" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
@@ -83,6 +84,7 @@ sprite{ id = "enemies/weapons/cleaver_thrust", description = "CleaverThrust" }
 sprite{ id = "enemies/weapons/test_axe_swipe", description = "test_axe_swipe" }
 sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/blood_drop", description = "Blood Drop" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
@@ -304,6 +306,7 @@ item{ id = "pistol", description = "Pistol" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
+enemy{ id = "beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 enemy{ id = "brick_troll", description = "Brick Troll" }
 enemy{ id = "dog", description = "Dog" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }

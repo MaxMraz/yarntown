@@ -1,0 +1,8 @@
+animation{
+  name = "drop",
+  src_image = "entities/blood_drop.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 16, num_columns = 8 },
+  },
+}

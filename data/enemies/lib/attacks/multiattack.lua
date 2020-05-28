@@ -3,7 +3,7 @@
 
 local attack = {}
 
-local wind_up_time = 300
+local wind_up_time = 700
 local attack_frequency = 500
 local tracking = false
 

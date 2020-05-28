@@ -30814,24 +30814,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2144,
-  y = 160,
-  width = 352,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 2256,
-  y = 112,
-  width = 128,
-  height = 64,
-  pattern = "124",
-}
-
-tile{
-  layer = 0,
   x = 2240,
   y = 136,
   width = 16,
@@ -30909,24 +30891,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 2256,
-  y = 104,
-  width = 32,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 2272,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "3",
 }
 
 tile{
@@ -31138,24 +31102,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2256,
-  y = 88,
-  width = 16,
-  height = 32,
-  pattern = "184",
-}
-
-tile{
-  layer = 0,
-  x = 2256,
-  y = 120,
-  width = 16,
-  height = 8,
-  pattern = "184_2",
-}
-
-tile{
-  layer = 0,
   x = 2368,
   y = 32,
   width = 16,
@@ -31315,56 +31261,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 2256,
-  y = 168,
-  width = 48,
-  height = 8,
-  pattern = "102",
-}
-
-tile{
-  layer = 0,
-  x = 2336,
-  y = 168,
-  width = 48,
-  height = 8,
-  pattern = "102",
-}
-
-tile{
-  layer = 0,
-  x = 2296,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "100",
-}
-
-tile{
-  layer = 0,
-  x = 2328,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "100",
-}
-
-tile{
-  layer = 0,
   x = 2312,
   y = 184,
   width = 16,
   height = 56,
   pattern = "184",
-}
-
-tile{
-  layer = 0,
-  x = 2312,
-  y = 168,
-  width = 16,
-  height = 16,
-  pattern = "183",
 }
 
 tile{
@@ -32117,7 +32018,7 @@ tile{
 tile{
   layer = 0,
   x = 2112,
-  y = 312,
+  y = 272,
   width = 16,
   height = 8,
   pattern = "184_2",
@@ -32128,7 +32029,7 @@ tile{
   x = 2112,
   y = 72,
   width = 16,
-  height = 240,
+  height = 200,
   pattern = "184",
 }
 
@@ -33327,6 +33228,123 @@ tile{
   width = 8,
   height = 160,
   pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 2240,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 2144,
+  y = 160,
+  width = 352,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 112,
+  width = 128,
+  height = 64,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 168,
+  width = 48,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 168,
+  width = 48,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "183",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 88,
+  width = 16,
+  height = 32,
+  pattern = "184",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "184_2",
 }
 
 separator{
@@ -36215,6 +36233,105 @@ teletransporter{
   height = 16,
   destination_map = "central_yarntown/central_yarntown",
   destination = "from_viaduct_ladder_top",
+}
+
+enemy{
+  layer = 0,
+  x = 1920,
+  y = 213,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "warehouse_north_side_route",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
+}
+
+sensor{
+  name = "warehouse_north_side_route_1",
+  layer = 0,
+  x = 1888,
+  y = 213,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "warehouse_north_side_route_2",
+  layer = 0,
+  x = 2048,
+  y = 213,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "warehouse_north_side_route_3",
+  layer = 0,
+  x = 2048,
+  y = 101,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1728,
+  y = 205,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+    {
+      key = "patrol_route_name",
+      value = "warehouse_north_side_route",
+    },
+  },
+  direction = 0,
+  breed = "beastial_huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 2432,
+  y = 85,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "random",
+    },
+    {
+      key = "patrol_route_name",
+      value = "warehouse_north_side_route",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
+}
+
+enemy{
+  layer = 0,
+  x = 2224,
+  y = 117,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "random",
+    },
+    {
+      key = "patrol_route_name",
+      value = "warehouse_north_side_route",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
 }
 
 tile{

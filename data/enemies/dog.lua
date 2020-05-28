@@ -25,8 +25,6 @@ function enemy:on_created()
 end
 
 
-
-
 function enemy:choose_attack()
 	if enemy:get_distance(hero) >= 24 then
 		local attack = require("enemies/lib/attacks/lunge")

@@ -37,7 +37,7 @@ end)
 
 function enemy:choose_attack()
   --TODO add sweep attack, the jab is mad easy to dodge
-	if enemy:is_orthogonal_to_hero(16) then
+	if enemy:get_distance(hero) < 29 then
 		local num_attacks = math.random(2,6)
 		enemy.recovery_time = 1400
     local multiattack = require("enemies/lib/attacks/multiattack")
@@ -46,8 +46,13 @@ function enemy:choose_attack()
     multiattack:set_tracking(true)
 		multiattack:attack(enemy, DAMAGE, "enemies/weapons/brick_jab", num_attacks)
 	else
-		enemy.recovery_time = 500
-		enemy:choose_next_state("attack")
+		local attack = require("enemies/lib/attacks/lunge")
+		attack:attack(enemy, {
+			damage = 100,
+      wind_up_time = 1000,
+      wind_up_animation = "crouching"
+		})
+    enemy.recovery_time = 1000
 	end
 
 end
