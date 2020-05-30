@@ -61,7 +61,7 @@ function souls_enemy:create(enemy, props)
         --this is where a backstab would go in Souls, but in Bloodborne it's a stagger
         enemy:stagger()
 
-      elseif hero:get_state() == "sword_spin_attack" then
+      elseif hero:get_state() == "sword spin attack" then
         damage = damage * 2.5
       else
         if not enemy.agro then enemy:start_agro() end
@@ -162,6 +162,7 @@ function souls_enemy:create(enemy, props)
   	enemy.agro_cone:set_visible(false)
   	enemy.agro_cone:add_collision_test("sprite", function(cone, other_entity)
   		if other_entity:get_type() == "hero" then
+      enemy.agro_cone:clear_collision_tests()
   			enemy.agro_cone:remove()
         enemy.agro_cone = nil
         sol.timer.start(enemy, 400, function() --slight delay once they see you before attacking
@@ -258,6 +259,7 @@ function souls_enemy:create(enemy, props)
     --don't create infinite stunlock
     if enemy.staggered then return end
     enemy.staggered = true
+    sol.audio.play_sound"visceral_thud"
     sol.timer.stop_all(enemy)
     enemy:stop_movement()
     sprite:set_animation("stopped") --TODO add staggered animations for enemies

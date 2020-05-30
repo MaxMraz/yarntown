@@ -112,9 +112,11 @@ end
 function menu:on_command_pressed(command)
   local handled = false
   if command == "down" then
+    sol.audio.play_sound"cursor"
     menu.cursor.index = (menu.cursor.index + 1) % MAX_INDEX
     handled = true
   elseif command == "up" then
+    sol.audio.play_sound"cursor"
     menu.cursor.index = (menu.cursor.index - 1) % MAX_INDEX
     handled = true
   elseif command == "action" then

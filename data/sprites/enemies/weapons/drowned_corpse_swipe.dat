@@ -1,0 +1,11 @@
+animation{
+  name = "attack",
+  src_image = "enemies/drowned_corpse.png",
+  frame_delay = 120,
+  directions = {
+    { x = 0, y = 160, frame_width = 64, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 64, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 240, frame_width = 64, frame_height = 32, origin_x = 52, origin_y = 29, num_frames = 4 },
+    { x = 64, y = 272, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21, num_frames = 4 },
+  },
+}

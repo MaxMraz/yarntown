@@ -1,0 +1,45 @@
+animation{
+  name = "walking",
+  src_image = "enemies/drowned_corpse.png",
+  frame_delay = 170,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 0, frame_width = 48, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 32, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 48, y = 80, frame_width = 48, frame_height = 32, origin_x = 36, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "melee_attack",
+  src_image = "enemies/drowned_corpse.png",
+  frame_delay = 120,
+  directions = {
+    { x = 240, y = 0, frame_width = 64, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 160, y = 32, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 240, y = 80, frame_width = 64, frame_height = 32, origin_x = 52, origin_y = 29, num_frames = 4 },
+    { x = 160, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/drowned_corpse.png",
+  frame_delay = 450,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 80, frame_width = 48, frame_height = 32, origin_x = 36, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 21, num_frames = 2 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/drowned_corpse.png",
+  directions = {
+    { x = 240, y = 0, frame_width = 48, frame_height = 32, origin_x = 12, origin_y = 29 },
+    { x = 160, y = 32, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 256, y = 80, frame_width = 48, frame_height = 32, origin_x = 36, origin_y = 29 },
+    { x = 160, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 21 },
+  },
+}

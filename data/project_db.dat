@@ -69,6 +69,7 @@ sprite{ id = "doors/gate", description = "Gate" }
 sprite{ id = "enemies/beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 sprite{ id = "enemies/brick_troll", description = "Brick Troll" }
 sprite{ id = "enemies/dog", description = "Dog" }
+sprite{ id = "enemies/drowned_corpse", description = "Drowned Corpse" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/huntsman_axe", description = "Huntsman-Axe" }
 sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
@@ -81,6 +82,7 @@ sprite{ id = "enemies/weapons/axe_swipe", description = "AxeSwipe" }
 sprite{ id = "enemies/weapons/brick_jab", description = "Brick Jab" }
 sprite{ id = "enemies/weapons/cleaver_swipe", description = "CleaverSwipe" }
 sprite{ id = "enemies/weapons/cleaver_thrust", description = "CleaverThrust" }
+sprite{ id = "enemies/weapons/drowned_corpse_swipe", description = "DrownedCorpseSwipe" }
 sprite{ id = "enemies/weapons/test_axe_swipe", description = "test_axe_swipe" }
 sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" }
 sprite{ id = "entities/arrow", description = "Arrow" }
@@ -96,6 +98,7 @@ sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/lantern", description = "Lantern" }
+sprite{ id = "entities/lantern_sparkle" }
 sprite{ id = "entities/lost_echoes", description = "Lost Echoes" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
@@ -296,6 +299,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "blood_stone_shard", description = "Blood stone shard" }
 item{ id = "blood_vial", description = "Blood Vial(1,2,5)" }
 item{ id = "blood_vial_user", description = "Blod Vial User" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
@@ -309,6 +313,7 @@ item{ id = "tunic", description = "Tunic (red / green / purple)" }
 enemy{ id = "beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 enemy{ id = "brick_troll", description = "Brick Troll" }
 enemy{ id = "dog", description = "Dog" }
+enemy{ id = "drowned_corpse", description = "Drowned Corpse" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }
 enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
 enemy{ id = "test_bbenemy", description = "test bb enemy" }
@@ -483,7 +488,6 @@ file{ path = "sounds/water_fill.ogg", author = "Diarandor", license = "CC BY-SA 
 file{ path = "sounds/wings1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wings2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/world_warp.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/wrong.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wrong2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/wrong3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/animals", license = "CC BY-SA 4.0" }

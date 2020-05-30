@@ -1,0 +1,23 @@
+animation{
+  name = "sparkle_1",
+  src_image = "entities/lantern_sparkle.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+  },
+}
+animation{
+  name = "sparkle_2",
+  src_image = "entities/lantern_sparkle.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 32, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 12 },
+  },
+}
