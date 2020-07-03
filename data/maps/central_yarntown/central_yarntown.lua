@@ -67,3 +67,20 @@ function eileen_path_sensor:on_activated()
   eileen_path_hider:remove()
 end
 
+--Cleric Beast---------------------------------------------------
+function boss_music_sensor:on_activated()
+  boss_music_sensor:remove()
+  sol.audio.play_music"cleric_beast"
+  cleric_beast_fog_gate:set_enabled(true)
+end
+
+cleric_beast:register_event("on_dying", function()
+  cleric_beast_fog_gate:set_enabled(false)
+  sol.audio.play_music("cleric_beast_end", function() sol.audio.stop_music() end)
+  sol.timer.start(map, 2600, function()
+    map:create_poof(great_bridge_lantern:get_position())
+    great_bridge_lantern:set_enabled(true)
+    great_bridge_lantern:sparkle_effect()
+  end)
+end)
+

@@ -132,4 +132,29 @@ function enemy_meta:is_orthogonal_to_hero(threshold)
   return orthogonal
 end
 
+function enemy_meta:big_death()
+  local entity = self
+  local map = self:get_map()
+  local x, y, z = entity:get_position()
+  for i=1, 50 do
+    
+    local sparkle = map:create_custom_entity{
+      x=x, y=y, layer=z, direction=0, width=8, height=16,
+      sprite = "entities/lantern_sparkle",
+    }
+    sparkle:get_sprite():set_animation("sparkle_" .. math.random(1,2), function()
+      sparkle:remove()
+    end)
+    sparkle:get_sprite():set_ignore_suspend(true)
+    sparkle:set_drawn_in_y_order(true)
+    local m = sol.movement.create"straight"
+    m:set_speed(120)
+    m:set_angle(math.random(100) * 2 * math.pi / 100)
+    m:set_max_distance(math.random(24, 72))
+    m:set_ignore_obstacles(true)
+    m:set_ignore_suspend(true)
+    m:start(sparkle)
+  end
+end
+
 return true

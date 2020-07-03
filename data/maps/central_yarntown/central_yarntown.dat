@@ -33851,6 +33851,516 @@ tile{
   pattern = "80",
 }
 
+tile{
+  layer = 0,
+  x = 416,
+  y = 1440,
+  width = 16,
+  height = 16,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1456,
+  width = 16,
+  height = 128,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1584,
+  width = 16,
+  height = 16,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1600,
+  width = 16,
+  height = 64,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1664,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 1672,
+  width = 8,
+  height = 8,
+  pattern = "51_2",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1672,
+  width = 384,
+  height = 8,
+  pattern = "54_2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1672,
+  width = 8,
+  height = 8,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 1456,
+  width = 8,
+  height = 8,
+  pattern = "51_2",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1456,
+  width = 384,
+  height = 8,
+  pattern = "54_2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1456,
+  width = 8,
+  height = 8,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1464,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1456,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1464,
+  width = 16,
+  height = 16,
+  pattern = "80_2",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1472,
+  width = 16,
+  height = 16,
+  pattern = "80_2",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 1464,
+  width = 8,
+  height = 24,
+  pattern = "81_2",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1456,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 1448,
+  width = 24,
+  height = 24,
+  pattern = "81_2",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1464,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 1456,
+  width = 16,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1456,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1464,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 1456,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 1472,
+  width = 64,
+  height = 24,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1456,
+  width = 80,
+  height = 32,
+  pattern = "1",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1480,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 1480,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1640,
+  width = 64,
+  height = 24,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1624,
+  width = 80,
+  height = 32,
+  pattern = "1",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1648,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1648,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1632,
+  width = 32,
+  height = 16,
+  pattern = "174",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 1648,
+  width = 24,
+  height = 24,
+  pattern = "172",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 1632,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 1648,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1648,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 1616,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 1640,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 1648,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 1624,
+  width = 8,
+  height = 24,
+  pattern = "81_2",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1632,
+  width = 8,
+  height = 24,
+  pattern = "81_2",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1640,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 1640,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1648,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1632,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 1640,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1632,
+  width = 16,
+  height = 16,
+  pattern = "80_2",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 1640,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 1504,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1512,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1512,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1512,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 1600,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 1608,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -34589,8 +35099,8 @@ custom_entity{
 destination{
   name = "lantern_clinic",
   layer = 0,
-  x = 896,
-  y = 1565,
+  x = 1864,
+  y = 2853,
   direction = 3,
 }
 
@@ -38020,11 +38530,54 @@ wall{
 enemy{
   name = "cleric_beast",
   layer = 0,
-  x = 504,
-  y = 1581,
+  x = 544,
+  y = 1597,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
   direction = 0,
   breed = "cleric_beast",
   savegame_variable = "cleric_beast_state",
+}
+
+sensor{
+  name = "boss_music_sensor",
+  layer = 0,
+  x = 712,
+  y = 1509,
+  width = 16,
+  height = 176,
+}
+
+custom_entity{
+  name = "great_bridge_lantern",
+  layer = 0,
+  x = 464,
+  y = 1573,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/lantern",
+  model = "lantern",
+}
+
+wall{
+  name = "cleric_beast_fog_gate",
+  layer = 0,
+  x = 808,
+  y = 1552,
+  enabled_at_start = false,
+  width = 16,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -41484,15 +42037,6 @@ tile{
   layer = 1,
   x = 848,
   y = 1552,
-  width = 32,
-  height = 24,
-  pattern = "60",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 1440,
   width = 32,
   height = 24,
   pattern = "60",
@@ -44965,6 +45509,107 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 1656,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 1656,
+  width = 384,
+  height = 16,
+  pattern = "55_2",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 1656,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 1440,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 1440,
+  width = 384,
+  height = 16,
+  pattern = "55_2",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 1440,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 1440,
+  width = 32,
+  height = 24,
+  pattern = "60",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 1440,
+  width = 64,
+  height = 16,
+  pattern = "2",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 1608,
+  width = 64,
+  height = 16,
+  pattern = "2",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 1624,
+  width = 32,
+  height = 8,
+  pattern = "175",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 1640,
+  width = 24,
+  height = 8,
+  pattern = "173",
 }
 
 dynamic_tile{
