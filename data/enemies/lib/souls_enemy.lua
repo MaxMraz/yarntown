@@ -33,7 +33,17 @@ function souls_enemy:create(enemy, props)
   --Common functions for map entities
   enemy:register_event("on_position_changed", function()
     if not enemy.staggered then
-    	sprite:set_direction(enemy:get_movement():get_direction4())
+      if sprite:get_num_directions() == 2 then
+        if enemy:get_movement():get_angle() > math.pi / 2
+        and enemy:get_movement():get_angle() < 3 * math.pi / 2 then
+          sprite:set_direction(1)
+        else
+          sprite:set_direction(0)
+        end
+
+      else
+        sprite:set_direction(enemy:get_movement():get_direction4())
+      end
     end
   end)
 
@@ -216,7 +226,7 @@ function souls_enemy:create(enemy, props)
   		--see if close enough
       local dist = enemy:get_distance(hero)
   		if dist <= (props.attack_range or DEFAULT_ATTACK_RANGE) then
-  			m:stop()
+  			enemy:stop_movement()
   			enemy:choose_next_state("approach")
       elseif dist >= (props.deagro_threshold or 250) then
         --Deagro
@@ -231,7 +241,9 @@ function souls_enemy:create(enemy, props)
 
 
   function enemy:recover()
-  	sprite:set_direction(enemy:get_direction4_to(hero))
+    if sprite:get_num_directions() == 4 then
+      sprite:set_direction(enemy:get_direction4_to(hero))
+    end
     --TODO add a check if an enemy overlaps another one and if so, move aside a bit
   	sol.timer.start(enemy, (enemy.recovery_time or 400) + math.random(400), function()
   		enemy:choose_next_state("recover")

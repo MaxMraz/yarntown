@@ -1,0 +1,9 @@
+animation{
+  name = "attack",
+  src_image = "enemies/weapons/cleric_beast_swipe_1.png",
+  frame_delay = 90,
+  directions = {
+    { x = 560, y = 0, frame_width = 128, frame_height = 112, origin_x = 64, origin_y = 109, num_frames = 5 },
+    { x = 560, y = 368, frame_width = 128, frame_height = 112, origin_x = 64, origin_y = 109, num_frames = 5 },
+  },
+}

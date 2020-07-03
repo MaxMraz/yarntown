@@ -1,0 +1,48 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/cleric_beast.png",
+  frame_delay = 350,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 112, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 2 },
+    { x = 0, y = 256, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 2 },
+  },
+}
+animation{
+  name = "swipe_1",
+  src_image = "enemies/cleric_beast.png",
+  frame_delay = 90,
+  directions = {
+    { x = 672, y = 112, frame_width = 112, frame_height = 112, origin_x = 56, origin_y = 109, num_frames = 4 },
+    { x = 672, y = 256, frame_width = 112, frame_height = 112, origin_x = 56, origin_y = 109, num_frames = 4 },
+  },
+}
+animation{
+  name = "swipe_2",
+  src_image = "enemies/cleric_beast.png",
+  frame_delay = 90,
+  directions = {
+    { x = 560, y = 0, frame_width = 128, frame_height = 112, origin_x = 64, origin_y = 109, num_frames = 5 },
+    { x = 560, y = 368, frame_width = 128, frame_height = 112, origin_x = 64, origin_y = 109, num_frames = 5 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/cleric_beast.png",
+  frame_delay = 170,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 112, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 4 },
+    { x = 96, y = 256, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 4 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/cleric_beast.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 480, y = 112, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 2 },
+    { x = 480, y = 256, frame_width = 96, frame_height = 112, origin_x = 48, origin_y = 109, num_frames = 2 },
+  },
+}

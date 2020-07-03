@@ -34589,8 +34589,8 @@ custom_entity{
 destination{
   name = "lantern_clinic",
   layer = 0,
-  x = 1864,
-  y = 2845,
+  x = 896,
+  y = 1565,
   direction = 3,
 }
 
@@ -37997,6 +37997,34 @@ enemy{
   },
   direction = 0,
   breed = "huntsman_axe",
+}
+
+wall{
+  layer = 0,
+  x = 416,
+  y = 1456,
+  width = 400,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 416,
+  y = 1624,
+  width = 368,
+  height = 40,
+  stops_enemies = true,
+}
+
+enemy{
+  name = "cleric_beast",
+  layer = 0,
+  x = 504,
+  y = 1581,
+  direction = 0,
+  breed = "cleric_beast",
+  savegame_variable = "cleric_beast_state",
 }
 
 tile{

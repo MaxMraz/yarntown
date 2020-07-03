@@ -68,6 +68,7 @@ sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "doors/gate", description = "Gate" }
 sprite{ id = "enemies/beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 sprite{ id = "enemies/brick_troll", description = "Brick Troll" }
+sprite{ id = "enemies/cleric_beast", description = "Cleric Beast" }
 sprite{ id = "enemies/dog", description = "Dog" }
 sprite{ id = "enemies/drowned_corpse", description = "Drowned Corpse" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
@@ -82,6 +83,8 @@ sprite{ id = "enemies/weapons/axe_swipe", description = "AxeSwipe" }
 sprite{ id = "enemies/weapons/brick_jab", description = "Brick Jab" }
 sprite{ id = "enemies/weapons/cleaver_swipe", description = "CleaverSwipe" }
 sprite{ id = "enemies/weapons/cleaver_thrust", description = "CleaverThrust" }
+sprite{ id = "enemies/weapons/cleric_beast_swipe_1", description = "Cleric Beast Swipe 1" }
+sprite{ id = "enemies/weapons/cleric_beast_swipe_2", description = "Cleric Beast Swipe 2" }
 sprite{ id = "enemies/weapons/drowned_corpse_swipe", description = "DrownedCorpseSwipe" }
 sprite{ id = "enemies/weapons/test_axe_swipe", description = "test_axe_swipe" }
 sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" }
@@ -242,6 +245,8 @@ sound{ id = "message_letter", description = "message_letter" }
 sound{ id = "money_counter", description = "money_counter" }
 sound{ id = "money_counter_end", description = "money_counter_end" }
 sound{ id = "monster_hurt", description = "zora" }
+sound{ id = "monster_roar_1", description = "Monster Roar 1" }
+sound{ id = "monster_scream", description = "Monster Scream" }
 sound{ id = "mouse", description = "mouse" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "open_lock", description = "open_lock" }
@@ -312,6 +317,7 @@ item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
 enemy{ id = "beastial_huntsman_cleaver", description = "Beastial Huntsman-Cleaver" }
 enemy{ id = "brick_troll", description = "Brick Troll" }
+enemy{ id = "cleric_beast", description = "Cleric Beast" }
 enemy{ id = "dog", description = "Dog" }
 enemy{ id = "drowned_corpse", description = "Drowned Corpse" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }

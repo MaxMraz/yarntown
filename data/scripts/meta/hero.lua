@@ -42,12 +42,15 @@ function hero_meta:on_taking_damage(damage)
   -- end
 
   game:remove_life(damage)
-    game:set_suspended(true)
-    sol.timer.start(game, 120, function()
-      game:set_suspended(false)
-      self:get_map():get_camera():shake({count = 4, amplitude = 5, speed = 100})
-     end) --end of timer
-  end
+  game:set_suspended(true)
+  sol.timer.start(game, 120, function()
+    game:set_suspended(false)
+    self:get_map():get_camera():shake({count = 4, amplitude = 5, speed = 100})
+  end) --end of timer
+
+  self:set_invincible(true, 200)
+
+end
 
 function hero_meta:become_all_powerful()
   local game = self:get_game()
