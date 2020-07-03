@@ -1729,8 +1729,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
-  y = 1952,
+  x = 1896,
+  y = 1968,
   width = 16,
   height = 16,
   pattern = "80_2",
@@ -1738,8 +1738,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1912,
-  y = 1960,
+  x = 1888,
+  y = 1976,
   width = 16,
   height = 16,
   pattern = "80_2",
@@ -1747,16 +1747,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 1960,
-  width = 8,
-  height = 24,
-  pattern = "81",
-}
-
-tile{
-  layer = 0,
-  x = 1920,
+  x = 1904,
   y = 1976,
   width = 8,
   height = 24,
@@ -1765,8 +1756,17 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 1984,
+  x = 1896,
+  y = 1992,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 2000,
   width = 8,
   height = 16,
   pattern = "82",
@@ -3185,8 +3185,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 1768,
+  x = 1912,
+  y = 1776,
   width = 8,
   height = 24,
   pattern = "81_2",
@@ -3194,8 +3194,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1920,
-  y = 1776,
+  x = 1904,
+  y = 1784,
   width = 8,
   height = 16,
   pattern = "82",
@@ -3203,8 +3203,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
-  y = 1784,
+  x = 1912,
+  y = 1792,
   width = 8,
   height = 16,
   pattern = "82",
@@ -3230,7 +3230,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1928,
+  x = 1896,
   y = 1896,
   width = 8,
   height = 16,
@@ -34641,7 +34641,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1896,
+  x = 1864,
   y = 1965,
   properties = {
     {

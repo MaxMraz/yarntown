@@ -22,6 +22,7 @@ function attack:attack(enemy, props)
 	local hero = map:get_hero()
 	local could_attack = enemy:get_can_attack()
 	local wind_up_time = props.wind_up_time or 500
+	attack.finishing = false
 
 	enemy:stop_movement()
 	sprite:set_animation(wind_up_animation)
@@ -40,17 +41,21 @@ function attack:attack(enemy, props)
 		m:set_max_distance(props.distance or 96)
 		m:set_smooth(props.smooth or false)
 		m:start(enemy, function()
-			enemy:set_can_attack(could_attack)
-			enemy:choose_next_state("attack")
+      if not attack.finishing then attack:finish(enemy) end
 		end)
 
 		function m:on_obstacle_reached()
-			enemy:set_can_attack(could_attack)
-			enemy:choose_next_state"attack"
+      if not attack.finishing then attack:finish(enemy) end
 		end
 
 
 	end)
+end
+
+function attack:finish(enemy)
+	attack.finishing = true
+	enemy:set_can_attack(could_attack)
+	enemy:choose_next_state("attack")
 end
 
 

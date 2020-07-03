@@ -11,6 +11,7 @@ map:register_event("on_started", function()
   if game:get_value"boss_dead_cleric_beast" then
     cleric_beast:set_enabled(false)
     boss_music_sensor:set_enabled(false)
+    great_bridge_lantern:set_enabled(true)
   end
 end)
 
