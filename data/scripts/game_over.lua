@@ -5,6 +5,7 @@ function game_over:initialize(game)
   function game:on_game_over_started()
     local hero = game:get_hero()
     hero:set_animation"dead"
+    sol.audio.play_sound"bell_boom"
 
     --set lost echoes location for corpse run
     local x, y, z = hero:get_position()
@@ -33,6 +34,7 @@ function game_over:initialize(game)
 
       sol.timer.start(game, 2000, function()
         hero:teleport(game:get_value"respawn_map", game:get_value"respawn_destination")
+        sol.audio.play_sound"awaken"
       end)
       sol.timer.start(game, 2000, function()
         sol.menu.stop(require"scripts/hud/game_over_banner")

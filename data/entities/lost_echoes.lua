@@ -11,6 +11,7 @@ function entity:on_created()
 
   entity:add_collision_test("sprite", function(entity, other_entity)
     if other_entity:get_type() == "hero" then
+      sol.audio.play_sound"retrieval"
       game:add_money(echoes_amount)
       game:set_value("lost_echoes_map", nil)
       game:set_value("lost_echoes_x", nil)

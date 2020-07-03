@@ -37,7 +37,7 @@ end)
 
 function enemy:choose_attack()
   --TODO add sweep attack, the jab is mad easy to dodge
-	if enemy:get_distance(hero) < 29 then
+	if enemy:get_distance(hero) < 50 then
 		local num_attacks = math.random(2,6)
 		enemy.recovery_time = 1400
     local multiattack = require("enemies/lib/attacks/multiattack")

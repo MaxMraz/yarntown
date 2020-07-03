@@ -99,6 +99,7 @@ sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/fog_pillar", description = "Fog Pillar" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/lantern", description = "Lantern" }
 sprite{ id = "entities/lantern_sparkle" }

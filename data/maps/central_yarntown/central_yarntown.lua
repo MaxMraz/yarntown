@@ -7,6 +7,11 @@ map:register_event("on_started", function()
   light_fx = require"scripts/fx/lighting_effects"
   light_fx:set_darkness_level(area_darkness_level)
   sol.menu.start(map, light_fx)
+
+  if game:get_value"boss_dead_cleric_beast" then
+    cleric_beast:set_enabled(false)
+    boss_music_sensor:set_enabled(false)
+  end
 end)
 
 
@@ -71,11 +76,16 @@ end
 function boss_music_sensor:on_activated()
   boss_music_sensor:remove()
   sol.audio.play_music"cleric_beast"
-  cleric_beast_fog_gate:set_enabled(true)
+  for e in map:get_entities"cleric_beast_fog_gate" do
+    e:set_enabled(true)
+  end
 end
 
 cleric_beast:register_event("on_dying", function()
-  cleric_beast_fog_gate:set_enabled(false)
+  game:set_value("boss_dead_cleric_beast", true)
+  for e in map:get_entities"cleric_beast_fog_gate" do
+    e:set_enabled(false)
+  end
   sol.audio.play_music("cleric_beast_end", function() sol.audio.stop_music() end)
   sol.timer.start(map, 2600, function()
     map:create_poof(great_bridge_lantern:get_position())

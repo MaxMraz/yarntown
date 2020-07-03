@@ -9,6 +9,7 @@ require("scripts/multi_events")
 local initial_game = require("scripts/initial_game")
 local stamina_manager = require"scripts/action/stamina_manager"
 local game_restart = require("scripts/game_restart")
+local footstep_manager = require"scripts/fx/footsteps"
 
 local game_manager = {}
 
@@ -34,6 +35,7 @@ function game_manager:create(file)
   game:register_event("on_started", function()
     game_restart:reset_values(game)
     stamina_manager:start(game)
+    sol.timer.start(sol.main, 400, function() footstep_manager:start() end)
   end)
 
   return game

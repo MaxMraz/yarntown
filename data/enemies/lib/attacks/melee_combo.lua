@@ -22,7 +22,7 @@ function attack:attack(enemy, props)
 
 	enemy:stop_movement()
 	sprite:set_animation(wind_up_animation)
-	enemy.stagger_window = true
+	sol.timer.start(enemy, props.stagger_window_delay or 1, function() enemy.stagger_window = true end)
 	sol.timer.start(enemy, wind_up_time, function()
 		enemy.stagger_window = false
 
