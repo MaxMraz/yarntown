@@ -22,6 +22,7 @@ function attack:attack(enemy, props)
 	local sprite = enemy:get_sprite()
 	local map = enemy:get_map()
 	local hero = map:get_hero()
+	wind_up_time = props.wind_up_time
 
 	enemy:stop_movement()
 	sprite:set_animation(wind_up_animation)

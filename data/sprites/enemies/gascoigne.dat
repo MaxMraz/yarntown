@@ -22,6 +22,40 @@ animation{
   },
 }
 animation{
+  name = "shoot",
+  src_image = "enemies/gascoigne.png",
+  frame_delay = 110,
+  directions = {
+    { x = 512, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 3 },
+    { x = 512, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 3 },
+    { x = 512, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 3 },
+    { x = 512, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 3 },
+  },
+}
+animation{
+  name = "spark_wind_up",
+  src_image = "enemies/gascoigne.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 320, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 320, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 320, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 320, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "upper_cut",
+  src_image = "enemies/gascoigne.png",
+  frame_delay = 90,
+  directions = {
+    { x = 352, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 352, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 352, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 352, y = 144, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+  },
+}
+animation{
   name = "walking",
   src_image = "enemies/gascoigne.png",
   frame_delay = 140,

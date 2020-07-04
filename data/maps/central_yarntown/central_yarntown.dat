@@ -41867,6 +41867,14 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  layer = 0,
+  x = 2128,
+  y = 2741,
+  direction = 3,
+  breed = "gascoigne",
+}
+
 tile{
   layer = 1,
   x = 192,
