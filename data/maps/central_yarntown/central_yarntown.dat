@@ -41869,10 +41869,24 @@ wall{
 
 enemy{
   layer = 0,
-  x = 2128,
-  y = 2741,
+  x = 2056,
+  y = 2605,
   direction = 3,
   breed = "gascoigne",
+}
+
+enemy{
+  layer = 0,
+  x = 2072,
+  y = 2821,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 0,
+  breed = "huntsman_rifle",
 }
 
 tile{

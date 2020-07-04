@@ -93,6 +93,7 @@ sprite{ id = "enemies/weapons/test_axe_thrust", description = "test_axe_thrust" 
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/blood_drop", description = "Blood Drop" }
 sprite{ id = "entities/bomb", description = "Bomb" }
+sprite{ id = "entities/bullet_trail", description = "Bullet Trail" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
@@ -228,6 +229,7 @@ sound{ id = "fire_ball", description = "fire_ball" }
 sound{ id = "fire_ball2", description = "fire_ball2" }
 sound{ id = "frost1", description = "frost1" }
 sound{ id = "frost2", description = "frost2" }
+sound{ id = "hand_cannon", description = "hand_cannon" }
 sound{ id = "heart", description = "heart" }
 sound{ id = "heart_container", description = "heart_container" }
 sound{ id = "hero_dying", description = "hero_dying" }
@@ -326,6 +328,7 @@ enemy{ id = "drowned_corpse", description = "Drowned Corpse" }
 enemy{ id = "gascoigne", description = "Gascoigne" }
 enemy{ id = "huntsman_axe", description = "Huntsman-Axe" }
 enemy{ id = "huntsman_cleaver", description = "Huntsman-Cleaver" }
+enemy{ id = "huntsman_rifle", description = "Huntsman Rifle" }
 enemy{ id = "test_bbenemy", description = "test bb enemy" }
 
 entity{ id = "breakable", description = "Breakable" }

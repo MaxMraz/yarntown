@@ -33,7 +33,7 @@ end)
 function enemy:choose_attack()
   local random = math.random(1, 100)
   --Melee Attacks
-	if enemy:get_distance(hero) <= 64 and random <= 70 then
+	if enemy:get_distance(hero) <= 64 and random <= 50 then
 		local attack = require("enemies/lib/attacks/melee_combo")
 		attack:set_wind_up_time(600)
 		enemy.recovery_time = 400
@@ -56,18 +56,16 @@ function enemy:choose_attack()
 		})
   elseif enemy:get_distance(hero) <= 64 then
     local attack = require("enemies/lib/attacks/melee_attack")
-		enemy.recovery_time = 100
-		enemy:choose_next_state("recover")
     enemy.recovery_time = 900
-    attack:attack{
+    attack:attack(enemy, {
       damage = 200,
       wind_up_animation = "spark_wind_up",
       attack_sprite = "enemies/weapons/gascoigne_uppercut",
-      attack_animation = "upper_cut",
-      
-    }    
+      attack_animation = "upper_cut",      
+    })
 	else
-
+		enemy.recovery_time = 100
+		enemy:choose_next_state("recover")
 	end
 
 end

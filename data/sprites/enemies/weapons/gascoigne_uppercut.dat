@@ -1,6 +1,7 @@
 animation{
   name = "attack",
   src_image = "enemies/weapons/gascoigne_axe.png",
+  frame_delay = 90,
   directions = {
     { x = 400, y = 0, frame_width = 32, frame_height = 48, origin_x = 8, origin_y = 45, num_frames = 4 },
     { x = 384, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },

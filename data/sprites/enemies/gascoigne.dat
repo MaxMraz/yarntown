@@ -22,7 +22,7 @@ animation{
   },
 }
 animation{
-  name = "shoot",
+  name = "shooting",
   src_image = "enemies/gascoigne.png",
   frame_delay = 110,
   directions = {
