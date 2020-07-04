@@ -72,6 +72,7 @@ sprite{ id = "enemies/cleric_beast", description = "Cleric Beast" }
 sprite{ id = "enemies/dog", description = "Dog" }
 sprite{ id = "enemies/drowned_corpse", description = "Drowned Corpse" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
+sprite{ id = "enemies/gascoigne", description = "Gascoigne" }
 sprite{ id = "enemies/huntsman_axe", description = "Huntsman-Axe" }
 sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
 sprite{ id = "enemies/huntsman_template", description = "huntsman-template" }
