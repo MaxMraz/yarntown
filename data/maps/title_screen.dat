@@ -1,0 +1,2484 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "125",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 384,
+  height = 192,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 256,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 0,
+  width = 256,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "108",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 64,
+  height = 64,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "6_2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "4_2",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "5_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "6_2",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "4_2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "5_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = -8,
+  width = 96,
+  height = 32,
+  pattern = "118",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "119",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = -8,
+  width = 8,
+  height = 32,
+  pattern = "122",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = -8,
+  width = 8,
+  height = 32,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 24,
+  width = 96,
+  height = 8,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 64,
+  width = 96,
+  height = 16,
+  pattern = "2_3",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 32,
+  width = 96,
+  height = 32,
+  pattern = "5_3",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "4_3",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "14_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "14_2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "10_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "10_2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "179",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "179",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 80,
+  width = 32,
+  height = 24,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 80,
+  width = 8,
+  height = 24,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 32,
+  height = 24,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "79",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "79",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 128,
+  width = 96,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 120,
+  width = 32,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 120,
+  width = 32,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 88,
+  width = 16,
+  height = 48,
+  pattern = "78",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 88,
+  width = 16,
+  height = 48,
+  pattern = "78",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 144,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 144,
+  width = 96,
+  height = 16,
+  pattern = "2_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 144,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 64,
+  width = 96,
+  height = 32,
+  pattern = "5_3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 64,
+  width = 64,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 0,
+  width = 80,
+  height = 8,
+  pattern = "143_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "134_2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "133_2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 8,
+  width = 96,
+  height = 32,
+  pattern = "118_2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "120_2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 8,
+  width = 8,
+  height = 32,
+  pattern = "122_2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 8,
+  width = 8,
+  height = 32,
+  pattern = "123_2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "119_2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 40,
+  width = 96,
+  height = 8,
+  pattern = "121_2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 48,
+  width = 96,
+  height = 16,
+  pattern = "2_3",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "14_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "14_2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "109",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "110",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "109",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 88,
+  width = 64,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 112,
+  width = 96,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 64,
+  width = 16,
+  height = 64,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 64,
+  width = 16,
+  height = 64,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 80,
+  width = 48,
+  height = 48,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 80,
+  width = 16,
+  height = 48,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 0,
+  width = 96,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 48,
+  width = 64,
+  height = 32,
+  pattern = "118",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 80,
+  width = 64,
+  height = 8,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "119",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 48,
+  width = 8,
+  height = 32,
+  pattern = "122",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 48,
+  width = 8,
+  height = 32,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 40,
+  width = 48,
+  height = 8,
+  pattern = "143",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 88,
+  width = 64,
+  height = 16,
+  pattern = "2_3",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "3_3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 104,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 136,
+  width = 64,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 104,
+  width = 64,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 104,
+  width = 16,
+  height = 32,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 104,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 104,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 136,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 104,
+  width = 80,
+  height = 8,
+  pattern = "156_2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 152,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 184,
+  width = 64,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 152,
+  width = 64,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 152,
+  width = 16,
+  height = 32,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 160,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 160,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 160,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 168,
+  width = 8,
+  height = 16,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 152,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 168,
+  width = 8,
+  height = 16,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 152,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 152,
+  width = 80,
+  height = 8,
+  pattern = "156_2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "51_2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 200,
+  width = 64,
+  height = 8,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "139",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "140",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = -8,
+  width = 48,
+  height = 16,
+  pattern = "142",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 8,
+  width = 16,
+  height = 32,
+  pattern = "138",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 8,
+  width = 16,
+  height = 32,
+  pattern = "137",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "141",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 32,
+  height = 80,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 96,
+  width = 80,
+  height = 8,
+  pattern = "143_2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "134_2",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 136,
+  width = 96,
+  height = 8,
+  pattern = "121_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "120_2",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 104,
+  width = 96,
+  height = 32,
+  pattern = "118_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 104,
+  width = 8,
+  height = 32,
+  pattern = "123_2",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 208,
+  width = 96,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 144,
+  width = 96,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 160,
+  width = 16,
+  height = 48,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 144,
+  width = 80,
+  height = 8,
+  pattern = "156_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "44_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 8,
+  height = 48,
+  pattern = "45_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 144,
+  width = 8,
+  height = 24,
+  pattern = "46_2",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "178",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "178",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 152,
+  width = 32,
+  height = 32,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 168,
+  width = 32,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "140_2",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "142_2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 224,
+  width = 80,
+  height = 16,
+  pattern = "139_2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "140_2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 208,
+  width = 80,
+  height = 16,
+  pattern = "142_2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "137_2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "141_2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "138_2",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 224,
+  width = 96,
+  height = 32,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 256,
+  width = 96,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 48,
+  width = 32,
+  height = 40,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 152,
+  width = 32,
+  height = 16,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 24,
+  width = 32,
+  height = 24,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 88,
+  width = 32,
+  height = 64,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "185",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "179",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "178",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 80,
+  width = 16,
+  height = 48,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 152,
+  width = 32,
+  height = 32,
+  pattern = "228",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 160,
+  width = 32,
+  height = 24,
+  pattern = "224",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 160,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 168,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 200,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 192,
+  width = 16,
+  height = 24,
+  pattern = "81_2",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 64,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 72,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 168,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 176,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 160,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 168,
+  width = 8,
+  height = 24,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 160,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "80_2",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 0,
+  width = 64,
+  height = 80,
+  pattern = "88",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 0,
+  width = 48,
+  height = 64,
+  pattern = "103",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 0,
+  width = 48,
+  height = 64,
+  pattern = "104",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 0,
+  width = 96,
+  height = 8,
+  pattern = "156_2",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 184,
+  width = 64,
+  height = 16,
+  pattern = "55",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = -16,
+  width = 8,
+  height = 8,
+  pattern = "154",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = -16,
+  width = 64,
+  height = 8,
+  pattern = "155",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = -16,
+  width = 8,
+  height = 8,
+  pattern = "153",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 64,
+  width = 80,
+  height = 32,
+  pattern = "139_2",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 64,
+  width = 16,
+  height = 32,
+  pattern = "137_2",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "154_2",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 40,
+  width = 96,
+  height = 8,
+  pattern = "155_2",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 0,
+  width = 32,
+  height = 24,
+  pattern = "60",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "186",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 184,
+  width = 32,
+  height = 24,
+  pattern = "59",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 160,
+  width = 32,
+  height = 24,
+  pattern = "60",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 200,
+  width = 96,
+  height = 8,
+  pattern = "155_2",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "153_2",
+}
+
+tile{
+  layer = 1,
+  x = 408,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "154_2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "84",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "84",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "84",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "84",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 136,
+  width = 32,
+  height = 16,
+  pattern = "229",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 144,
+  width = 32,
+  height = 16,
+  pattern = "225",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 168,
+  width = 32,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 208,
+  width = 96,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "80_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_45",
+  layer = 1,
+  x = 128,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_46",
+  layer = 1,
+  x = 160,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_47",
+  layer = 1,
+  x = 240,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_48",
+  layer = 1,
+  x = 272,
+  y = 120,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_49",
+  layer = 1,
+  x = 96,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_50",
+  layer = 1,
+  x = 128,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_51",
+  layer = 1,
+  x = 272,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_52",
+  layer = 1,
+  x = 304,
+  y = 216,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+

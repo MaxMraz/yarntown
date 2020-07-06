@@ -3,6 +3,7 @@ map{ id = "first_map" }
 map{ id = "hunters_dream/dream_outside", description = "Dream-Outside" }
 map{ id = "respawn_map", description = "respawn_map" }
 map{ id = "tests/yarn1", description = "yarn1" }
+map{ id = "title_screen" }
 
 tileset{ id = "castle", description = "Castle" }
 tileset{ id = "house", description = "House" }
@@ -104,6 +105,7 @@ sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/effects/muzzle_flash", description = "Muzzle Flash" }
+sprite{ id = "entities/effects/rally_glow", description = "Rally Glow" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fog_pillar", description = "Fog Pillar" }
 sprite{ id = "entities/items", description = "Items" }
@@ -214,6 +216,8 @@ sound{ id = "cane", description = "cane" }
 sound{ id = "cane2", description = "cane2" }
 sound{ id = "cane3", description = "cane3" }
 sound{ id = "cat", description = "cat" }
+sound{ id = "charge_1", description = "charge_1" }
+sound{ id = "charge_sword", description = "charge_sword" }
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "cricket", description = "cricket" }
@@ -419,7 +423,6 @@ file{ path = "sounds/boss_killed.ogg", author = "Diarandor", license = "CC BY-SA
 file{ path = "sounds/bounce.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bow.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bush.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/cane.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cane2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cane3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cat.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }

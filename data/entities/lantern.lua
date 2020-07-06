@@ -27,16 +27,20 @@ function entity:on_interaction()
   end
   game:set_value("respawn_destination", destination:get_name())
 
+  game:set_starting_location(map:get_id(), destination:get_name())
+
+
   --Check to return to dream
   game:start_dialog("_game.rest_at_lantern", function(answer)
     if answer == 1 then
       --sound
       sol.audio.play_sound"lantern_commune"
-      --heal
-      game:set_life(game:get_max_life())
+
       --reset enemies by clearing enemies_killed table
       game.enemies_killed = {}
 
+      --heal
+      game:set_life(game:get_max_life())
       --refill blood vials
       game:replenish_blood_vials()
       game:replenish_bullets()

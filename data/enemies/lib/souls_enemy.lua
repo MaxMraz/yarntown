@@ -82,6 +82,9 @@ function souls_enemy:create(enemy, props)
 
   		enemy:remove_life(damage)
 
+      --Player Rally
+      if hero.can_rally then hero:rally(damage) end
+
       --TODO consider stunning enemies if you hit them super hard. Not open for visceral attacks, but stunned
       if damage >= (props.life or 9000) * .75 then
         --something like enemy:stun. Having a stun and stagger that are different seems confusing tho
@@ -264,7 +267,7 @@ function souls_enemy:create(enemy, props)
     if enemy:get_life() <= 0 then
       return
     end
-    enemy:get_hit(game:get_value"gun_damage" or 15)
+    enemy:get_hit(game:get_value"gun_damage" or 15 + ((game:get_value"skill" or 10) -10) * 20)
     if enemy.stagger_window then
       enemy.stagger_window = false
       enemy:stagger()

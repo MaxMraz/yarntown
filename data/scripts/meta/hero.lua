@@ -19,8 +19,11 @@ end
 -- Redefine how to calculate the damage received by the hero.
 function hero_meta:on_taking_damage(damage)
   local game = self:get_game()
+  local hero = self
   local defense = game:get_value("defense") or 1
   damage = damage - defense
+  --Strength stat increases defense a bit
+  damage = damage - game:get_max_life() * .05  * ((game:get_value"strength" or 10) - 10)
   if game.take_half_damage then
     damage = damage / 2
   end
@@ -42,6 +45,7 @@ function hero_meta:on_taking_damage(damage)
   -- end
 
   game:remove_life(damage)
+
   game:set_suspended(true)
   sol.timer.start(game, 120, function()
     game:set_suspended(false)
@@ -50,15 +54,30 @@ function hero_meta:on_taking_damage(damage)
 
   self:set_invincible(true, 200)
 
+  --Rally
+  hero.max_rally_amount = damage
+  if hero.rally_timer then hero.rally_timer:stop() end
+  hero.can_rally = true
+  hero.rally_timer = sol.timer.start(self, 3000, function()
+    hero.can_rally = false
+    hero.rally_amount = 0
+  end)
+
 end
 
-function hero_meta:become_all_powerful()
+function hero_meta:rally(damage_done)
+  local hero = self
   local game = self:get_game()
-  game:set_value("sword_damage", 25)
-  game:set_value("bow_damage", 25)
-  game:set_value("defense", 25)
-  game:set_max_life(52)
-  game:set_life(52)
+  damage_done = damage_done - math.max(damage_done - hero.max_rally_amount, 0)
+  rally_health = damage_done
+  sol.audio.play_sound"rally"
+  game:add_life(rally_health)
+  hero.max_rally_amount = hero.max_rally_amount - rally_health
+
+  local rally_sprite = hero:create_sprite("entities/effects/rally_glow")
+  rally_sprite:set_animation("glow", function()
+    hero:remove_sprite(rally_sprite)
+  end)
 end
 
 local MAX_BUFFER_SIZE = 48

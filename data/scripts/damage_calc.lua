@@ -16,4 +16,15 @@ function calc:calculate_attack_damage(enemy)
   return damage
 end
 
+
+function calc:calculate_gun_damage(enemy)
+	local game = sol.main.get_game()
+
+	local damage = game:get_value("gun_damage") or 15
+	damage = damage + ((game:get_value"skill" or 10) - 10) * damage * .1
+
+	return damage
+end
+
+
 return calc

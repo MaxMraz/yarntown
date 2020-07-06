@@ -30,6 +30,7 @@ function game_manager:create(file)
   require("scripts/fx/lighting_effects"):initialize()
   require("scripts/button_inputs"):initialize(game)
   require("scripts/game_over"):initialize(game)
+  require("scripts/menus/pause"):initialize(game)
 
   --reset some values whenever game starts or restarts
   game:register_event("on_started", function()

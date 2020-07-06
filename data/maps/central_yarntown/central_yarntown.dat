@@ -40469,6 +40469,7 @@ destination{
   x = 2280,
   y = 2853,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 destination{
@@ -40477,6 +40478,7 @@ destination{
   x = 1440,
   y = 2221,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 teletransporter{
@@ -43698,6 +43700,7 @@ destination{
   x = 880,
   y = 1573,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 sensor{
@@ -44283,6 +44286,7 @@ destination{
   x = 216,
   y = 629,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 npc{
@@ -45176,6 +45180,69 @@ npc{
   y = 2661,
   direction = 3,
   subtype = 1,
+}
+
+wall{
+  layer = 0,
+  x = 960,
+  y = 936,
+  width = 48,
+  height = 64,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 952,
+  y = 1400,
+  width = 88,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1248,
+  y = 1552,
+  width = 48,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2472,
+  y = 48,
+  width = 112,
+  height = 24,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2664,
+  y = 536,
+  width = 104,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2432,
+  y = 1408,
+  width = 48,
+  height = 64,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2392,
+  y = 1648,
+  width = 32,
+  height = 48,
+  stops_enemies = true,
 }
 
 tile{
