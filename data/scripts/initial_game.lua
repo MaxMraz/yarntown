@@ -26,12 +26,15 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("max_stamina", 85) --max stamina = endurance * 2.5 + 65. Endurance level 10 means 85 stamina. Over 800 stamina goes off screen
 
   game:set_value("strength", 10)
-  game:set_value("sword_damage", 40) --so is damage strength * 4? I guess for now
+  game:set_value("sword_damage", 100) --base Saw Cleaver damage
   game:set_value("skill", 10) --No effect on anything yet
   game:set_value("gun_damage", 15)
 
   --Just have 20 blood vials to start
   game:get_item("blood_vial_user"):set_amount(20)
+
+  --Same with bullets
+  game:get_item("pistol"):set_amount(20)
 
   --Set starting location and starting respawn
   game:set_starting_location("central_yarntown/central_yarntown", "lantern_clinic")  -- Starting location.

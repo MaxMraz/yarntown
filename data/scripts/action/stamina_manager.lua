@@ -22,7 +22,7 @@ function menu:start(game)
   function game:remove_stamina(amount)
     game.stamina = game.stamina - amount
     if game.stamina <0 then game.stamina = 0 end
-    game.stamina_regain_block_points = 10 --block points are 100ms increments before stamina starts refilling again
+    game.stamina_regain_block_points = 6 --block points are 100ms increments before stamina starts refilling again
   end
 
 

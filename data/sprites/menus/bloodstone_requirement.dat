@@ -1,0 +1,7 @@
+animation{
+  name = "requirement",
+  src_image = "menus/bloodstone_requirement.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 40, origin_x = 0, origin_y = 0 },
+  },
+}

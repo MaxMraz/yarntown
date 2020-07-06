@@ -30,7 +30,7 @@ end
 
 
 function item:on_obtaining()
-  item:set_brandish_when_picked(false)
+--  item:set_brandish_when_picked(false)
   local amounts = {1, 2, 5}
   local user_item = game:get_item("blood_vial_user")
   if user_item:get_amount() >= 20 then

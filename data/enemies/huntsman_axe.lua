@@ -26,8 +26,8 @@ enemy:register_event("on_dying", function()
   local random = math.random(1,100)
   if random <= 20 then
     enemy:set_treasure("blood_vial")
-  elseif random <= 29 then
-    --quicksilver bullets
+  elseif random <= 35 then
+    enemy:set_treasure("quicksilver_bullets")
   end
 end)
 

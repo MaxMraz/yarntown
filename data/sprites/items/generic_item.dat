@@ -1,0 +1,9 @@
+animation{
+  name = "stopped",
+  src_image = "items/generic_item.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}

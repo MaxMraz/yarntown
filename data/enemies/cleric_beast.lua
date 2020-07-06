@@ -9,6 +9,7 @@ local sprite
 local movement
 local DAMAGE = 150
 enemy.blood_echoes = 4000
+enemy.defense = 104
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

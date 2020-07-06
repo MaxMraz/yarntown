@@ -1,8 +1,10 @@
 local item = ...
 local game = item:get_game()
+local bullet_cost = 1
 
 function item:on_started()
   item:set_savegame_variable("possession_pistol")
+  item:set_amount_savegame_variable"quicksilver_bullet_amount"
   item:set_assignable(true)
   item:set_variant(1)
   game:set_item_assigned(1, item)
@@ -11,10 +13,13 @@ end
 
 function item:on_using()
   local hero = game:get_hero()
-  local enemy = item:select_target()
-
-
---  item:set_finished()
+  if item:get_amount() >= bullet_cost then
+    local enemy = item:select_target()
+    item:remove_amount(bullet_cost)
+  else
+    sol.audio.play_sound"wrong"
+    item:set_finished()
+  end
 end
 
 function item:select_target()

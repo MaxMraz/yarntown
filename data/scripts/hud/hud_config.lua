@@ -40,6 +40,13 @@ local hud_config = {
     y = 23,
   },
 
+  -- Quicksilver Bullets
+  {
+    menu_script = "scripts/hud/quicksilver_bullets",
+    x = 4,
+    y = 41,
+  },
+
   --[[ Pause icon.
   {
     menu_script = "scripts/hud/pause_icon",

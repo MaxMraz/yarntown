@@ -9,6 +9,7 @@ local sprite
 local movement
 local DAMAGE = 150
 enemy.blood_echoes = 1800
+enemy.defense = 95
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
@@ -32,9 +33,30 @@ end)
 
 function enemy:choose_attack()
   local random = math.random(1, 100)
-  --Melee Attacks
-	if enemy:get_distance(hero) <= 64 and random <= 50 then
-		local attack = require("enemies/lib/attacks/melee_combo")
+  --Spark Uppercut
+  if enemy:get_distance(hero) <= 64 and random <= 30  then
+    local attack = require("enemies/lib/attacks/melee_attack")
+    enemy.recovery_time = 900
+    attack:attack(enemy, {
+      damage = 200,
+      wind_up_animation = "spark_wind_up",
+      wind_up_time = "500",
+      attack_sprite = "enemies/weapons/gascoigne_uppercut",
+      attack_animation = "upper_cut",      
+    })
+
+  --Thrust
+  elseif enemy:is_orthogonal_to_hero(8) and random < 50 then
+		local attack = require("enemies/lib/attacks/melee_attack")
+		attack:set_wind_up_time(900)
+		enemy.recovery_time = 800
+		attack:attack(enemy, {
+			damage = DAMAGE+50, attack_sprite = "enemies/weapons/axe_slam"
+		})
+
+  --Melee Combo
+	elseif enemy:get_distance(hero) <= 64 then
+		local attack = require("enemies/lib/attacks/tracking_combo")
 		attack:set_wind_up_time(600)
 		enemy.recovery_time = 400
     local potential_attack_sprites = {
@@ -46,6 +68,8 @@ function enemy:choose_attack()
       {"enemies/weapons/axe_swipe"},
     }
     local which_attack_set = math.random(1,4)
+    local shoot_at_end = false
+    if which_attack_set > 2 then shoot_at_end = true end
 		attack:attack(enemy, {
 			damage = DAMAGE,
 			attack_sprites = potential_attack_sprites[which_attack_set],
@@ -53,16 +77,9 @@ function enemy:choose_attack()
         "cleric_beast/scream_1", "cleric_beast/scream_2", "cleric_beast/scream_3",
         "cleric_beast/scream_4", "cleric_beast/scream_5"
       },
+      shoot_at_end = shoot_at_end,
 		})
-  elseif enemy:get_distance(hero) <= 64 then
-    local attack = require("enemies/lib/attacks/melee_attack")
-    enemy.recovery_time = 900
-    attack:attack(enemy, {
-      damage = 200,
-      wind_up_animation = "spark_wind_up",
-      attack_sprite = "enemies/weapons/gascoigne_uppercut",
-      attack_animation = "upper_cut",      
-    })
+
 	else
 		enemy.recovery_time = 100
 		enemy:choose_next_state("recover")

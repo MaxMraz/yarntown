@@ -23,6 +23,13 @@ function enemy:on_created()
 end
 
 
+enemy:register_event("on_dying", function()
+  local random = math.random(1,100)
+  if random <= 10 then
+    enemy:set_treasure("quicksilver_bullets")
+  end
+end)
+
 
 
 function enemy:choose_attack()

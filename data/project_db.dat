@@ -75,9 +75,11 @@ sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/gascoigne", description = "Gascoigne" }
 sprite{ id = "enemies/huntsman_axe", description = "Huntsman-Axe" }
 sprite{ id = "enemies/huntsman_cleaver", description = "Huntsman-Cleaver" }
+sprite{ id = "enemies/huntsman_rifle", description = "Huntsman-Rifle" }
 sprite{ id = "enemies/huntsman_template", description = "huntsman-template" }
 sprite{ id = "enemies/test_bbenemy", description = "test-bbenemy" }
 sprite{ id = "enemies/test_bbenemy_weapon", description = "test enemy weapon" }
+sprite{ id = "enemies/tools/agro_cone_large", description = "AgroCone-L" }
 sprite{ id = "enemies/tools/agro_cone_medium", description = "Agro Cone - Medium" }
 sprite{ id = "enemies/weapons/axe_slam", description = "AxeSlam" }
 sprite{ id = "enemies/weapons/axe_swipe", description = "AxeSwipe" }
@@ -101,6 +103,7 @@ sprite{ id = "entities/effects/light_l", description = "Light - L" }
 sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
+sprite{ id = "entities/effects/muzzle_flash", description = "Muzzle Flash" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fog_pillar", description = "Fog Pillar" }
 sprite{ id = "entities/items", description = "Items" }
@@ -137,13 +140,17 @@ sprite{ id = "hud/icon_item_2", description = "Item 2 icon" }
 sprite{ id = "hud/icon_pause", description = "Pause icon" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "hud/money_icon", description = "Money Icon" }
+sprite{ id = "hud/quicksilver_bullet_icon", description = "QS Bullet Icon" }
 sprite{ id = "hud/stamina_bar", description = "Stamina Bar" }
 sprite{ id = "hud/stamina_bar_background", description = "stamina bar BG" }
+sprite{ id = "items/generic_item", description = "Generic Item" }
 sprite{ id = "menus/arrow", description = "Arrow" }
+sprite{ id = "menus/bloodstone_requirement" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "npc/kaleido", description = "Kaleido" }
+sprite{ id = "npc/max", description = "Max" }
 sprite{ id = "npc/sign", description = "Sign" }
 sprite{ id = "npc/woman_1a", description = "Woman 1a" }
 sprite{ id = "npc/woman_1b", description = "Woman 1b" }
@@ -168,6 +175,8 @@ sprite{ id = "teletransporters/teletransporter_green", description = "Teletransp
 sprite{ id = "teletransporters/teletransporter_pink", description = "Teletransporter (pink)" }
 sprite{ id = "teletransporters/teletransporter_yellow", description = "Teletransporter (yellow)" }
 
+music{ id = "cleric_beast", description = "cleric_beast" }
+music{ id = "cleric_beast_end", description = "cleric_beast_end" }
 music{ id = "eduardo/boss", description = "Boss" }
 music{ id = "eduardo/cave", description = "Cave" }
 music{ id = "eduardo/dungeon_finished", description = "Dungeon finished" }
@@ -184,6 +193,7 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "ominous_wind", description = "ominous_wind" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bird_chirp", description = "bird_chirp" }
@@ -309,14 +319,15 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
-item{ id = "blood_stone_shard", description = "Blood stone shard" }
 item{ id = "blood_vial", description = "Blood Vial(1,2,5)" }
 item{ id = "blood_vial_user", description = "Blod Vial User" }
+item{ id = "bloodstone_shard", description = "Blood stone shard" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "gem", description = "Gem (x1 / x5 / x20 / x50 / x300)" }
 item{ id = "heart", description = "Heart" }
 item{ id = "money_bag", description = "Money bag (small / large / huge)" }
 item{ id = "pistol", description = "Pistol" }
+item{ id = "quicksilver_bullets", description = "QS Bullets-Pickup(3,5,10)" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 

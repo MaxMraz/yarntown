@@ -2,6 +2,7 @@ local map = ...
 local game = map:get_game()
 local light_fx
 local area_darkness_level = "dusk"
+local boss_bar = require"scripts/hud/boss_bar"
 
 map:register_event("on_started", function()
   light_fx = require"scripts/fx/lighting_effects"
@@ -10,8 +11,14 @@ map:register_event("on_started", function()
 
   if game:get_value"boss_dead_cleric_beast" then
     cleric_beast:set_enabled(false)
-    boss_music_sensor:set_enabled(false)
+    cleric_boss_music_sensor:set_enabled(false)
     great_bridge_lantern:set_enabled(true)
+  end
+
+  if game:get_value"boss_dead_gascoigne" then
+    gascoigne:set_enabled(false)
+    gascoigne_boss_music_sensor:set_enabled(false)
+    oedon_tomb_lantern:set_enabled(true)
   end
 end)
 
@@ -58,6 +65,12 @@ function sensor:on_activated()
 end
 end
 
+for sensor in map:get_entities("gascoigne_dark_area_sensor") do
+function sensor:on_activated()
+  light_fx:fade_to_darkness_level({200,200,200})
+end
+end
+
 for sensor in map:get_entities("leave_dark_area_sensor") do
 function sensor:on_activated()
   light_fx:fade_to_darkness_level(area_darkness_level)
@@ -73,16 +86,40 @@ function eileen_path_sensor:on_activated()
   eileen_path_hider:remove()
 end
 
+for e in map:get_entities"crafting_table" do
+function e:on_interaction()
+  sol.menu.start(map, require"scripts/menus/weapon_upgrade")
+end
+end
+
+function bath_messenger:on_interaction()
+  game:start_dialog("_shop.vials", function(answer)
+    if answer == 1 then
+      if game:get_money() < 170 then game:start_dialog"_shop.not_enough_echoes" return end
+      game:remove_money(170)
+      if game:get_item("blood_vial_user"):get_amount() < 20 then
+        game:get_item("blood_vial_user"):add_amount(1)
+      else
+        game:add_stored_blood_vials(1)
+      end
+    end
+  end)
+end
+
+
 --Cleric Beast---------------------------------------------------
-function boss_music_sensor:on_activated()
-  boss_music_sensor:remove()
+function cleric_boss_music_sensor:on_activated()
+  cleric_boss_music_sensor:remove()
   sol.audio.play_music"cleric_beast"
   for e in map:get_entities"cleric_beast_fog_gate" do
     e:set_enabled(true)
   end
+  sol.menu.start(game, boss_bar)
+  boss_bar:set_enemy(cleric_beast)
 end
 
 cleric_beast:register_event("on_dying", function()
+  sol.menu.stop(boss_bar)
   game:set_value("boss_dead_cleric_beast", true)
   for e in map:get_entities"cleric_beast_fog_gate" do
     e:set_enabled(false)
@@ -92,6 +129,34 @@ cleric_beast:register_event("on_dying", function()
     map:create_poof(great_bridge_lantern:get_position())
     great_bridge_lantern:set_enabled(true)
     great_bridge_lantern:sparkle_effect()
+  end)
+end)
+
+
+--Gascoigne---------------------------------------------------------
+function gascoigne_boss_music_sensor:on_activated()
+  gascoigne_boss_music_sensor:remove()
+  sol.audio.play_music"cleric_beast"
+  for e in map:get_entities"gascoigne_beast_fog_gate" do
+    e:set_enabled(true)
+  end
+  sol.menu.start(game, boss_bar)
+  boss_bar:set_enemy(gascoigne)
+end
+
+gascoigne:register_event("on_dying", function()
+  sol.menu.stop(boss_bar)
+  game:set_value("boss_dead_gascoigne", true)
+  for e in map:get_entities"gascoigne_beast_fog_gate" do
+    e:set_enabled(false)
+  end
+  sol.audio.play_music("cleric_beast_end", function() sol.audio.stop_music() end)
+  sol.timer.start(map, 2600, function()
+    map:focus_on(map:get_camera(), oedon_tomb_lantern, function()
+      map:create_poof(oedon_tomb_lantern:get_position())
+      oedon_tomb_lantern:set_enabled(true)
+      oedon_tomb_lantern:sparkle_effect()
+    end)
   end)
 end)
 

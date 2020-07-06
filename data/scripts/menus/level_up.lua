@@ -170,10 +170,10 @@ function menu:process_stat_update(stat_updated)
     game:set_value("max_stamina", game:get_value"endurance" * 2.5 + 65)
 
   elseif stat_updated == "strength" then
-    --Strength is a temp formula:
-    game:set_value("sword_damage", game:get_value"strength" * 4)
+    --Strength is for sword damage and defense calcs
 
   elseif stat_updated == "skill" then
+    --Skill is for sword damage and visceral attack calcs
 
   end
 end

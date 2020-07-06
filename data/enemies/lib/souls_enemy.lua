@@ -21,7 +21,10 @@ function souls_enemy:create(enemy, props)
 
   -- function enemy:on_collision_enemy() print"Yeah it happened!" end
 
-  enemy:set_attack_consequence("sword", function() enemy:get_hit(game:get_value"sword_damage" or 40) end)
+  --Calculate sword damage
+  local sword_damage = require("scripts/damage_calc"):calculate_attack_damage(enemy)
+
+  enemy:set_attack_consequence("sword", function() enemy:get_hit(sword_damage) end)
   enemy:set_attack_consequence("thrown_item", function() enemy:get_hit(1) end)
   enemy:set_attack_consequence("explosion", function() enemy:get_hit(1) end)
   enemy:set_attack_consequence("fire", function() enemy:get_hit(1) end)
@@ -88,6 +91,7 @@ function souls_enemy:create(enemy, props)
 
 
   function enemy:visceral_attack(init_damage)
+    init_damage = init_damage + (init_damage * ((game:get_value"skill" or 10) - 10) * .25 )
     enemy:remove_life(init_damage * 6)
     enemy:stop_movement()
     --create effect probably TODO improve this later

@@ -6,6 +6,13 @@ Locked.
 }
 
 dialog{
+  id = "_game.not_enough_bloodstone",
+  text = [[
+You don't have enough Bloodstones.
+]],
+}
+
+dialog{
   id = "_game.rest_at_lantern",
   question = "1",
   text = [[
@@ -16,9 +23,44 @@ No
 }
 
 dialog{
+  id = "_game.weapon_upgrade",
+  question = "1",
+  text = [[
+Upgrade weapon?
+Yes
+No
+]],
+}
+
+dialog{
   id = "_game.wrong_side",
   text = [[
 Does not open from this side.
+]],
+}
+
+dialog{
+  id = "_max.congrats",
+  text = [[
+Hey, I'm Max! This is the end,
+but thanks for playing.
+]],
+}
+
+dialog{
+  id = "_shop.not_enough_echoes",
+  text = [[
+Insufficient echoes.
+]],
+}
+
+dialog{
+  id = "_shop.vials",
+  question = "1",
+  text = [[
+Buy blood vial for 170 echoes?
+Yes
+No
 ]],
 }
 
@@ -68,12 +110,75 @@ Restores HP.
 }
 
 dialog{
+  id = "_treasure.bloodstone_shard.1",
+  text = [[
+You found a Bloodstone Shard, a
+shard that forms in coldblood.
+Embed in weapons to fortify them.
+]],
+}
+
+dialog{
+  id = "_treasure.bloodstone_shard.2",
+  text = [[
+You found Bloodstone Shards,
+shards that form in coldblood.
+Embed in weapons to fortify them.
+]],
+}
+
+dialog{
+  id = "_treasure.bloodstone_shard.3",
+  text = [[
+You found Bloodstone Shards,
+shards that form in coldblood.
+Embed in weapons to fortify them.
+]],
+}
+
+dialog{
   id = "_treasure.dandelion_charm.1",
   text = [[
 The bone of an old hunter whose name is
 lost. It is said they were a practitioner
 of the art of Quickening, a technique
 particular to the first hunters.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.1",
+  text = [[
+You found quicksilver bullets.
+In firearms, quicksilver must
+be employed against beasts.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.2",
+  text = [[
+You found quicksilver bullets.
+In firearms, quicksilver must
+be employed against beasts.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.3",
+  text = [[
+You found quicksilver bullets.
+In firearms, quicksilver must
+be employed against beasts.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.4",
+  text = [[
+You found quicksilver bullets.
+In firearms, quicksilver must
+be employed against beasts.
 ]],
 }
 

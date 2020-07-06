@@ -39,6 +39,7 @@ function entity:on_interaction()
 
       --refill blood vials
       game:replenish_blood_vials()
+      game:replenish_bullets()
 
       --teleport to respawn map then back to reset enemies on this map
       local hero = game:get_hero()

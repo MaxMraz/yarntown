@@ -1,0 +1,11 @@
+animation{
+  name = "flash",
+  src_image = "enemies/gascoigne.png",
+  frame_delay = 50,
+  directions = {
+    { x = 608, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5, num_columns = 1 },
+    { x = 608, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5, num_columns = 1 },
+    { x = 608, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5, num_columns = 1 },
+    { x = 608, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5, num_columns = 1 },
+  },
+}

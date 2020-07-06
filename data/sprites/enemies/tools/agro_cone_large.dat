@@ -1,0 +1,10 @@
+animation{
+  name = "cone",
+  src_image = "enemies/tools/agro_cone_large.png",
+  directions = {
+    { x = 8, y = 8, frame_width = 312, frame_height = 216, origin_x = 24, origin_y = 124 },
+    { x = 664, y = 8, frame_width = 232, frame_height = 320, origin_x = 112, origin_y = 285 },
+    { x = 0, y = 272, frame_width = 320, frame_height = 224, origin_x = 280, origin_y = 128 },
+    { x = 376, y = 8, frame_width = 232, frame_height = 312, origin_x = 104, origin_y = 41 },
+  },
+}

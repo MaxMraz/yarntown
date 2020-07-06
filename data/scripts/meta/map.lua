@@ -43,6 +43,12 @@ map_meta:register_event("on_started", function(self)
     }
   end
 
+  --Give all pickables the glowy item sprite
+  for e in map:get_entities_by_type"pickable" do
+    e:remove_sprite()
+    e:create_sprite("items/generic_item")
+  end
+
 
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do
