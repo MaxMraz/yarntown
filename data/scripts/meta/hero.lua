@@ -58,7 +58,7 @@ function hero_meta:on_taking_damage(damage)
   hero.max_rally_amount = damage
   if hero.rally_timer then hero.rally_timer:stop() end
   hero.can_rally = true
-  hero.rally_timer = sol.timer.start(self, 3000, function()
+  hero.rally_timer = sol.timer.start(game, 3000, function()
     hero.can_rally = false
     hero.rally_amount = 0
   end)
@@ -75,7 +75,9 @@ function hero_meta:rally(damage_done)
   hero.max_rally_amount = hero.max_rally_amount - rally_health
 
   local rally_sprite = hero:create_sprite("entities/effects/rally_glow")
-  rally_sprite:set_animation("glow", function()
+  rally_sprite:set_animation("glow")
+  rally_sprite:set_blend_mode"add"
+  sol.timer.start(game, 1000, function()
     hero:remove_sprite(rally_sprite)
   end)
 end
