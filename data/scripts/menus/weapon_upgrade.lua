@@ -23,7 +23,7 @@ function menu:on_started()
   local game = sol.main.get_game()
   game:start_dialog("_game.weapon_upgrade", function(answer)
     if answer == 1 then
-      if game:get_item("bloodstone_shard"):get_amount() > required_amount then
+      if game:get_item("bloodstone_shard"):get_amount() >= required_amount then
         menu:upgrade_weapon()
       else
         --not enough shards

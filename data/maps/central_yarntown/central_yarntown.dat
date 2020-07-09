@@ -39742,6 +39742,33 @@ tile{
   pattern = "248",
 }
 
+wall{
+  layer = 0,
+  x = 2480,
+  y = 304,
+  width = 32,
+  height = 128,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2160,
+  y = 944,
+  width = 80,
+  height = 32,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1376,
+  y = 944,
+  width = 112,
+  height = 32,
+  stops_enemies = true,
+}
+
 separator{
   layer = 0,
   x = 0,
