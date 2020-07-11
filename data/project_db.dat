@@ -53,21 +53,15 @@ sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/effects/muzzle_flash", description = "Muzzle Flash" }
 sprite{ id = "entities/effects/rally_glow", description = "Rally Glow" }
 sprite{ id = "entities/fog_pillar", description = "Fog Pillar" }
+sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/lantern", description = "Lantern" }
 sprite{ id = "entities/lantern_sparkle" }
 sprite{ id = "entities/lost_echoes", description = "Lost Echoes" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
-sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/stair_entity", description = "Stair Entity" }
-sprite{ id = "entities/star", description = "Star" }
-sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
-sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
-sprite{ id = "ground_effects/leaves", description = "Leaves" }
-sprite{ id = "ground_effects/water_splash", description = "Water splash" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
-sprite{ id = "hero/shield_collision_mask", description = "Shield Collision Mask" }
 sprite{ id = "hero/spear", description = "Spear" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
@@ -109,11 +103,6 @@ sprite{ id = "switches/switch_3", description = "Switch 3" }
 sprite{ id = "switches/switch_4", description = "Switch 4" }
 sprite{ id = "switches/switch_5", description = "Switch 5" }
 sprite{ id = "switches/switch_solid", description = "Solid switch" }
-sprite{ id = "teletransporters/destination", description = "Destination of teletransporter" }
-sprite{ id = "teletransporters/teletransporter_blue", description = "Teletransporter (blue)" }
-sprite{ id = "teletransporters/teletransporter_green", description = "Teletransporter (green)" }
-sprite{ id = "teletransporters/teletransporter_pink", description = "Teletransporter (pink)" }
-sprite{ id = "teletransporters/teletransporter_yellow", description = "Teletransporter (yellow)" }
 
 music{ id = "cleric_beast", description = "cleric_beast" }
 music{ id = "cleric_beast_end", description = "cleric_beast_end" }
@@ -467,22 +456,11 @@ file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", license = 
 file{ path = "sprites/enemies/enemy_killed.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/entities/rupee_icon.dat", author = "Christopho", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/items.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/entities/star.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/lava_splash.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/lava_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/leaves.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/leaves.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/walking_ground_effects.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/water_splash.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/ground_effects/water_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/hero_on_shield v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/shield_collision_mask.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_box.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_box_message_end.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
@@ -505,11 +483,6 @@ file{ path = "sprites/hud/magic_bar.png", author = "Olivier Cléro", license = "
 file{ path = "sprites/hud/rupee_icon.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/small_key_icon.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/items", license = "CC BY-SA 4.0" }
-file{ path = "sprites/items/bomb.png", author = "Bertram", license = "CC BY-SA 4.0" }
-file{ path = "sprites/items/gem.png", author = "Bertram", license = "CC BY-SA 4.0" }
-file{ path = "sprites/items/heart.png", author = "Bertram", license = "CC BY-SA 4.0" }
-file{ path = "sprites/items/sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/items/tunic.png", author = "Bertram", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
@@ -538,12 +511,6 @@ file{ path = "sprites/switches/switch_4.dat", author = "Zane Kukta", license = "
 file{ path = "sprites/switches/switch_5.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/switch_solid.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/teletransporters", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/destination.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/teletransporter.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/teletransporter_blue.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/teletransporter_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/teletransporter_pink.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/teletransporters/teletransporter_yellow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/castle.dat", author = "Christopho, Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/castle.tiles.png", author = "Stephen Challener, Jetrel, Zane Kukta", license = "CC BY 4.0" }
 file{ path = "tilesets/house.dat", author = "Diarandor", license = "CC-BY-SA 4.0" }

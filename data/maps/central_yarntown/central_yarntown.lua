@@ -86,25 +86,7 @@ function eileen_path_sensor:on_activated()
   eileen_path_hider:remove()
 end
 
-for e in map:get_entities"crafting_table" do
-function e:on_interaction()
-  sol.menu.start(map, require"scripts/menus/weapon_upgrade")
-end
-end
 
-function bath_messenger:on_interaction()
-  game:start_dialog("_shop.vials", function(answer)
-    if answer == 1 then
-      if game:get_money() < 170 then game:start_dialog"_shop.not_enough_echoes" return end
-      game:remove_money(170)
-      if game:get_item("blood_vial_user"):get_amount() < 20 then
-        game:get_item("blood_vial_user"):add_amount(1)
-      else
-        game:add_stored_blood_vials(1)
-      end
-    end
-  end)
-end
 
 
 --Cleric Beast---------------------------------------------------

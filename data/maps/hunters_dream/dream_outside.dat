@@ -4779,7 +4779,7 @@ npc{
 npc{
   name = "bath_messenger",
   layer = 0,
-  x = 240,
+  x = 248,
   y = 197,
   direction = 3,
   subtype = 1,

@@ -17,7 +17,7 @@ end
 
 function game:replenish_bullets()
   local user_item = game:get_item("pistol")
-  local needed_vials = 20 - user_item:get_amount()
+  local needed_vials = 20 - (user_item:get_amount() or 0)
   if not game:get_value"stored_bullets" then game:set_value("stored_bullets", 0) end
   if game:get_value"stored_bullets" < needed_vials then
     user_item:add_amount(game:get_value"stored_bullets")
@@ -29,13 +29,13 @@ function game:replenish_bullets()
 end
 
 
-function item:on_obtaining()
+function item:on_obtaining(variant)
 --  item:set_brandish_when_picked(false)
   local amounts = {3, 5, 10}
+  local amount_obtained = amounts[variant]
   local user_item = game:get_item("pistol")
-  if user_item:get_amount() >= 20 then
-    game:add_stored_bullets(amounts[user_item:get_variant()])
-  else
-    user_item:add_amount(amounts[user_item:get_variant()])
-  end
+  local held_amount = user_item:get_amount()
+  local amount_over_20 = math.max(held_amount + amount_obtained - 20, 0)
+  user_item:add_amount(amount_obtained - amount_over_20)
+  game:add_stored_bullets(amount_over_20)
 end

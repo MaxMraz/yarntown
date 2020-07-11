@@ -131,6 +131,22 @@ but thanks for playing.
 }
 
 dialog{
+  id = "_npcs.doll.exit",
+  text = [[
+May you find your worth in the
+waking world.
+]],
+}
+
+dialog{
+  id = "_npcs.doll.welcome",
+  text = [[
+Welcome, good hunter. Let the
+Echoes be your strength.
+]],
+}
+
+dialog{
   id = "_shop.not_enough_echoes",
   text = [[
 Insufficient echoes.

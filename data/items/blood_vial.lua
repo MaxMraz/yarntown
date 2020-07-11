@@ -29,13 +29,13 @@ function game:replenish_blood_vials()
 end
 
 
-function item:on_obtaining()
+function item:on_obtaining(variant)
 --  item:set_brandish_when_picked(false)
   local amounts = {1, 2, 5}
   local user_item = game:get_item("blood_vial_user")
-  if user_item:get_amount() >= 20 then
-    game:add_stored_blood_vials(amounts[user_item:get_variant()])
-  else
-    user_item:add_amount(amounts[user_item:get_variant()])
-  end
+  local amount_obtained = amounts[variant]
+  local held_amount = user_item:get_amount()
+  local amount_over_20 = math.max(held_amount + amount_obtained - 20, 0)
+  user_item:add_amount(amount_obtained - amount_over_20)
+  game:add_stored_blood_vials(amount_over_20)
 end
