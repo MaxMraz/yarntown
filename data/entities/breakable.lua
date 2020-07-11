@@ -43,4 +43,12 @@ function entity:destroy()
     entity:set_traversable_by(true)
     entity:remove()
   end)
+  --alert nearby enemies
+  local ALERT_DISTANCE = 100
+  for enemy in map:get_entities_by_type"enemy" do
+    if enemy:get_distance(entity) < ALERT_DISTANCE and enemy:get_layer() == hero:get_layer() and not enemy.agro then
+      if enemy.agro_cone then enemy.agro_cone:remove() enemy.agro_cone = nil end
+      enemy:start_agro()
+    end
+  end
 end

@@ -122,6 +122,8 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "gascoigne", description = "gascoigne" }
+music{ id = "hunters_dream", description = "hunters_dream" }
 music{ id = "ominous_wind", description = "ominous_wind" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }

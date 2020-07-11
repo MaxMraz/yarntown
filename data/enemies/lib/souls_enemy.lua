@@ -201,6 +201,16 @@ function souls_enemy:create(enemy, props)
   	enemy.agro = true
     enemy.deagro_x, enemy.deagro_y, enemy.deagro_z = enemy:get_position()
   	enemy:approach_hero()
+
+  --alert nearby enemies
+  local ALERT_DISTANCE = 48
+  for e in map:get_entities_by_type"enemy" do
+    if e:get_distance(enemy) <= ALERT_DISTANCE and e:get_layer() == enemy:get_layer() and not e.agro then
+      if e.agro_cone then e.agro_cone:remove() e.agro_cone = nil end
+      e:start_agro()
+    end
+  end
+
   end
 
 
