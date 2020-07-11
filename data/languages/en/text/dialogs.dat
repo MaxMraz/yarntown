@@ -1,4 +1,77 @@
 dialog{
+  id = "_controls.heal",
+  text = [[
+Press V to heal using a blood
+vial. Carry up to 20 at once.
+More will be placed in storage.
+]],
+}
+
+dialog{
+  id = "_controls.lantern",
+  text = [[
+Commune with the dream at
+lanterns. Will heal you, but
+defeated enemies will return.
+]],
+}
+
+dialog{
+  id = "_controls.level_up",
+  text = [[
+Spend Blood Echoes to level up
+at any lantern, or with the doll
+in the Hunter's Dream.
+]],
+}
+
+dialog{
+  id = "_controls.move_talk",
+  text = [[
+Use the arrow keys to move, and
+the space bar to interact or
+roll.
+]],
+}
+
+dialog{
+  id = "_controls.pause",
+  text = [[
+Press D to pause and save.
+You will restart at the last
+lantern when reloading the game.
+]],
+}
+
+dialog{
+  id = "_controls.pistol",
+  text = [[
+Press X to fire your pistol.
+Can stun enemies if shot right
+before attack hits.
+]],
+}
+
+dialog{
+  id = "_controls.visceral",
+  text = [[
+Hit an enemy with the pistol
+or in the back with a charged
+attack to stun them. While
+stunned, attack them to do a
+visceral attack.
+]],
+}
+
+dialog{
+  id = "_controls.weapon",
+  text = [[
+Press C to swing your weapon.
+Hold C to charge an attack.
+]],
+}
+
+dialog{
   id = "_game.locked",
   text = [[
 Locked.

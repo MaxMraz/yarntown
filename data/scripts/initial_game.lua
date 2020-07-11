@@ -37,7 +37,7 @@ function initial_game:initialize_new_savegame(game)
   game:get_item("pistol"):set_amount(20)
 
   --Set starting location and starting respawn
-  game:set_starting_location("central_yarntown/central_yarntown", "lantern_clinic")  -- Starting location.
+  game:set_starting_location("hunters_dream/dream_outside", "from_waking_world")  -- Starting location.
   game:set_value("respawn_map", "central_yarntown/central_yarntown")
   game:set_value("respawn_destination", "lantern_clinic")
   game:set_value("respawn_x", 1864)

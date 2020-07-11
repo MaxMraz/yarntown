@@ -39372,116 +39372,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2128,
-  y = 2552,
-  width = 24,
-  height = 16,
-  pattern = "43",
-  tileset = "castle",
-}
-
-tile{
-  layer = 0,
-  x = 2112,
-  y = 2552,
-  width = 16,
-  height = 16,
-  pattern = "155",
-  tileset = "castle",
-}
-
-tile{
-  layer = 0,
-  x = 2072,
-  y = 2576,
-  width = 32,
-  height = 24,
-  pattern = "243",
-}
-
-tile{
-  layer = 0,
-  x = 2096,
-  y = 2568,
-  width = 48,
-  height = 32,
-  pattern = "240",
-}
-
-tile{
-  layer = 0,
-  x = 2128,
-  y = 2576,
-  width = 48,
-  height = 32,
-  pattern = "240_3",
-}
-
-tile{
-  layer = 0,
-  x = 2168,
-  y = 2576,
-  width = 32,
-  height = 24,
-  pattern = "243_3",
-}
-
-tile{
-  layer = 0,
-  x = 2160,
-  y = 2592,
-  width = 32,
-  height = 24,
-  pattern = "243",
-}
-
-tile{
-  layer = 0,
-  x = 2168,
-  y = 2608,
-  width = 32,
-  height = 24,
-  pattern = "243_2",
-}
-
-tile{
-  layer = 0,
-  x = 2040,
-  y = 2576,
-  width = 48,
-  height = 32,
-  pattern = "240_2",
-}
-
-tile{
-  layer = 0,
-  x = 2040,
-  y = 2600,
-  width = 32,
-  height = 24,
-  pattern = "243",
-}
-
-tile{
-  layer = 0,
-  x = 2040,
-  y = 2616,
-  width = 32,
-  height = 24,
-  pattern = "243_2",
-}
-
-tile{
-  layer = 0,
-  x = 2072,
-  y = 2592,
-  width = 32,
-  height = 24,
-  pattern = "243_3",
-}
-
-tile{
-  layer = 0,
   x = 2032,
   y = 2544,
   width = 16,
@@ -39496,76 +39386,6 @@ tile{
   width = 16,
   height = 64,
   pattern = "138",
-}
-
-tile{
-  layer = 0,
-  x = 2096,
-  y = 2592,
-  width = 8,
-  height = 24,
-  pattern = "76",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 2136,
-  y = 2592,
-  width = 8,
-  height = 24,
-  pattern = "78",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 2104,
-  y = 2592,
-  width = 32,
-  height = 24,
-  pattern = "77",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 2072,
-  y = 2608,
-  width = 24,
-  height = 16,
-  pattern = "80",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 2120,
-  y = 2592,
-  width = 16,
-  height = 16,
-  pattern = "222",
-  tileset = "castle",
-}
-
-tile{
-  layer = 0,
-  x = 2096,
-  y = 2584,
-  width = 16,
-  height = 16,
-  pattern = "59",
-  tileset = "castle",
-}
-
-tile{
-  layer = 0,
-  x = 2104,
-  y = 2584,
-  width = 16,
-  height = 16,
-  pattern = "60",
-  tileset = "castle",
 }
 
 tile{
@@ -39672,33 +39492,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2144,
-  y = 2616,
-  width = 48,
-  height = 32,
-  pattern = "240",
-}
-
-tile{
-  layer = 0,
-  x = 2168,
-  y = 2632,
-  width = 32,
-  height = 24,
-  pattern = "243",
-}
-
-tile{
-  layer = 0,
-  x = 2136,
-  y = 2632,
-  width = 32,
-  height = 24,
-  pattern = "243",
-}
-
-tile{
-  layer = 0,
   x = 2192,
   y = 2632,
   width = 16,
@@ -39717,29 +39510,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 2152,
-  y = 2640,
-  width = 32,
-  height = 16,
-  pattern = "239",
-}
-
-tile{
-  layer = 0,
-  x = 2160,
-  y = 2656,
+  x = 2328,
+  y = 2712,
   width = 16,
-  height = 8,
-  pattern = "247",
-}
-
-tile{
-  layer = 0,
-  x = 2160,
-  y = 2632,
-  width = 16,
-  height = 24,
-  pattern = "248",
+  height = 32,
+  pattern = "193",
 }
 
 wall{
@@ -40514,7 +40289,8 @@ teletransporter{
   y = 2728,
   width = 16,
   height = 16,
-  destination_map = "first_map",
+  destination_map = "hunters_dream/dream_outside",
+  destination = "from_clinic_door",
 }
 
 separator{
@@ -45079,24 +44855,6 @@ wall{
   stops_projectiles = true,
 }
 
-npc{
-  name = "crafting_table",
-  layer = 0,
-  x = 2112,
-  y = 2613,
-  direction = 3,
-  subtype = 0,
-}
-
-npc{
-  name = "crafting_table_2",
-  layer = 0,
-  x = 2128,
-  y = 2613,
-  direction = 3,
-  subtype = 0,
-}
-
 wall{
   layer = 0,
   x = 1920,
@@ -45198,15 +44956,6 @@ pickable{
   treasure_name = "blood_vial",
   treasure_variant = 3,
   treasure_savegame_variable = "blood_vial_central_yharnam_south_of_dark_house",
-}
-
-npc{
-  name = "bath_messenger",
-  layer = 0,
-  x = 2168,
-  y = 2661,
-  direction = 3,
-  subtype = 1,
 }
 
 wall{
@@ -53509,16 +53258,6 @@ tile{
   width = 24,
   height = 16,
   pattern = "189_2",
-}
-
-tile{
-  layer = 1,
-  x = 2072,
-  y = 2592,
-  width = 24,
-  height = 16,
-  pattern = "81",
-  tileset = "oceanset_inside",
 }
 
 tile{

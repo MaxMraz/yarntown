@@ -6,7 +6,7 @@ local menu = {}
 
 function menu:initialize(game)
   --Debug Mode Toggle:
-  local debug_mode = true
+  local debug_mode = false
   function game:set_debug_mode(mode)
   	debug_mode = mode
   end
