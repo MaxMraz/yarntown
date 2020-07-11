@@ -62,6 +62,9 @@ function souls_enemy:create(enemy, props)
   			sprite:set_blend_mode"blend"
   		end)
 
+    --alert nearby enemies
+    enemy:agro_nearby_enemies()
+
   		sol.audio.play_sound(props.enemy_hurt_sound or "enemy_hurt")
 
       if enemy.agro_cone then enemy.agro_cone:remove() enemy.agro_cone = nil end
@@ -198,21 +201,21 @@ function souls_enemy:create(enemy, props)
 
 
   function enemy:start_agro()
-  	enemy.agro = true
+    	enemy.agro = true
     enemy.deagro_x, enemy.deagro_y, enemy.deagro_z = enemy:get_position()
-  	enemy:approach_hero()
+  	  enemy:approach_hero()
+  end
 
-  --alert nearby enemies
-  local ALERT_DISTANCE = 48
-  for e in map:get_entities_by_type"enemy" do
-    if e:get_distance(enemy) <= ALERT_DISTANCE and e:get_layer() == enemy:get_layer() and not e.agro then
-      if e.agro_cone then e.agro_cone:remove() e.agro_cone = nil end
-      e:start_agro()
+
+  function enemy:agro_nearby_enemies()
+    local ALERT_DISTANCE = 48
+    for e in map:get_entities_by_type"enemy" do
+      if e:get_distance(enemy) <= ALERT_DISTANCE and e:get_layer() == enemy:get_layer() and not e.agro then
+        if e.agro_cone then e.agro_cone:remove() e.agro_cone = nil end
+        e:start_agro()
+        end
     end
   end
-
-  end
-
 
 
   function enemy:choose_next_state(previous_state)
