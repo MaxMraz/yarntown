@@ -1,7 +1,7 @@
-##License: TO-DO
+## License: TO-DO
 
 
-##Controls:
+## Controls:
 - Arrow Keys: Move
 - Space: Action / Dodgeroll
 - C: Swing weapon
@@ -11,7 +11,7 @@
 - D: pause and save (you will restart at the last lantern visited)
 
 
-##If you haven't played Bloodborne:
+## If you haven't played Bloodborne:
 I haven't made much of an effort to explain things, sorry, this is just a little side project for me. Here's a quick rundown of some things.
 
 - Using actions depletes your stamina bar. If it's all the way down, you won't be able to attack or dodge.
