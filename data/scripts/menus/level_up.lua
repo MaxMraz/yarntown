@@ -150,7 +150,6 @@ function menu:process_selection()
   end
   game:remove_money(menu.required_echoes_amount)
   game:set_value(stats[menu.cursor.index + 1], game:get_value(stats[menu.cursor.index + 1]) + 1)
-  game:set_value("player_level", game:get_value("player_level") + 1)
   menu:process_stat_update(stats[menu.cursor.index + 1])
   menu:set_numbers()
 end
@@ -159,6 +158,13 @@ end
 
 function menu:process_stat_update(stat_updated)
   local game = sol.main.get_game()
+
+  --Level up
+  local new_level = game:get_value("player_level") + 1
+  game:set_value("player_level", new_level)
+
+  --Defense is increased every level
+  game:set_value("defense", (3 + .03 * new_level) - (.1 * new_level) )
 
   if stat_updated == "vitality" then
     --each vitality level, max hp goes up by (vitality * .6)+14 

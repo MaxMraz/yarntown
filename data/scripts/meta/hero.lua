@@ -24,7 +24,7 @@ print("Initial damage:", damage) ------------------------------------
   local defense = game:get_value("defense") or 1
   damage = damage - defense
 
-  damage = damage - ((game:get_value"strength" or 10) - 10) * 4 --TODO this is a little high, but there's no armor
+  damage = damage - ((game:get_value"strength" or 10) - 10) * 3 --TODO this will get crazy at high levels
 
   if game.take_half_damage then
     damage = damage / 2
