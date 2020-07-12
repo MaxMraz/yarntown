@@ -106,22 +106,6 @@ sprite{ id = "switches/switch_solid", description = "Solid switch" }
 
 music{ id = "cleric_beast", description = "cleric_beast" }
 music{ id = "cleric_beast_end", description = "cleric_beast_end" }
-music{ id = "eduardo/boss", description = "Boss" }
-music{ id = "eduardo/cave", description = "Cave" }
-music{ id = "eduardo/dungeon_finished", description = "Dungeon finished" }
-music{ id = "eduardo/fairy", description = "Fairy" }
-music{ id = "eduardo/fanfare", description = "Fanfare" }
-music{ id = "eduardo/game_over", description = "Game Over" }
-music{ id = "eduardo/lunarius", description = "Lunarius theme" }
-music{ id = "eduardo/mini_game", description = "Mini game" }
-music{ id = "eduardo/mountains", description = "Mountains" }
-music{ id = "eduardo/neptune_battle", description = "Neptune battle" }
-music{ id = "eduardo/overworld", description = "Overworld" }
-music{ id = "eduardo/soldiers", description = "Soldiers" }
-music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
-music{ id = "eduardo/title_screen", description = "Title screen" }
-music{ id = "eduardo/village", description = "Village" }
-music{ id = "eduardo/witch_hut", description = "Witch" }
 music{ id = "gascoigne", description = "gascoigne" }
 music{ id = "hunters_dream", description = "hunters_dream" }
 music{ id = "ominous_wind", description = "ominous_wind" }
@@ -296,23 +280,6 @@ file{ path = "items/sword.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "items/tunic.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
-file{ path = "musics/eduardo", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/boss.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/cave.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/dungeon_finished.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/fairy.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/fanfare.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/game_over.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/lunarius.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/mini_game.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/mountains.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/neptune_battle.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/overworld.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/soldiers.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/sword_fanfare.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/title_screen.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/village.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
-file{ path = "musics/eduardo/witch_hut.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud", license = "GPL v3" }
