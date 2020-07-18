@@ -1,4 +1,8 @@
-## License: TO-DO
+## License:
+- The solarus engine is licensed as GPL v3
+- All code particular to this game is licensed the same
+- Graphic, music, and .dat assets are all rights reserved.
+- This game is a tribute to the world of Bloodborne, but is unaffiliated with From software.
 
 
 ## Controls:
