@@ -118,7 +118,7 @@ end)
 --Gascoigne---------------------------------------------------------
 function gascoigne_boss_music_sensor:on_activated()
   gascoigne_boss_music_sensor:remove()
-  sol.audio.play_music"gascoigne"
+  sol.audio.play_music"cleric_beast"
   for e in map:get_entities"gascoigne_beast_fog_gate" do
     e:set_enabled(true)
   end
