@@ -2,10 +2,11 @@ local menu = {}
 
 local game_manager = require"scripts/game_manager"
 
-local MAX_CURSOR_INDEX = 2
+local MAX_CURSOR_INDEX = 3
 local options = {
 	"Continue",
-	"New Game"
+	"New Game",
+  "Quit",
 }
 local FADE_IN_RATE = 40
 
@@ -20,6 +21,9 @@ function menu:on_started()
   menu.continue_surface:set_text(options[1])
   menu.new_game_surface = sol.text_surface.create{font="enter_command", font_size=16}
   menu.new_game_surface:set_text(options[2])
+  menu.quit_surface = sol.text_surface.create{font="enter_command", font_size=16}
+  menu.quit_surface:set_text(options[3])
+
 
   menu.cursor_index = 1
 
@@ -28,6 +32,7 @@ function menu:on_started()
   menu.bg:draw(menu.surface)
   menu.continue_surface:draw(menu.surface, options_x, options_y)
   menu.new_game_surface:draw(menu.surface, options_x, options_y + 16)
+  menu.quit_surface:draw(menu.surface, options_x, options_y + 32)
   menu.surface:set_opacity(0)
   menu.surface:fade_in(FADE_IN_RATE)
 
@@ -69,6 +74,9 @@ function menu:process_selection()
 		local game = game_manager:create("save_1")
 		game:start()
 		sol.menu.stop(menu)
+
+	elseif options[menu.cursor_index] == "Quit" then
+    sol.main.exit()
 
 	else
 		print("Cursor index = ", menu.cursor_index)
