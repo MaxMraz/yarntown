@@ -4618,7 +4618,7 @@ tile{
 tile{
   layer = 0,
   x = 1816,
-  y = 1960,
+  y = 1968,
   width = 16,
   height = 16,
   pattern = "82",
@@ -19650,7 +19650,7 @@ tile{
 tile{
   layer = 0,
   x = 1472,
-  y = 1976,
+  y = 1984,
   width = 16,
   height = 16,
   pattern = "82",
