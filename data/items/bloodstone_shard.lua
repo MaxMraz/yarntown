@@ -7,7 +7,7 @@ function item:on_started()
 end
 
 function item:on_obtaining(variant)
---  item:set_brandish_when_picked(false)
+  item:set_brandish_when_picked(false)
   local amounts = {1,2,4}
   item:add_amount(amounts[variant])
 end

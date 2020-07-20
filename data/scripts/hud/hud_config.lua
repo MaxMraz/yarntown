@@ -47,6 +47,17 @@ local hud_config = {
     y = 41,
   },
 
+
+ -- Consumables picked-up.
+  {
+    menu_script = "scripts/hud/consumables",
+    id = "consumables",
+    x = -52,
+    y = 48,
+    duration = 2500,
+  },
+
+
   --[[ Pause icon.
   {
     menu_script = "scripts/hud/pause_icon",

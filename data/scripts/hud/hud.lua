@@ -23,6 +23,18 @@ local function initialize_hud_features(game)
     custom_command_effects = {},
   }
 
+  for _, element_config in ipairs(hud_config) do
+    local element_builder = require(element_config.menu_script)
+    local element = element_builder:new(game, element_config)
+    if element.set_dst_position ~= nil then
+      -- Compatibility with old HUD element scripts
+      -- whose new() method don't take a config parameter.
+      element:set_dst_position(element_config.x, element_config.y)
+    end
+    hud.elements[#hud.elements + 1] = element
+    if element_config.id then hud.elements[element_config.id] = element end
+  end
+
   -- For quicker and direct access to the icons.
   local item_icons = {}
   local action_icon

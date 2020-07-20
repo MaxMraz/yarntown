@@ -6,10 +6,12 @@
 -- or uncommenting lines below.
 
 require("scripts/hud/hud")
+--require("scripts/hud/hud_2")
 require("scripts/menus/dialog_box")
 require"scripts/meta/camera"
 require"scripts/meta/enemy"
 require"scripts/meta/hero"
+require("scripts/meta/item")
 require"scripts/meta/map"
 
 return true

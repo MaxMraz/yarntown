@@ -30,7 +30,7 @@ end
 
 
 function item:on_obtaining(variant)
---  item:set_brandish_when_picked(false)
+  item:set_brandish_when_picked(false)
   local amounts = {3, 5, 10}
   local amount_obtained = amounts[variant]
   local user_item = game:get_item("pistol")
