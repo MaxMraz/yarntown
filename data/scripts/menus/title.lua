@@ -60,14 +60,12 @@ end
 
 ----JOYPAD---------------------------------------------------------------------
 function menu:on_joypad_button_pressed(command)
-print("button", command)
   if command == 0 then
     menu:on_key_pressed("space")
   end
 end
 
 function menu:on_joypad_hat_moved(hat,command)
-print("hat", hat, command)
   if command == 6 then
     menu:on_key_pressed("down")
   elseif command == 2 then
@@ -76,7 +74,6 @@ print("hat", hat, command)
 end
 
 function menu:on_joypad_axis_moved(axis,state)
-print("axis", axis, state)
   if axis == 1 and state == 1 then
     menu:on_key_pressed("down")
   elseif axis == 1 and state == -1 then
