@@ -18,13 +18,12 @@ end
 
 -- Redefine how to calculate the damage received by the hero.
 function hero_meta:on_taking_damage(damage)
-print("Initial damage:", damage) ------------------------------------
   local game = self:get_game()
   local hero = self
   local defense = game:get_value("defense") or 1
   damage = damage - defense
 
-  damage = damage - ((game:get_value"strength" or 10) - 10) * 3 --TODO this will get crazy at high levels
+  damage = damage - ((game:get_value"strength" or 10) - 10) * 5 --TODO this will get crazy at high levels
 
   if game.take_half_damage then
     damage = damage / 2
@@ -33,14 +32,16 @@ print("Initial damage:", damage) ------------------------------------
     damage = 1
   end
 
-  game:remove_life(damage)
-print("Damage: ", damage)
-
   game:set_suspended(true)
   sol.timer.start(game, 120, function()
     game:set_suspended(false)
     self:get_map():get_camera():shake({count = 4, amplitude = 5, speed = 100})
   end) --end of timer
+
+  game:remove_life(damage)
+
+  --Manually kill hero if 0 life
+  if game:get_life() <= 0 then game:start_game_over() end
 
   self:set_invincible(true, 200)
 

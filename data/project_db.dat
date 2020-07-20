@@ -2,6 +2,8 @@ map{ id = "central_yarntown/central_yarntown", description = "Central Yarntown" 
 map{ id = "first_map" }
 map{ id = "hunters_dream/dream_outside", description = "Dream-Outside" }
 map{ id = "respawn_map", description = "respawn_map" }
+map{ id = "test1" }
+map{ id = "test2" }
 map{ id = "tests/yarn1", description = "yarn1" }
 map{ id = "title_screen" }
 
