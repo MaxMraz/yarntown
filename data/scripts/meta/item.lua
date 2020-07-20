@@ -42,7 +42,6 @@ item_meta:register_event("on_obtained", function(self, variant)
   
   if item:has_amount() and variant>0 then
     local hud = game:get_hud() or {}
-print("elements: ", hud.elements, "consumables: ", hud.elements.consumables)
     local menu = hud.elements and hud.elements.consumables
     if menu then menu:add_item(item, variant) end --display a panel for the item on the hud
   end
