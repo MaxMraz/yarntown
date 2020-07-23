@@ -1299,7 +1299,7 @@ tile_pattern{
 
 tile_pattern{
   id = "185",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 208,
   y = 472,
@@ -1309,7 +1309,7 @@ tile_pattern{
 
 tile_pattern{
   id = "185_2",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 224,
   y = 472,
@@ -1339,7 +1339,7 @@ tile_pattern{
 
 tile_pattern{
   id = "187",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 240,
   y = 464,
@@ -1349,7 +1349,7 @@ tile_pattern{
 
 tile_pattern{
   id = "188",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 208,
   y = 512,
@@ -1359,7 +1359,7 @@ tile_pattern{
 
 tile_pattern{
   id = "188_2",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 232,
   y = 512,

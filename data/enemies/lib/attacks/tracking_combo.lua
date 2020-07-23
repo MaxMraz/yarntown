@@ -65,6 +65,10 @@ function attack:attack(enemy, props)
 					m:start(enemy, function()
 						combo_move()
 					end)
+          function m:on_obstacle_reached() --in case the move can't finish we still want to continue
+            m:stop()
+            combo_move()
+          end
 				else
 					if shoot_at_end then
 						sprite:set_direction(enemy:get_direction4_to(hero))

@@ -18,8 +18,9 @@ function enemy:on_created()
   	initial_movement_type = enemy:get_property("initial_movement_type") or "random",
   	damage = DAMAGE,
   	life = 2031,
-  	attack_range = 48,
+  	attack_range = 140,
   	speed = 100,
+  deagro_threshold = 900,
   })
 end
 
@@ -34,7 +35,15 @@ end)
 function enemy:choose_attack()
   local random = math.random(1, 100)
   --Spark Uppercut
-  if enemy:get_distance(hero) <= 64 and random <= 30  then
+  if enemy:get_distance(hero) > 64 and not enemy.gun_recharge then
+		require("enemies/lib/attacks/gun"):attack(enemy, {
+      num_bullets = 5,
+    })
+    enemy.recovery_time = 900
+    enemy.gun_recharge = true
+    sol.timer.start(map, 5000, function() enemy.gun_recharge = false end)
+
+  elseif enemy:get_distance(hero) <= 64 and random <= 30  then
     local attack = require("enemies/lib/attacks/melee_attack")
     enemy.recovery_time = 900
     attack:attack(enemy, {
@@ -46,7 +55,7 @@ function enemy:choose_attack()
     })
 
   --Thrust
-  elseif enemy:is_orthogonal_to_hero(8) and random < 50 then
+  elseif enemy:is_orthogonal_to_hero(8) and random < 50 and enemy:get_distance(hero) < 70 then
 		local attack = require("enemies/lib/attacks/melee_attack")
 		attack:set_wind_up_time(900)
 		enemy.recovery_time = 800
@@ -60,14 +69,15 @@ function enemy:choose_attack()
 		attack:set_wind_up_time(600)
 		enemy.recovery_time = 400
     local potential_attack_sprites = {
-      {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe",
+      [1] = {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe",
         "enemies/weapons/axe_slam"
       },
-      {"enemies/weapons/axe_swipe", "enemies/weapons/axe_slam",},
-      {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe",},
-      {"enemies/weapons/axe_swipe"},
+      [2] = {"enemies/weapons/axe_swipe", "enemies/weapons/axe_slam",},
+      [3] = {"enemies/weapons/axe_swipe", "enemies/weapons/axe_swipe",},
+      [4] = {"enemies/weapons/axe_swipe"},
     }
     local which_attack_set = math.random(1,4)
+print("Which attack set: ", which_attack_set)
     local shoot_at_end = false
     if which_attack_set > 2 then shoot_at_end = true end
 		attack:attack(enemy, {

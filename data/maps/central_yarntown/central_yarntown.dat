@@ -35670,15 +35670,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 0,
-  width = 16,
-  height = 704,
-  pattern = "97",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 704,
   width = 16,
@@ -35913,7 +35904,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
+  x = 312,
   y = 376,
   width = 8,
   height = 8,
@@ -35924,7 +35915,7 @@ tile{
   layer = 0,
   x = 104,
   y = 376,
-  width = 240,
+  width = 208,
   height = 8,
   pattern = "54_2",
 }
@@ -35951,7 +35942,7 @@ tile{
   layer = 0,
   x = 32,
   y = 384,
-  width = 320,
+  width = 384,
   height = 32,
   pattern = "5",
 }
@@ -35969,7 +35960,7 @@ tile{
   layer = 0,
   x = 32,
   y = 416,
-  width = 320,
+  width = 384,
   height = 16,
   pattern = "2",
 }
@@ -35985,8 +35976,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 344,
-  y = 352,
+  x = 312,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "51_3",
@@ -35994,7 +35985,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 352,
   y = 424,
   width = 8,
   height = 8,
@@ -36003,7 +35994,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
+  x = 360,
   y = 424,
   width = 8,
   height = 8,
@@ -36012,7 +36003,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
+  x = 336,
   y = 424,
   width = 16,
   height = 8,
@@ -36021,7 +36012,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
+  x = 336,
   y = 352,
   width = 16,
   height = 72,
@@ -36030,7 +36021,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 360,
+  x = 328,
   y = 352,
   width = 8,
   height = 72,
@@ -36039,7 +36030,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
+  x = 320,
   y = 352,
   width = 8,
   height = 72,
@@ -36048,7 +36039,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
+  x = 320,
   y = 424,
   width = 8,
   height = 8,
@@ -36057,7 +36048,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 352,
   y = 352,
   width = 8,
   height = 72,
@@ -36066,7 +36057,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 360,
+  x = 328,
   y = 424,
   width = 8,
   height = 8,
@@ -36075,7 +36066,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
+  x = 360,
   y = 352,
   width = 8,
   height = 72,
@@ -36264,15 +36255,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "99",
-}
-
-tile{
-  layer = 0,
   x = 16,
   y = 704,
   width = 16,
@@ -36282,7 +36264,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 304,
   y = 384,
   width = 16,
   height = 32,
@@ -36291,7 +36273,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 336,
+  x = 304,
   y = 416,
   width = 16,
   height = 24,
@@ -36300,7 +36282,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
+  x = 240,
   y = 384,
   width = 16,
   height = 32,
@@ -36309,7 +36291,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
+  x = 240,
   y = 416,
   width = 16,
   height = 24,
@@ -36332,15 +36314,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "51_4",
 }
 
 tile{
@@ -36354,9 +36327,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
+  x = 256,
   y = 384,
-  width = 64,
+  width = 48,
   height = 8,
   pattern = "156_2",
 }
@@ -36741,7 +36714,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
+  x = 264,
   y = 424,
   width = 24,
   height = 16,
@@ -36750,7 +36723,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
+  x = 248,
   y = 424,
   width = 16,
   height = 16,
@@ -36822,7 +36795,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
+  x = 264,
   y = 408,
   width = 24,
   height = 16,
@@ -37399,7 +37372,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 648,
+  y = 656,
   width = 16,
   height = 16,
   pattern = "185_2",
@@ -37713,16 +37686,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
-  y = 416,
-  width = 8,
-  height = 24,
-  pattern = "81_2",
-}
-
-tile{
-  layer = 0,
-  x = 336,
+  x = 304,
   y = 432,
   width = 8,
   height = 16,
@@ -37731,7 +37695,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
+  x = 320,
   y = 432,
   width = 8,
   height = 16,
@@ -38641,7 +38605,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 688,
+  y = 696,
   width = 16,
   height = 16,
   pattern = "187",
@@ -39644,6 +39608,78 @@ tile{
   height = 8,
   pattern = "79_3",
   tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  width = 16,
+  height = 704,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 376,
+  width = 16,
+  height = 8,
+  pattern = "54_2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "51",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "51_2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 384,
+  width = 32,
+  height = 8,
+  pattern = "156_2",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "51_3",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 432,
+  width = 32,
+  height = 24,
+  pattern = "190",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "99",
 }
 
 wall{
@@ -43736,9 +43772,9 @@ wall{
 
 wall{
   layer = 0,
-  x = 240,
+  x = 264,
   y = 664,
-  width = 96,
+  width = 72,
   height = 16,
   stops_enemies = true,
 }
@@ -43958,7 +43994,7 @@ dynamic_tile{
 dynamic_tile{
   name = "^lighting_effect_candle_126",
   layer = 0,
-  x = 304,
+  x = 288,
   y = 416,
   width = 16,
   height = 24,
@@ -44168,7 +44204,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 312,
+  x = 296,
   y = 373,
   width = 16,
   height = 16,
@@ -44179,7 +44215,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 296,
+  x = 280,
   y = 373,
   width = 16,
   height = 16,
@@ -45185,6 +45221,95 @@ custom_entity{
   direction = 0,
   sprite = "destructibles/box",
   model = "breakable",
+}
+
+wall{
+  layer = 0,
+  x = 128,
+  y = 432,
+  width = 192,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 304,
+  y = 352,
+  width = 16,
+  height = 24,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 360,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 368,
+  width = 192,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 128,
+  y = 360,
+  width = 160,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 368,
+  y = 360,
+  width = 32,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 152,
+  y = 656,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 32,
+  y = 616,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 248,
+  y = 664,
+  width = 16,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{
@@ -52748,14 +52873,14 @@ tile{
   layer = 1,
   x = 104,
   y = 360,
-  width = 240,
+  width = 208,
   height = 16,
   pattern = "55_2",
 }
 
 tile{
   layer = 1,
-  x = 344,
+  x = 312,
   y = 360,
   width = 8,
   height = 16,
@@ -52773,20 +52898,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 344,
-  y = 336,
+  x = 312,
+  y = 344,
   width = 8,
   height = 16,
   pattern = "52_3",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 360,
-  width = 8,
-  height = 16,
-  pattern = "52_4",
 }
 
 tile{
@@ -52864,7 +52980,7 @@ tile{
 tile{
   layer = 1,
   x = 136,
-  y = 640,
+  y = 648,
   width = 16,
   height = 8,
   pattern = "186_2",
@@ -53034,7 +53150,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
+  x = 240,
   y = 336,
   width = 16,
   height = 32,
@@ -53052,7 +53168,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
+  x = 240,
   y = 368,
   width = 16,
   height = 16,
@@ -53725,6 +53841,51 @@ tile{
   width = 24,
   height = 8,
   pattern = "173_2",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "55_2",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "52_3",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 392,
+  width = 64,
+  height = 40,
+  pattern = "191",
 }
 
 dynamic_tile{
@@ -54930,7 +55091,7 @@ sensor{
 dynamic_tile{
   name = "^lighting_effect_candle_128",
   layer = 1,
-  x = 240,
+  x = 224,
   y = 336,
   width = 16,
   height = 32,
@@ -54940,7 +55101,7 @@ dynamic_tile{
 dynamic_tile{
   name = "^lighting_effect_candle_129",
   layer = 1,
-  x = 272,
+  x = 256,
   y = 336,
   width = 16,
   height = 32,
