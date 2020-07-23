@@ -92,6 +92,7 @@ sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "npc/doll", description = "Doll" }
+sprite{ id = "npc/eileen", description = "Eileen" }
 sprite{ id = "npc/max", description = "Max" }
 sprite{ id = "npc/messenger", description = "messenger" }
 sprite{ id = "shadows/shadow_big", description = "Big shadow" }

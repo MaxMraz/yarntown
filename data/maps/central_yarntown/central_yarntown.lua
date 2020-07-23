@@ -86,6 +86,15 @@ function eileen_path_sensor:on_activated()
   eileen_path_hider:remove()
 end
 
+function eileen:on_interaction()
+  if not game:get_value"quest_eileen" then
+    game:start_dialog("_npcs.eileen.1", function() hero:start_treasure("blood_vial", 3) end)
+    game:set_value("quest_eileen", 0)
+  else
+    game:start_dialog"_npcs.eileen.2"
+  end
+end
+
 
 
 

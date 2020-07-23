@@ -17698,15 +17698,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 1816,
-  width = 24,
-  height = 24,
-  pattern = "172",
-}
-
-tile{
-  layer = 0,
   x = 680,
   y = 1856,
   width = 32,
@@ -39517,6 +39508,144 @@ tile{
   pattern = "193",
 }
 
+tile{
+  layer = 0,
+  x = 800,
+  y = 1816,
+  width = 16,
+  height = 24,
+  pattern = "170",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 1848,
+  width = 24,
+  height = 24,
+  pattern = "172_2",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1776,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1792,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1808,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1824,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1840,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1856,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 1760,
+  width = 80,
+  height = 8,
+  pattern = "86_3",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 1760,
+  width = 8,
+  height = 8,
+  pattern = "79_3",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 1760,
+  width = 8,
+  height = 8,
+  pattern = "79_3",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 1768,
+  width = 8,
+  height = 72,
+  pattern = "98_3",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 1792,
+  width = 8,
+  height = 8,
+  pattern = "79_3",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 1816,
+  width = 8,
+  height = 8,
+  pattern = "79_3",
+  tileset = "oceanset_inside",
+}
+
 wall{
   layer = 0,
   x = 2480,
@@ -44884,6 +45013,9 @@ pickable{
   layer = 0,
   x = 1632,
   y = 2621,
+  treasure_name = "blood_vial",
+  treasure_variant = 2,
+  treasure_savegame_variable = "central_yarnham_bridge_gorge_overlook_blood_vial",
 }
 
 pickable{
@@ -44902,15 +45034,6 @@ pickable{
   treasure_name = "blood_vial",
   treasure_variant = 3,
   treasure_savegame_variable = "blood_vial_central_yharnam_old_lady_house",
-}
-
-pickable{
-  layer = 0,
-  x = 1824,
-  y = 781,
-  treasure_name = "blood_vial",
-  treasure_variant = 3,
-  treasure_savegame_variable = "blood_vial_central_yharnam_eileen_balcony",
 }
 
 pickable{
@@ -45019,6 +45142,49 @@ wall{
   width = 32,
   height = 48,
   stops_enemies = true,
+}
+
+npc{
+  name = "eileen",
+  layer = 0,
+  x = 1888,
+  y = 797,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/eileen",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 1829,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 720,
+  y = 1829,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 728,
+  y = 1821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
 }
 
 tile{
@@ -48623,66 +48789,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 816,
-  y = 1776,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1792,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1808,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1824,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1840,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 1856,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 1,
   x = 544,
   y = 1736,
   width = 24,
@@ -48707,15 +48813,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "175",
-}
-
-tile{
-  layer = 1,
-  x = 712,
-  y = 1808,
-  width = 24,
-  height = 8,
-  pattern = "173",
 }
 
 tile{
@@ -53612,6 +53709,24 @@ tile{
   pattern = "173_2",
 }
 
+tile{
+  layer = 1,
+  x = 800,
+  y = 1808,
+  width = 16,
+  height = 8,
+  pattern = "171",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 1840,
+  width = 24,
+  height = 8,
+  pattern = "173_2",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_1",
   layer = 1,
@@ -55085,6 +55200,26 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 1888,
+  y = 720,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 1,
+  x = 1840,
+  y = 720,
+  width = 16,
+  height = 32,
+  pattern = "85",
 }
 
 tile{

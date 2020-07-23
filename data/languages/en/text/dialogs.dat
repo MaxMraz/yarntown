@@ -147,6 +147,29 @@ Echoes be your strength.
 }
 
 dialog{
+  id = "_npcs.eileen.1",
+  text = [[
+Oh, a hoonter, are ya? What a mess
+you've been caught in. And tonight,
+of all nights. Prepare yourself
+for the worst, there are no
+humans left. They're all beasts
+now. Unnerved? Heh, no matter.
+Without fear, we're no different
+from the beasts themselves.
+]],
+}
+
+dialog{
+  id = "_npcs.eileen.2",
+  text = [[
+Well, what are you still doing
+here? Enough trembling. A hoonter
+must hoont.
+]],
+}
+
+dialog{
   id = "_shop.not_enough_echoes",
   text = [[
 Insufficient echoes.
