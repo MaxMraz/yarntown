@@ -527,6 +527,14 @@ local function initialize_dialog_box_features(game)
     return true
   end
 
+  function dialog_box:on_joypad_hat_moved(hat, command)
+    if command == 6 then
+      dialog_box:on_command_pressed("down")
+    elseif command == 2 then
+      dialog_box:on_command_pressed("up")
+    end
+  end
+
   -- Draws the dialog box.
   function dialog_box:on_draw(dst_surface)
 

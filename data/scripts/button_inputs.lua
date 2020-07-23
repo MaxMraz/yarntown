@@ -118,6 +118,60 @@ function menu:initialize(game)
 
     return handled
   end
+
+  function game:on_joypad_hat_moved(hat, direction)
+    handled = false
+    if hat == 0 then
+      if direction == 0 then
+        game:simulate_command_released("up")
+        game:simulate_command_released("down")
+        game:simulate_command_pressed("right")
+        handled = true
+      elseif direction == 1 then
+        game:simulate_command_released("down")
+        game:simulate_command_pressed("right")
+        game:simulate_command_pressed("up")
+        handled = true
+      elseif direction == 2 then
+        game:simulate_command_released("left")
+        game:simulate_command_released("right")
+        game:simulate_command_pressed("up")
+        handled = true
+      elseif direction == 3 then
+        game:simulate_command_released("right")
+        game:simulate_command_pressed("up")
+        game:simulate_command_pressed("left")
+        handled = true
+      elseif direction == 4 then
+        game:simulate_command_released("up")
+        game:simulate_command_released("down")
+        game:simulate_command_pressed("left")
+        handled = true
+      elseif direction == 5 then
+        game:simulate_command_released("up")
+        game:simulate_command_pressed("left")
+        game:simulate_command_pressed("down")
+        handled = true
+      elseif direction == 6 then
+        game:simulate_command_released("left")
+        game:simulate_command_released("right")
+        game:simulate_command_pressed("down")
+        handled = true
+      elseif direction == 7 then
+        game:simulate_command_released("left")
+        game:simulate_command_pressed("down")
+        game:simulate_command_pressed("right")
+        handled = true
+      elseif direction == -1 then
+        game:simulate_command_released("right")
+        game:simulate_command_released("up")
+        game:simulate_command_released("left")
+        game:simulate_command_released("down")
+        handled = true
+      end
+    end
+    return handled
+  end
   
 end
 
