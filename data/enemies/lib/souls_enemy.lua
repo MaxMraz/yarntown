@@ -244,7 +244,7 @@ function souls_enemy:create(enemy, props)
 
   	sol.timer.start(enemy, 100, function()
   		--see if close enough
-      local dist = enemy:get_distance(hero)
+    local dist = enemy:get_distance(hero)
   		if dist <= (props.attack_range or DEFAULT_ATTACK_RANGE) then
   			enemy:stop_movement()
   			enemy:choose_next_state("approach")
