@@ -267,6 +267,7 @@ entity{ id = "lantern", description = "Lantern" }
 entity{ id = "lost_echoes", description = "Lost Echoes" }
 
 language{ id = "en", description = "English" }
+language{ id = "es", description = "es" }
 
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "enter_command", description = "Enter Command" }
@@ -282,6 +283,7 @@ file{ path = "items/money_bag.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "items/sword.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "items/tunic.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
+file{ path = "languages/es", author = "amirtorrez", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
