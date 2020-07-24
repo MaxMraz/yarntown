@@ -1,0 +1,317 @@
+dialog{
+  id = "_controls.heal",
+  text = [[
+Presiona V para curarte usando 
+viales de sangre. Puedes llevar 
+hasta 20 a la vez.
+El resto serán enviados al almacén.
+]],
+}
+
+dialog{
+  id = "_controls.lantern",
+  text = [[
+Comunicarse con el sueño en las
+linternas. Esto te curará, pero 
+los enemigos derrotados volverán.
+]],
+}
+
+dialog{
+  id = "_controls.level_up",
+  text = [[
+Gasta ecos de sangre para subir de
+nivel en cualquier linterna, o con 
+la muñeca en el Sueño del Cazador.
+]],
+}
+
+dialog{
+  id = "_controls.move_talk",
+  text = [[
+Usa las teclas de flecha para moverte,
+y la barra espaciadora para interactuar
+o rodar.
+]],
+}
+
+dialog{
+  id = "_controls.pause",
+  text = [[
+Presiona D para hacer pausar y guardar.
+Serás reiniciado en la última linterna 
+al recargar el juego.
+]],
+}
+
+dialog{
+  id = "_controls.pistol",
+  text = [[
+Presiona X para disparar la pistola.
+Puede aturdir a los enemigos si se 
+dispara bien antes de que el ataque 
+golpee.
+]],
+}
+
+dialog{
+  id = "_controls.visceral",
+  text = [[
+Golpea a un enemigo con la pistola
+o en la parte de atrás con un ataque 
+cargado para aturdirlos. Mientras 
+están aturdidos, ataca para hacer un
+ataque visceral.
+]],
+}
+
+dialog{
+  id = "_controls.weapon",
+  text = [[
+Presione C para mover el arma.
+Mantenga C para cargar un ataque.
+]],
+}
+
+dialog{
+  id = "_game.locked",
+  text = [[
+Bloqueado.
+]],
+}
+
+dialog{
+  id = "_game.not_enough_bloodstone",
+  text = [[
+No tienes suficientes piedras de sangre.
+]],
+}
+
+dialog{
+  id = "_game.pause",
+  question = "1",
+  text = [[
+        - Pausa -
+Guardar & Continuar
+Salir
+]],
+}
+
+dialog{
+  id = "_game.rest_at_lantern",
+  question = "1",
+  text = [[
+¿Comunicarse con El Sueño?
+Sí
+No
+]],
+}
+
+dialog{
+  id = "_game.weapon_upgrade",
+  question = "1",
+  text = [[
+¿Mejorar arma?
+Sí
+No
+]],
+}
+
+dialog{
+  id = "_game.wrong_side",
+  text = [[
+No se abre desde este lado.
+]],
+}
+
+dialog{
+  id = "_max.congrats",
+  text = [[
+¡Hola, soy Max! Este es el final,
+pero gracias por jugar.
+]],
+}
+
+dialog{
+  id = "_npcs.doll.exit",
+  text = [[
+Que encuentres tu valía en el
+mundo despierto.
+]],
+}
+
+dialog{
+  id = "_npcs.doll.welcome",
+  text = [[
+Bienvenido, buen cazador. Deja
+que los ecos sean tu fuerza.
+]],
+}
+
+dialog{
+  id = "_npcs.eileen.1",
+  text = [[
+Oh, eres un cazador, ¿no? 
+En qué lío te has metido.
+Y esta noche, de todas las
+noches. Prepárate para lo
+peor, ya no quedan humanos.
+Ahora sólo hay bestias. 
+¿Desconcertado? Ah, no importa...
+Sin miedo, no somos diferentes
+de las propias bestias.
+]],
+}
+
+dialog{
+  id = "_npcs.eileen.2",
+  text = [[
+Bueno, ¿qué haces aquí todavía? 
+Basta de estremecimientos. Un
+cazador debe cazar.
+]],
+}
+
+dialog{
+  id = "_shop.not_enough_echoes",
+  text = [[
+Ecos insuficientes.
+]],
+}
+
+dialog{
+  id = "_shop.vials",
+  question = "1",
+  text = [[
+¿Comprar vial por 170 ecos?
+Sí
+No
+]],
+}
+
+dialog{
+  id = "_test.1",
+  text = [[
+Esfinge de cuarzo negro, 
+¡Escucha mi promesa!
+¡Cuando lleguen los zombis,
+envíen rápidamente un fax
+al Juez Pat!
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.1",
+  text = [[
+Encontraste un frasco de sangre.
+Sangre especial usada en servicio.
+Restaura HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.2",
+  text = [[
+Encontraste un frasco de sangre.
+Sangre especial usada en servicio.
+Restaura HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.3",
+  text = [[
+Encontraste un frasco de sangre.
+Sangre especial usada en servicio.
+Restaura HP.
+]],
+}
+
+dialog{
+  id = "_treasure.blood_vial.4",
+  text = [[
+Encontraste un frasco de sangre.
+Sangre especial usada en servicio.
+Restaura HP.
+]],
+}
+
+dialog{
+  id = "_treasure.bloodstone_shard.1",
+  text = [[
+Encontraste un fragmento de piedra
+de sangre, un fragmento que se 
+forma de la fría sangre.
+Se incrusta en las armas para
+fortificarlas.
+]],
+}
+
+dialog{
+  id = "_treasure.bloodstone_shard.2",
+  text = [[
+Encontraste un fragmento de piedra
+de sangre, un fragmento que se 
+forma de la fría sangre.
+Se incrusta en las armas para
+fortificarlas.
+]],
+}
+
+dialog{
+  id = "_treasure.bloodstone_shard.3",
+  text = [[
+Encontraste un fragmento de piedra
+de sangre, un fragmento que se 
+forma de la fría sangre.
+Se incrusta en las armas para
+fortificarlas.
+]],
+}
+
+dialog{
+  id = "_treasure.dandelion_charm.1",
+  text = [[
+El hueso de un viejo cazador cuyo nombre
+se ha perdido. Se dice que eran 
+practicantes del arte de aceleración, una
+técnica en particular de los primeros
+cazadores.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.1",
+  text = [[
+Encontraste balas de mercurio.
+En las armas de fuego, el mercurio debe
+ser empleado contra las bestias.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.2",
+  text = [[
+Encontraste balas de mercurio.
+En las armas de fuego, el mercurio debe
+ser empleado contra las bestias.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.3",
+  text = [[
+Encontraste balas de mercurio.
+En las armas de fuego, el mercurio debe
+ser empleado contra las bestias.
+]],
+}
+
+dialog{
+  id = "_treasure.quicksilver_bullets.4",
+  text = [[
+Encontraste balas de mercurio.
+En las armas de fuego, el mercurio debe
+ser empleado contra las bestias.
+]],
+}
