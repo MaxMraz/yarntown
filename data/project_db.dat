@@ -267,7 +267,7 @@ entity{ id = "lantern", description = "Lantern" }
 entity{ id = "lost_echoes", description = "Lost Echoes" }
 
 language{ id = "en", description = "English" }
-language{ id = "es", description = "es" }
+language{ id = "es", description = "Espanol" }
 
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "enter_command", description = "Enter Command" }
