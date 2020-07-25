@@ -181,7 +181,7 @@ function souls_enemy:create(enemy, props)
   	}
   	enemy.agro_cone:set_visible(false)
   	enemy.agro_cone:add_collision_test("sprite", function(cone, other_entity)
-  		if other_entity:get_type() == "hero" then
+  		if other_entity:get_type() == "hero" and enemy:is_in_same_region(other_entity) then
       enemy.agro_cone:clear_collision_tests()
   			enemy.agro_cone:remove()
         enemy.agro_cone = nil

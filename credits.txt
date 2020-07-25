@@ -1,0 +1,8 @@
+
+Yarntown is created by Max Mraz
+
+Thanks to the Solarus team at solarus-games.org for their help
+
+Spanish translation by Amir Torrez (https://amirtorrez.gitlab.io/)
+
+

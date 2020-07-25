@@ -13128,7 +13128,7 @@ tile{
   x = 2424,
   y = 1344,
   width = 8,
-  height = 64,
+  height = 80,
   pattern = "53_2",
 }
 
@@ -13353,7 +13353,7 @@ tile{
   x = 2240,
   y = 1192,
   width = 8,
-  height = 80,
+  height = 96,
   pattern = "53_2",
 }
 
@@ -45310,6 +45310,96 @@ wall{
   width = 16,
   height = 8,
   stops_enemies = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 2328,
+  y = 1205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2312,
+  y = 1213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+destination{
+  name = "from_falling_drydock",
+  layer = 0,
+  x = 2288,
+  y = 157,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1776,
+  y = 576,
+  width = 80,
+  height = 48,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1776,
+  y = 632,
+  width = 80,
+  height = 40,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1864,
+  y = 576,
+  width = 64,
+  height = 48,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1888,
+  y = 624,
+  width = 40,
+  height = 48,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1864,
+  y = 632,
+  width = 24,
+  height = 40,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1936,
+  y = 576,
+  width = 64,
+  height = 96,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_falling_drydock",
 }
 
 tile{

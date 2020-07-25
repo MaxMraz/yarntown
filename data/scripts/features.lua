@@ -5,6 +5,7 @@
 -- Features can be enabled to disabled independently by commenting
 -- or uncommenting lines below.
 
+require"scripts/action/hole_drop_landing"
 require("scripts/hud/hud")
 require("scripts/menus/dialog_box")
 require"scripts/meta/camera"
