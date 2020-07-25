@@ -40,7 +40,7 @@ end)
 function enemy:choose_attack()
 	if enemy:get_distance(hero) <= GUN_RANGE then
 		require("enemies/lib/attacks/gun"):attack(enemy, {
-      num_bullets = 5,
+      num_bullets = 1,
       max_bullet_distance = 120,
     })
 	else
