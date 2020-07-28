@@ -71,8 +71,10 @@ end
 
 -- Starting the menu.
 function solarus_logo_menu:on_started()
-  --Start music
-  sol.audio.play_music"hunters_dream"
+  sol.timer.start(1, function()
+    --Start music
+    sol.audio.play_music("hunters_dream")
+  end)
   -- Initialize or reinitialize the animation.
   animation_step = 0
   timer = nil

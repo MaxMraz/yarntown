@@ -14,6 +14,8 @@ local options_x = 185
 local options_y = 200
 
 function menu:on_started()
+  sol.audio.play_music("hunters_dream") -- make sure the music runs, in case it didn't start on the screen before
+
 	menu.surface = sol.surface.create()
   menu.bg = sol.surface.create("menus/title_screen_background.png")
   menu.cursor = sol.surface.create("menus/cursor.png")
