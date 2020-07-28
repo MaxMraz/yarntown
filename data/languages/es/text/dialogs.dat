@@ -11,7 +11,7 @@ El resto serán enviados al almacén.
 dialog{
   id = "_controls.lantern",
   text = [[
-Comunicarse con el sueño en las
+Comunicate con el sueño en las
 linternas. Esto te curará, pero 
 los enemigos derrotados volverán.
 ]],
@@ -29,7 +29,7 @@ la muñeca en el Sueño del Cazador.
 dialog{
   id = "_controls.move_talk",
   text = [[
-Usa las teclas de flecha para moverte,
+Usa las teclas de flechas para moverte,
 y la barra espaciadora para interactuar
 o rodar.
 ]],
@@ -38,7 +38,7 @@ o rodar.
 dialog{
   id = "_controls.pause",
   text = [[
-Presiona D para hacer pausar y guardar.
+Presiona D para hacer pausa y guardar.
 Serás reiniciado en la última linterna 
 al recargar el juego.
 ]],
