@@ -33317,7 +33317,7 @@ tile{
   x = 2616,
   y = 832,
   width = 16,
-  height = 80,
+  height = 64,
   pattern = "181",
 }
 
@@ -33326,7 +33326,7 @@ tile{
   x = 2728,
   y = 832,
   width = 16,
-  height = 80,
+  height = 64,
   pattern = "181",
 }
 
@@ -33364,24 +33364,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 2816,
-  y = 976,
-  width = 32,
-  height = 16,
-  pattern = "93",
-}
-
-tile{
-  layer = 0,
-  x = 2800,
-  y = 976,
-  width = 16,
-  height = 16,
-  pattern = "92",
 }
 
 tile{
@@ -33458,168 +33440,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2816,
-  y = 1088,
-  width = 32,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 2816,
-  y = 992,
-  width = 32,
-  height = 96,
-  pattern = "5",
-}
-
-tile{
-  layer = 0,
-  x = 2800,
-  y = 1088,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 2800,
-  y = 992,
-  width = 16,
-  height = 96,
-  pattern = "4",
-}
-
-tile{
-  layer = 0,
-  x = 2824,
-  y = 992,
-  width = 16,
-  height = 112,
-  pattern = "184",
-}
-
-tile{
-  layer = 0,
-  x = 2824,
-  y = 1104,
-  width = 16,
-  height = 8,
-  pattern = "184_2",
-}
-
-tile{
-  layer = 0,
-  x = 2576,
-  y = 792,
-  width = 8,
-  height = 8,
-  pattern = "51",
-}
-
-tile{
-  layer = 0,
-  x = 2600,
-  y = 792,
-  width = 8,
-  height = 8,
-  pattern = "51_2",
-}
-
-tile{
-  layer = 0,
-  x = 2584,
-  y = 792,
-  width = 16,
-  height = 8,
-  pattern = "54_2",
-}
-
-tile{
-  layer = 0,
-  x = 2576,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "51",
-}
-
-tile{
-  layer = 0,
-  x = 2600,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "51_2",
-}
-
-tile{
-  layer = 0,
-  x = 2584,
-  y = 832,
-  width = 16,
-  height = 8,
-  pattern = "54_2",
-}
-
-tile{
-  layer = 0,
-  x = 2752,
-  y = 792,
-  width = 8,
-  height = 8,
-  pattern = "51",
-}
-
-tile{
-  layer = 0,
-  x = 2776,
-  y = 792,
-  width = 8,
-  height = 8,
-  pattern = "51_2",
-}
-
-tile{
-  layer = 0,
-  x = 2760,
-  y = 792,
-  width = 16,
-  height = 8,
-  pattern = "54_2",
-}
-
-tile{
-  layer = 0,
-  x = 2752,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "51",
-}
-
-tile{
-  layer = 0,
-  x = 2776,
-  y = 832,
-  width = 8,
-  height = 8,
-  pattern = "51_2",
-}
-
-tile{
-  layer = 0,
-  x = 2760,
-  y = 832,
-  width = 16,
-  height = 8,
-  pattern = "54_2",
-}
-
-tile{
-  layer = 0,
   x = 2584,
   y = 1056,
   width = 32,
@@ -33652,24 +33472,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 2576,
-  y = 1016,
-  width = 16,
-  height = 8,
-  pattern = "64",
-}
-
-tile{
-  layer = 0,
-  x = 2592,
-  y = 1016,
-  width = 16,
-  height = 8,
-  pattern = "62_2",
 }
 
 tile{
@@ -33809,42 +33611,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2784,
-  y = 496,
-  width = 64,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 2544,
-  y = 496,
-  width = 96,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 2632,
-  y = 496,
-  width = 16,
-  height = 16,
-  pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 2776,
-  y = 496,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
   x = 2664,
   y = 568,
   width = 8,
@@ -33958,15 +33724,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "184_2",
-}
-
-tile{
-  layer = 0,
-  x = 2616,
-  y = 632,
-  width = 16,
-  height = 16,
-  pattern = "183",
 }
 
 tile{
@@ -39682,6 +39439,78 @@ tile{
   pattern = "99",
 }
 
+tile{
+  layer = 0,
+  x = 2744,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 2664,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "108",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 512,
+  width = 96,
+  height = 128,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 640,
+  width = 64,
+  height = 384,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 1024,
+  width = 32,
+  height = 160,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1112,
+  width = 96,
+  height = 72,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 744,
+  width = 48,
+  height = 368,
+  pattern = "214",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 512,
+  width = 64,
+  height = 256,
+  pattern = "214",
+}
+
 wall{
   layer = 0,
   x = 2480,
@@ -42240,24 +42069,6 @@ wall{
   stops_projectiles = true,
 }
 
-destination{
-  name = "to_sewer_south_ladder",
-  layer = 0,
-  x = 2832,
-  y = 1021,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 2824,
-  y = 992,
-  width = 16,
-  height = 16,
-  destination_map = "central_yarntown/central_yarntown",
-  destination = "from_sewer_south_ladder",
-}
-
 teletransporter{
   layer = 0,
   x = 2664,
@@ -42269,102 +42080,6 @@ teletransporter{
 }
 
 sensor{
-  name = "^layer_up_sensor_2",
-  layer = 0,
-  x = 2600,
-  y = 813,
-  width = 16,
-  height = 32,
-}
-
-wall{
-  layer = 0,
-  x = 2608,
-  y = 800,
-  width = 8,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 2592,
-  y = 792,
-  width = 24,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 2592,
-  y = 832,
-  width = 24,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-sensor{
-  name = "^layer_up_sensor_4",
-  layer = 0,
-  x = 2760,
-  y = 813,
-  width = 16,
-  height = 32,
-}
-
-wall{
-  layer = 0,
-  x = 2744,
-  y = 800,
-  width = 8,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 2744,
-  y = 792,
-  width = 24,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 2744,
-  y = 832,
-  width = 24,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-sensor{
   name = "leave_dark_area_sensor_4",
   layer = 0,
   x = 2672,
@@ -42373,21 +42088,6 @@ sensor{
     {
       key = "level",
       value = "dusk",
-    },
-  },
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "dark_area_sensor_4",
-  layer = 0,
-  x = 2832,
-  y = 1021,
-  properties = {
-    {
-      key = "level",
-      value = "2",
     },
   },
   width = 16,
@@ -42766,15 +42466,6 @@ wall{
   stops_enemies = true,
 }
 
-sensor{
-  name = "south_sewer_right_route_1",
-  layer = 0,
-  x = 2816,
-  y = 581,
-  width = 16,
-  height = 16,
-}
-
 custom_entity{
   layer = 0,
   x = 2104,
@@ -42876,299 +42567,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 2840,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2824,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-enemy{
-  layer = 0,
-  x = 2816,
-  y = 557,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "route",
-    },
-    {
-      key = "patrol_route_name",
-      value = "south_sewer_right_route",
-    },
-  },
-  direction = 3,
-  breed = "beastial_huntsman_cleaver",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2832,
-  y = 541,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2808,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2792,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2792,
-  y = 541,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 661,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2832,
-  y = 693,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2824,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2592,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2608,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2632,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2632,
-  y = 541,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2560,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2600,
-  y = 861,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2584,
-  y = 861,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2592,
-  y = 877,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2768,
-  y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2760,
-  y = 869,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
   x = 2624,
   y = 925,
   width = 16,
@@ -43198,217 +42596,6 @@ custom_entity{
   direction = 0,
   sprite = "destructibles/barrel",
   model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2568,
-  y = 1173,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 1165,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 1165,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2824,
-  y = 1173,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2840,
-  y = 1181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2760,
-  y = 1165,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2760,
-  y = 1181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2776,
-  y = 1173,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2792,
-  y = 1181,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2760,
-  y = 1093,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2760,
-  y = 1109,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2792,
-  y = 973,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2792,
-  y = 989,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-sensor{
-  name = "south_sewer_right_route_2",
-  layer = 0,
-  x = 2808,
-  y = 677,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "south_sewer_right_route_3",
-  layer = 0,
-  x = 2792,
-  y = 765,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "south_sewer_right_route_4",
-  layer = 0,
-  x = 2792,
-  y = 861,
-  width = 16,
-  height = 16,
-}
-
-enemy{
-  layer = 0,
-  x = 2584,
-  y = 573,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "idle",
-    },
-  },
-  direction = 3,
-  breed = "beastial_huntsman_cleaver",
-}
-
-sensor{
-  name = "south_sewer_left_route_1",
-  layer = 0,
-  x = 2560,
-  y = 869,
-  width = 16,
-  height = 16,
-}
-
-enemy{
-  layer = 0,
-  x = 2560,
-  y = 1021,
-  properties = {
-    {
-      key = "initial_movement_type",
-      value = "route",
-    },
-    {
-      key = "patrol_route_name",
-      value = "south_sewer_left_route",
-    },
-  },
-  direction = 3,
-  breed = "beastial_huntsman_cleaver",
 }
 
 enemy{
@@ -43669,24 +42856,6 @@ destination{
   y = 1573,
   direction = 3,
   starting_location_mode = "yes",
-}
-
-sensor{
-  name = "south_sewer_left_route_2",
-  layer = 0,
-  x = 2560,
-  y = 981,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "south_sewer_left_route_3",
-  layer = 0,
-  x = 2560,
-  y = 1125,
-  width = 16,
-  height = 16,
 }
 
 separator{
@@ -44587,91 +43756,6 @@ custom_entity{
   model = "breakable",
 }
 
-pickable{
-  layer = 0,
-  x = 2560,
-  y = 525,
-  treasure_name = "bloodstone_shard",
-  treasure_savegame_variable = "bloodstone_central_yarntown_east_sewer_upper_walkway",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2576,
-  y = 525,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2576,
-  y = 541,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2560,
-  y = 541,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/box",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2568,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2552,
-  y = 573,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "destructibles/barrel",
-  model = "breakable",
-}
-
 enemy{
   layer = 0,
   x = 2696,
@@ -45400,6 +44484,54 @@ teletransporter{
   height = 96,
   destination_map = "central_yarntown/central_yarntown",
   destination = "from_falling_drydock",
+}
+
+sensor{
+  name = "^layer_up_sensor_4",
+  layer = 0,
+  x = 2624,
+  y = 661,
+  width = 16,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 2608,
+  y = 640,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 2608,
+  y = 648,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 2632,
+  y = 648,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -52276,24 +51408,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 2744,
-  y = 544,
-  width = 16,
-  height = 16,
-  pattern = "107",
-}
-
-tile{
-  layer = 1,
-  x = 2664,
-  y = 544,
-  width = 16,
-  height = 16,
-  pattern = "108",
-}
-
-tile{
-  layer = 1,
   x = 2680,
   y = 544,
   width = 64,
@@ -52304,15 +51418,6 @@ tile{
 tile{
   layer = 1,
   x = 2608,
-  y = 800,
-  width = 144,
-  height = 32,
-  pattern = "125",
-}
-
-tile{
-  layer = 1,
-  x = 2608,
   y = 792,
   width = 8,
   height = 8,
@@ -52386,33 +51491,6 @@ tile{
   layer = 1,
   x = 2600,
   y = 776,
-  width = 8,
-  height = 16,
-  pattern = "52_2",
-}
-
-tile{
-  layer = 1,
-  x = 2576,
-  y = 816,
-  width = 8,
-  height = 16,
-  pattern = "52",
-}
-
-tile{
-  layer = 1,
-  x = 2584,
-  y = 816,
-  width = 16,
-  height = 16,
-  pattern = "55_2",
-}
-
-tile{
-  layer = 1,
-  x = 2600,
-  y = 816,
   width = 8,
   height = 16,
   pattern = "52_2",
@@ -53978,6 +53056,510 @@ tile{
   pattern = "191",
 }
 
+tile{
+  layer = 1,
+  x = 2544,
+  y = 512,
+  width = 64,
+  height = 512,
+  pattern = "124",
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 512,
+  width = 64,
+  height = 128,
+  pattern = "124",
+}
+
+tile{
+  layer = 1,
+  x = 2544,
+  y = 1024,
+  width = 32,
+  height = 160,
+  pattern = "125",
+}
+
+tile{
+  layer = 1,
+  x = 2528,
+  y = 1056,
+  width = 48,
+  height = 32,
+  pattern = "192",
+}
+
+tile{
+  layer = 1,
+  x = 2544,
+  y = 496,
+  width = 96,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 2632,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 1,
+  x = 2616,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "183",
+}
+
+tile{
+  layer = 1,
+  x = 2640,
+  y = 512,
+  width = 8,
+  height = 128,
+  pattern = "63",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = "64",
+}
+
+tile{
+  layer = 1,
+  x = 2624,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = "62_2",
+}
+
+tile{
+  layer = 1,
+  x = 2632,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = "64_3",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 648,
+  width = 8,
+  height = 368,
+  pattern = "63_2",
+}
+
+tile{
+  layer = 1,
+  x = 2600,
+  y = 1016,
+  width = 16,
+  height = 8,
+  pattern = "64_3",
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 1024,
+  width = 8,
+  height = 160,
+  pattern = "63",
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 1016,
+  width = 16,
+  height = 8,
+  pattern = "64",
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 1016,
+  width = 16,
+  height = 8,
+  pattern = "62_2",
+}
+
+tile{
+  layer = 1,
+  x = 2616,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "183",
+}
+
+tile{
+  layer = 1,
+  x = 2784,
+  y = 512,
+  width = 64,
+  height = 256,
+  pattern = "124",
+}
+
+tile{
+  layer = 1,
+  x = 2752,
+  y = 736,
+  width = 64,
+  height = 448,
+  pattern = "124",
+}
+
+tile{
+  layer = 1,
+  x = 2784,
+  y = 1056,
+  width = 64,
+  height = 128,
+  pattern = "124",
+}
+
+tile{
+  layer = 1,
+  x = 2776,
+  y = 512,
+  width = 8,
+  height = 224,
+  pattern = "63_2",
+}
+
+tile{
+  layer = 1,
+  x = 2752,
+  y = 736,
+  width = 16,
+  height = 8,
+  pattern = "62",
+}
+
+tile{
+  layer = 1,
+  x = 2768,
+  y = 736,
+  width = 16,
+  height = 8,
+  pattern = "64_3",
+}
+
+tile{
+  layer = 1,
+  x = 2744,
+  y = 736,
+  width = 16,
+  height = 8,
+  pattern = "64",
+}
+
+tile{
+  layer = 1,
+  x = 2744,
+  y = 744,
+  width = 8,
+  height = 448,
+  pattern = "63_2",
+}
+
+tile{
+  layer = 1,
+  x = 2784,
+  y = 496,
+  width = 64,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 2776,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 2528,
+  y = 480,
+  width = 16,
+  height = 704,
+  pattern = "97",
+}
+
+tile{
+  layer = 1,
+  x = 2848,
+  y = 480,
+  width = 16,
+  height = 288,
+  pattern = "97",
+}
+
+tile{
+  layer = 1,
+  x = 2816,
+  y = 768,
+  width = 32,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 2848,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "94",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 784,
+  width = 16,
+  height = 192,
+  pattern = "97",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "96",
+}
+
+tile{
+  layer = 1,
+  x = 2816,
+  y = 976,
+  width = 32,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 1,
+  x = 2848,
+  y = 992,
+  width = 16,
+  height = 192,
+  pattern = "97",
+}
+
+tile{
+  layer = 1,
+  x = 2848,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "96",
+}
+
+tile{
+  layer = 1,
+  x = 2544,
+  y = 1184,
+  width = 320,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 2528,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 1,
+  x = 2848,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "94",
+}
+
+tile{
+  layer = 1,
+  x = 2816,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 2816,
+  y = 992,
+  width = 32,
+  height = 96,
+  pattern = "5",
+}
+
+tile{
+  layer = 1,
+  x = 2824,
+  y = 992,
+  width = 16,
+  height = 112,
+  pattern = "184",
+}
+
+tile{
+  layer = 1,
+  x = 2824,
+  y = 1104,
+  width = 16,
+  height = 8,
+  pattern = "184_2",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 992,
+  width = 16,
+  height = 96,
+  pattern = "4",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 800,
+  width = 144,
+  height = 32,
+  pattern = "125",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "51_4",
+}
+
+tile{
+  layer = 1,
+  x = 2744,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "51_4",
+}
+
+tile{
+  layer = 1,
+  x = 2744,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "51_4",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "51_4",
+}
+
+tile{
+  layer = 1,
+  x = 2616,
+  y = 840,
+  width = 16,
+  height = 64,
+  pattern = "181",
+}
+
+tile{
+  layer = 1,
+  x = 2728,
+  y = 840,
+  width = 16,
+  height = 64,
+  pattern = "181",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 2616,
+  y = 776,
+  width = 128,
+  height = 16,
+  pattern = "55_2",
+}
+
+tile{
+  layer = 1,
+  x = 2744,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "52_2",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_1",
   layer = 1,
@@ -55139,46 +54721,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "^invisible_stairs_2",
-  layer = 1,
-  x = 2576,
-  y = 800,
-  width = 40,
-  height = 32,
-  pattern = "4",
-  tileset = "oceanset_outside",
-}
-
-dynamic_tile{
-  name = "^invisible_stairs_4",
-  layer = 1,
-  x = 2744,
-  y = 800,
-  width = 40,
-  height = 32,
-  pattern = "4",
-  tileset = "oceanset_outside",
-}
-
-sensor{
-  name = "^layer_down_sensor_3",
-  layer = 1,
-  x = 2584,
-  y = 813,
-  width = 16,
-  height = 32,
-}
-
-sensor{
-  name = "^layer_down_sensor_5",
-  layer = 1,
-  x = 2776,
-  y = 813,
-  width = 16,
-  height = 32,
-}
-
-dynamic_tile{
   name = "^lighting_effect_candle_128",
   layer = 1,
   x = 224,
@@ -55473,6 +55015,679 @@ dynamic_tile{
   pattern = "85",
 }
 
+custom_entity{
+  layer = 1,
+  x = 2592,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2608,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2632,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2632,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2560,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 749,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2600,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2584,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2592,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2568,
+  y = 1173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+enemy{
+  layer = 1,
+  x = 2584,
+  y = 573,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "idle",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
+}
+
+sensor{
+  name = "south_sewer_left_route_1",
+  layer = 1,
+  x = 2560,
+  y = 869,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 1,
+  x = 2560,
+  y = 1021,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "south_sewer_left_route",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
+}
+
+sensor{
+  name = "south_sewer_left_route_2",
+  layer = 1,
+  x = 2560,
+  y = 981,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "south_sewer_left_route_3",
+  layer = 1,
+  x = 2560,
+  y = 1125,
+  width = 16,
+  height = 16,
+}
+
+pickable{
+  layer = 1,
+  x = 2560,
+  y = 525,
+  treasure_name = "bloodstone_shard",
+  treasure_savegame_variable = "bloodstone_central_yarntown_east_sewer_upper_walkway",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2576,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2576,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2560,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2568,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2552,
+  y = 573,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+sensor{
+  name = "south_sewer_right_route_1",
+  layer = 1,
+  x = 2816,
+  y = 581,
+  width = 16,
+  height = 16,
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2824,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+enemy{
+  layer = 1,
+  x = 2816,
+  y = 557,
+  properties = {
+    {
+      key = "initial_movement_type",
+      value = "route",
+    },
+    {
+      key = "patrol_route_name",
+      value = "south_sewer_right_route",
+    },
+  },
+  direction = 3,
+  breed = "beastial_huntsman_cleaver",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2832,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2808,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2792,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2792,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 677,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2832,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2824,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2824,
+  y = 1173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2840,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2760,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2760,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2776,
+  y = 1173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/barrel",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2792,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2760,
+  y = 1093,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2760,
+  y = 1109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2792,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 2792,
+  y = 989,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "destructibles/box",
+  model = "breakable",
+}
+
+sensor{
+  name = "south_sewer_right_route_2",
+  layer = 1,
+  x = 2808,
+  y = 677,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "south_sewer_right_route_3",
+  layer = 1,
+  x = 2792,
+  y = 765,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "south_sewer_right_route_4",
+  layer = 1,
+  x = 2792,
+  y = 861,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "to_sewer_south_ladder",
+  layer = 1,
+  x = 2832,
+  y = 1021,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 2824,
+  y = 992,
+  width = 16,
+  height = 16,
+  destination_map = "central_yarntown/central_yarntown",
+  destination = "from_sewer_south_ladder",
+}
+
+sensor{
+  name = "dark_area_sensor_6",
+  layer = 1,
+  x = 2832,
+  y = 1021,
+  properties = {
+    {
+      key = "level",
+      value = "2",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_4",
+  layer = 1,
+  x = 2616,
+  y = 640,
+  width = 16,
+  height = 40,
+  pattern = "4",
+  tileset = "oceanset_outside",
+}
+
+sensor{
+  name = "^layer_down_sensor_5",
+  layer = 1,
+  x = 2624,
+  y = 677,
+  width = 16,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 2632,
+  y = 640,
+  width = 8,
+  height = 40,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 2608,
+  y = 640,
+  width = 8,
+  height = 40,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 2,
   x = 1792,
@@ -55489,33 +55704,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "88",
-}
-
-tile{
-  layer = 2,
-  x = 2608,
-  y = 776,
-  width = 8,
-  height = 16,
-  pattern = "52",
-}
-
-tile{
-  layer = 2,
-  x = 2616,
-  y = 776,
-  width = 128,
-  height = 16,
-  pattern = "55_2",
-}
-
-tile{
-  layer = 2,
-  x = 2744,
-  y = 776,
-  width = 8,
-  height = 16,
-  pattern = "52_2",
 }
 
 tile{
@@ -55579,5 +55767,55 @@ tile{
   width = 8,
   height = 16,
   pattern = "52",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 2,
+  x = 2784,
+  y = 1040,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 2,
+  x = 2784,
+  y = 808,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 2,
+  x = 2832,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "85",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 2,
+  x = 2544,
+  y = 600,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 2,
+  x = 2544,
+  y = 920,
+  width = 16,
+  height = 32,
+  pattern = "85_2",
 }
 

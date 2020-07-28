@@ -5,6 +5,7 @@ local area_darkness_level = "dusk"
 local boss_bar = require"scripts/hud/boss_bar"
 
 map:register_event("on_started", function()
+  area_darkness_level = game:get_value"central_yarnham_area_darkness_level" or "dusk"
   light_fx = require"scripts/fx/lighting_effects"
   light_fx:set_darkness_level(area_darkness_level)
   sol.menu.start(map, light_fx)
@@ -149,5 +150,6 @@ gascoigne:register_event("on_dying", function()
       oedon_tomb_lantern:sparkle_effect()
     end)
   end)
+  game:set_value("central_yarnham_area_darkness_level", "night")
 end)
 
