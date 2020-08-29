@@ -2,6 +2,9 @@
 
 # ![Icon](medias/icon/icon_32.png) Yarntown
 
+### Note: Yarntown has moved to gitlab!
+https://gitlab.com/maxmraz/yarntown
+
 - [About](#about)
 - [License](#license)
 - [Controls](#controls)
